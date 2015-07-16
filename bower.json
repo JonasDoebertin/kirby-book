@@ -1,0 +1,19 @@
+{
+  "name": "kirby-book",
+  "version": "0.0.0",
+  "authors": [
+    "Jonas Döbertin <hello@jd-powered.net>"
+  ],
+  "license": "None",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inuit-starter-kit": "~0.2.9",
+    "inuit-clearfix": "~0.2.2"
+  }
+}

@@ -1,0 +1,38 @@
+/**
+ * $NAVIGATION
+ */
+
+.navigation {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -$sidebar-width;
+    width: $sidebar-width;
+
+    border-right: 1px solid $sidebar-border-color;
+    background: $sidebar-background-color;
+    font-family: $font-family-sans-serif;
+}
+
+    .navigation__divider {
+        border: 0;
+        height: 1px;
+        background: $sidebar-border-color;
+        margin: 10px 0;
+    }
+
+    .navigation__item {
+        margin: 10px 15px;
+    }
+
+/**
+ * #NAVIGATION TOGGLE
+ */
+
+.with-animation .navigation {
+    transition: left 300ms ease;
+}
+
+.with-sidebar .navigation {
+    left: 0;
+}

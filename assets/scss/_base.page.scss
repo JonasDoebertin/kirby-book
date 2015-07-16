@@ -1,0 +1,42 @@
+/**
+ * $PAGE
+ */
+
+
+html {
+    font-size: 100%;
+    line-height: $line-height-base;
+    font-weight: $font-weight-base;
+    background-color: $background-color-base;
+    color: $text-color;
+    overflow-y: scroll;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+
+    &.serif {
+        font-family: $font-family-serif;
+    }
+
+    &.sans-serif {
+        font-family: $font-family-sans-serif;
+    }
+
+    &.font-size-smaller {
+        font-size: 80%;
+    }
+
+    &.font-size-small {
+        font-size: 90%;
+    }
+
+    &.font-size-large {
+        font-size: 115%;
+    }
+
+    &.font-size-larger {
+        font-size: 130%;
+    }
+}

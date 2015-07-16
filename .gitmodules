@@ -4,3 +4,12 @@
 [submodule "panel"]
 	path = panel
 	url = https://github.com/getkirby/panel.git
+[submodule "site/fields/selector"]
+	path = site/fields/selector
+	url = https://github.com/storypioneers/kirby-selector.git
+[submodule "site/fields/color"]
+	path = site/fields/color
+	url = https://github.com/ian-cox/Kirby-Color-Picker.git
+[submodule "site/fields/markdown"]
+	path = site/fields/markdown
+	url = https://github.com/JonasDoebertin/kirby-visual-markdown.git

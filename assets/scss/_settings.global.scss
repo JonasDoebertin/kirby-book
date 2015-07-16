@@ -1,0 +1,42 @@
+
+/**
+ * #PAGE SETUP
+ */
+$background-color-base:   #ffffff;
+
+/**
+ * #TYPOGRAPHY
+ */
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       "Merriweather", Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+$font-family-base:        $font-family-sans-serif;
+
+$text-color:              #333333;
+$text-color-muted:        #cfcfcf;
+
+$font-size-base:          16px;
+$line-height-base:        1.5;
+$font-weight-base:        400;
+
+
+
+
+/**
+ * #NAVIGATION
+ */
+$sidebar-width:           300px;
+$sidebar-background-color: #fafafa;
+$sidebar-border-color:    rgba(0, 0, 0, 0.075);
+
+
+
+
+
+/**
+ * #INUIT.CSS OVERRIDES
+ */
+$inuit-base-font-size:          $font-size-base;
+$inuit-base-line-height:        ($line-height-base * $font-size-base);
+$inuit-base-text-color:         $text-color;
+$inuit-base-background-color:   $background-color-base;

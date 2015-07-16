@@ -1,0 +1,29 @@
+Title: Kirby Book Demo
+
+----
+
+Description: A quick Kirby Book working demo
+
+----
+
+Logo: 
+
+----
+
+Highlight: #d9342e
+
+----
+
+Footer: Published with Kirby Book.
+
+----
+
+Googleid: 
+
+----
+
+Bingid: 
+
+----
+
+Author: »jd« powered / Jonas Döbertin
