@@ -23,6 +23,9 @@ var Core = function($) {
 
         // Initialize sidebar component
         self.sidebar = new Sidebar($, self);
+
+        // Initialize dropdown component
+        self.dropdown = new Dropdown($, self);
     };
 
     // Run initialization

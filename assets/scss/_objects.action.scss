@@ -3,6 +3,7 @@
  */
 .action {
     display: block;
+    position: relative;
     height: 30px;
     width: 30px;
     line-height: 30px;
@@ -21,7 +22,8 @@
         float: right;
     }
 
-    @include attention {
+    &:hover,
+    &.with-dropdown {
         color: $text-color;
     }
 }

@@ -8,8 +8,12 @@
         <i class="fa fa-search"></i>
     </a>
 
-    <a class="action  action--left  js-action-toggle-search" href="#">
+    <a class="action  action--left  js-dropdown-toggle" href="#">
         <i class="fa fa-font"></i>
+        <ul class="dropdown">
+            <li class="dropdown__item  serif">Serif</li>
+            <li class="dropdown__item  sans-serif">Sans Serif</li>
+        </ul>
     </a>
 
     <a class="action  action--right  js-action-toggle-share" href="#">
