@@ -6,10 +6,14 @@ var Core = function($) {
 
     // Cached DOM lements
     this.$document = $(document);
-    this.elements = {};
+    this.elements = {
+        html: $('html'),
+    };
 
     // Component instances
     this.sidebar = null;
+    this.dropdown = null;
+    this.theme = null;
 
     /**
      * Initialization.
@@ -26,6 +30,9 @@ var Core = function($) {
 
         // Initialize dropdown component
         self.dropdown = new Dropdown($, self);
+
+        // Initialize theme component
+        self.theme = new Theme($, self);
     };
 
     // Run initialization

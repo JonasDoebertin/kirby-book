@@ -9,3 +9,13 @@
 .sans-serif {
     font-family: $font-family-sans-serif;
 }
+
+.smaller {
+    font-size: 0.85em;
+    line-height: inherit;
+}
+
+.larger {
+    font-size: 1.15em;
+    line-height: inherit;
+}

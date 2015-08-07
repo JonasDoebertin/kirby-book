@@ -58,3 +58,16 @@ $dropdown-background: #fafafa;
         padding: 0 15px;
         white-space: nowrap;
     }
+
+    .dropdown__item--half {
+        width: 50%;
+        float: left;
+    }
+
+    .dropdown__item--divider {
+        clear: both;
+        border-bottom: 1px solid darken($dropdown-background, 5%);
+        height: 0px;
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }

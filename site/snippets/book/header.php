@@ -11,6 +11,9 @@
     <a class="action  action--left  js-dropdown-toggle" href="#">
         <i class="fa fa-font"></i>
         <ul class="dropdown">
+            <li class="dropdown__item  dropdown__item--half  smaller">A</li>
+            <li class="dropdown__item  dropdown__item--half  larger">A</li>
+            <li class="dropdown__item--divider"></li>
             <li class="dropdown__item  serif">Serif</li>
             <li class="dropdown__item  sans-serif">Sans Serif</li>
         </ul>
