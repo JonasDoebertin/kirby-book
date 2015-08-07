@@ -14,8 +14,12 @@
             <li class="dropdown__item  dropdown__item--half  smaller">A</li>
             <li class="dropdown__item  dropdown__item--half  larger">A</li>
             <li class="dropdown__item--divider"></li>
-            <li class="dropdown__item  serif">Serif</li>
-            <li class="dropdown__item  sans-serif">Sans Serif</li>
+            <li class="dropdown__item  serif  js-theme-toggle" data-toggle="font" data-value="serif" title="Switch to a serif font.">
+                    Serif
+            </li>
+            <li class="dropdown__item  sans-serif  js-theme-toggle" data-toggle="font" data-value="sans-serif" title="Switch to a sans serif font.">
+                Sans Serif
+            </li>
         </ul>
     </a>
 

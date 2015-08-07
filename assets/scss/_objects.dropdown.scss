@@ -57,6 +57,12 @@ $dropdown-background: #fafafa;
         line-height: 2;
         padding: 0 15px;
         white-space: nowrap;
+        transition: color 300ms ease;
+        cursor: pointer;
+
+        &:hover {
+            color: $text-color;
+        }
     }
 
     .dropdown__item--half {

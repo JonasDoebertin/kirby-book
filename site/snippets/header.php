@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html class="no-js  font-size-normal sans-serif with-sidebar with-animation" lang="{{ language }}">
+<html class="no-js  font-size-normal serif with-sidebar with-animation" lang="{{ language }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -17,7 +17,7 @@
 
         <!-- favicon and app icons -->
 
-        <!-- <?= css('//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,400,700') ?> -->
+        <?= css('//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,400,700') ?>
         <!-- <?= css('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css') ?> -->
         <?= css('assets/css/main.min.css') ?>
         <?= css('api/theme/custom.min.css') ?>
