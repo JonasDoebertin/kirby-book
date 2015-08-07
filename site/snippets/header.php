@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html class="no-js  font-size-normal serif with-sidebar with-animation" lang="{{ language }}">
+<html class="no-js  normal sans-serif with-sidebar with-animation" lang="<?= $site->contentlanguage()?>">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">

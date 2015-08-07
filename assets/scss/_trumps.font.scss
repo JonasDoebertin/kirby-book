@@ -2,6 +2,10 @@
  * $FONT
  */
 
+
+/**
+ * #FONT FACES
+ */
 .serif {
     font-family: $font-family-serif;
 }
@@ -10,12 +14,44 @@
     font-family: $font-family-sans-serif;
 }
 
+
+/**
+ * #FONT SIZES
+ */
+.larger {
+    font-size: 120%;
+}
+
+.large {
+    font-size: 110%;
+}
+
+.normal {
+    font-size: 100%;
+}
+
+.small {
+    font-size: 90%;
+}
+
 .smaller {
+    font-size: 80%;
+}
+
+/**
+ * #TEXT MANIPULATORS
+ */
+
+.smaller-text {
     font-size: 0.85em;
     line-height: inherit;
 }
 
-.larger {
+.larger-text {
     font-size: 1.15em;
     line-height: inherit;
+}
+
+.strong {
+    font-weight: 700;
 }

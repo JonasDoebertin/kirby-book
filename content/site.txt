@@ -27,3 +27,11 @@ Bingid:
 ----
 
 Author: »jd« powered / Jonas Döbertin
+
+----
+
+Font: serif
+
+----
+
+Contentlanguage: en

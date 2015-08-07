@@ -39,4 +39,15 @@ class BasePage extends Page
         return site()->author()->html();
     }
 
+    public function tocNumber()
+    {
+        $number = $this->num() . '.';
+
+        if (!is_null($parent = $this->parent())) {
+            $number = $parent->tocNumber() . $number;
+        }
+
+        return $number;
+    }
+
 }

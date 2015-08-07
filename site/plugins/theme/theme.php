@@ -54,6 +54,7 @@ class Theme
 
         // Highlight text color
         $css .= '.highlight--text{color:' . self::option('highlightColor', 'inherit') . '!important;}';
+        $css .= '.highlight--hover-text:hover{color:' . self::option('highlightColor', 'inherit') . '!important;}';
 
         // Highlight border color
         $css .= '.highlight--border{border-color:' . Helpers::hexToRgba(self::option('highlightColor', 'inherit'), 0.5) . '!important;}';

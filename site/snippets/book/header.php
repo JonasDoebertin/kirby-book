@@ -4,15 +4,15 @@
         <i class="fa fa-bars"></i>
     </a>
 
-    <a class="action  action--left  js-action-toggle-search" href="#">
+    <!-- <a class="action  action--left  js-action-toggle-search" href="#">
         <i class="fa fa-search"></i>
-    </a>
+    </a> -->
 
     <a class="action  action--left  js-dropdown-toggle" href="#">
         <i class="fa fa-font"></i>
         <ul class="dropdown">
-            <li class="dropdown__item  dropdown__item--half  smaller">A</li>
-            <li class="dropdown__item  dropdown__item--half  larger">A</li>
+            <li class="dropdown__item  dropdown__item--half  smaller-text  js-theme-toggle" data-toggle="size" data-value="down">A</li>
+            <li class="dropdown__item  dropdown__item--half  larger-text  js-theme-toggle" data-toggle="size" data-value="up">A</li>
             <li class="dropdown__item--divider"></li>
             <li class="dropdown__item  serif  js-theme-toggle" data-toggle="font" data-value="serif" title="Switch to a serif font.">
                     Serif

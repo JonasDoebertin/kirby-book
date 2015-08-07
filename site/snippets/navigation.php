@@ -1,12 +1,8 @@
 <aside class="navigation">
 
-    <div class="navigation__item  search">
-        <input type="text" placeholder="Search" />
-    </div>
-
     <header class="navigation__item  navigation__header">
         <p>
-            <?= $site->title()->html() ?>
+            <strong><?= $site->title()->html() ?></strong>
         </p>
     </header>
 
