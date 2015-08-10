@@ -1,5 +1,9 @@
 <?php
 
+c::set('panel.stylesheet', 'assets/css/panel.min.css');
+
+c::set('markdown.extra', true);
+
 c::set('routes', [
 
     [

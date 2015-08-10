@@ -19,8 +19,9 @@ var Theme = function($, app) {
      * @type {Object}
      */
     this.state = {
-        font: 'sans-serif',
-        size: 'normal'
+        font:  'sans-serif',
+        size:  'normal',
+        color: 'white'
     };
 
     /**
@@ -34,6 +35,12 @@ var Theme = function($, app) {
      * @type {Array}
      */
     this.sizes = ['smaller', 'small', 'normal', 'large', 'larger'];
+
+    /**
+     * All avaiable color variantions
+     * @type {Array}
+     */
+    this.colors = ['white', 'sepia'];
 
     /**
      * Initialization.
@@ -60,6 +67,9 @@ var Theme = function($, app) {
                     break;
                 case 'size':
                     self.changeSize(target.data('value'));
+                    break;
+                case 'color':
+                    self.setColor(target.data('value'));
             }
         });
 
@@ -87,6 +97,14 @@ var Theme = function($, app) {
             }
         });
         self.setSize(store.get('size', self.state.size));
+
+        // Find and apply current color
+        $.each(self.colors, function(index, element) {
+            if (self.app.elements.html.hasClass(element)) {
+                self.state.color = element;
+            }
+        });
+        self.setColor(store.get('color', self.state.color));
 
     };
 
@@ -164,6 +182,19 @@ var Theme = function($, app) {
         }
 
         return (direction === 'up') ? self.sizes[++i] : self.sizes[--i];
+    };
+
+    /**
+     * Set a new color.
+     * @since 1.0.0
+     * @param {string}  color
+     * @return {void}
+     */
+    this.setColor = function(color) {
+        self.state.color = color;
+        self.app.elements.html.removeClass(self.colors.join(' '));
+        self.app.elements.html.addClass(color);
+        store.set('color', color);
     };
 
     /**

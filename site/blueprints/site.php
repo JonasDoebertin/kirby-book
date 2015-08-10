@@ -220,3 +220,13 @@ fields:
         label: Bing Webmaster Tools Verification
         type: text
         icon: windows
+
+    headlineAdvancedOptions:
+        label: Advanced Options
+        type: headline
+
+    tracking:
+        label: Tracking Code
+        type: textarea
+        buttons: false
+        icon: bar-chart

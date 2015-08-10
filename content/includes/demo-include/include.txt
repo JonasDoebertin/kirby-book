@@ -1,0 +1,9 @@
+Title: Demo Include
+
+----
+
+Text: [This is a **quick** *demo* ~~include~~.]
+
+----
+
+Sitemap: 

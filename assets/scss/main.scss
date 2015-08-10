@@ -7,9 +7,8 @@
  * #SETTINGS
  */
 @import "bower_components/inuit-defaults/settings.defaults";
-// @import "bower_components/inuit-responsive-settings/settings.responsive";
 @import "settings.global";
-// @import "settings.colors";
+
 
 
 /**
@@ -17,8 +16,6 @@
  */
 @import "bower_components/inuit-functions/tools.functions";
 @import "bower_components/inuit-mixins/tools.mixins";
-// @import "bower_components/inuit-responsive-tools/tools.responsive";
-// @import "bower_components/inuit-tools-widths/tools.widths";
 @import "tools.mixins";
 @import "tools.aliases";
 
@@ -33,36 +30,19 @@
 /**
  * #BASE
  */
-// @import "bower_components/inuit-page/base.page";
 @import "base.page";
-// @import "bower_components/inuit-headings/base.headings";
-// @import "base.headings";
-// @import "base.anchor";
-// @import "bower_components/inuit-paragraphs/base.paragraphs";
-// @import "bower_components/inuit-images/base.images";
-// @import "base.input";
 
 
 /**
  * #OBJECTS
  */
-// @import "bower_components/inuit-layout/objects.layout";
 @import "objects.action";
 @import "objects.dropdown";
-// @import "objects.breadcrumbs";
 
 
 /**
  * #COMPONENTS
  */
-// @import "components.site-nav";
-// @import "components.main-menu";
-// @import "components.page-title";
-// @import "components.search";
-// @import "components.collection";
-// @import "components.category-box";
-// @import "components.topics";
-// @import "components.simple-footer";
 @import "components.navigation";
 @import "components.summary";
 @import "components.book";
@@ -75,5 +55,5 @@
 @import "bower_components/inuit-clearfix/trumps.clearfix";
 @import "trumps.fontawesome";
 @import "trumps.font";
-// @import "bower_components/inuit-widths/trumps.widths";
-// @import "bower_components/inuit-widths-responsive/trumps.widths-responsive";
+@import "trumps.theme";
+@import "trumps.print";

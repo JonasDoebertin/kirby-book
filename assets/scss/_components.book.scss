@@ -8,8 +8,12 @@
     right: 0;
     bottom: 0;
     left: 0;
-    transition: left 300ms ease;
+    transition: left 300ms ease, transform 300ms ease;
     overflow-y: auto;
+
+    @media (max-width: ($sidebar-width * 2)) {
+        transition: transform 300ms ease;
+    }
 }
 
     .book__wrap {
@@ -28,6 +32,10 @@
             padding: 0 10px;
             font-size: 14px;
             overflow: visible;
+
+            .sepia & {
+                color: $text-color-sepia-muted;
+            }
 
             .action--left:first-child {
                 margin-left: 0;
@@ -66,4 +74,9 @@
  */
 .with-sidebar .book {
     left: $sidebar-width;
+
+    @media (max-width: ($sidebar-width * 2)) {
+        transform: translate(calc(100% - 60px), 0);
+        left: 0;
+    }
 }

@@ -3,6 +3,7 @@
  * #PAGE SETUP
  */
 $background-color-base:   #ffffff;
+$background-color-sepia:  #f2ecdf;
 
 /**
  * #TYPOGRAPHY
@@ -14,6 +15,8 @@ $font-family-base:        $font-family-sans-serif;
 
 $text-color:              #333333;
 $text-color-muted:        #cfcfcf;
+$text-color-sepia:        #402a17;
+$text-color-sepia-muted:  #bca997;
 
 $font-size-base:          16px;
 $line-height-base:        1.5;
@@ -26,7 +29,7 @@ $font-weight-base:        400;
  * #NAVIGATION
  */
 $sidebar-width:           300px;
-$sidebar-background-color: #fafafa;
+$sidebar-background-color: rgba(0, 0, 0, .035);
 $sidebar-border-color:    rgba(0, 0, 0, 0.075);
 
 

@@ -1,0 +1,25 @@
+@media print {
+
+    .navigation {
+        display: none;
+    }
+
+    .book {
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+        .book__header {
+            .action {
+                display: none;
+            }
+            .book__title {
+                opacity: 1;
+            }
+        }
+
+        .book_page {
+            max-width: 100%;
+        }
+
+}

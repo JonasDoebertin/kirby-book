@@ -59,6 +59,9 @@ class Theme
         // Highlight border color
         $css .= '.highlight--border{border-color:' . Helpers::hexToRgba(self::option('highlightColor', 'inherit'), 0.5) . '!important;}';
 
+        // Link color
+        $css .= '.page__content a{color: ' . self::option('highlightColor', 'inherit') . '!important;}';
+
         return $css;
     }
 }

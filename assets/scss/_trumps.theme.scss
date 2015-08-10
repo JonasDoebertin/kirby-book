@@ -39,19 +39,15 @@
 }
 
 /**
- * #TEXT MANIPULATORS
+ * #COLOR VARIATIONS
  */
 
-.smaller-text {
-    font-size: 0.85em;
-    line-height: inherit;
+.white {
+    background: $background-color-base;
+    color: $text-color;
 }
 
-.larger-text {
-    font-size: 1.15em;
-    line-height: inherit;
-}
-
-.strong {
-    font-weight: 700;
+.sepia {
+    background: $background-color-sepia;
+    color: $text-color-sepia;
 }
