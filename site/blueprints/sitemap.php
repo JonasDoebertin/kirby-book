@@ -4,7 +4,7 @@ files:
     hide: true
 preview: false
 deletable: false
-icon:
+icon: sitemap
 
 fields:
     AboutHeadline:

@@ -2,7 +2,7 @@
     <div class="page__wrap">
 
         <h2 class="page__headline  highlight--text  highlight--border">
-            <?= $page->headline()->html() ?>
+            <?= $page->headline()->or($page->title())->html() ?>
         </h2>
 
         <div class="page__content">
@@ -14,7 +14,7 @@
                 <ul>
                     <?php foreach ($page->children()->visible() as $child): ?>
                         <li>
-                            <a href="<?= $child->url() ?>" title="<?= $page->title()->html() ?>"><?= $page->title()->html() ?>
+                            <a href="<?= $child->url() ?>" title="<?= $child->title()->html() ?>"><?= $child->title()->html() ?>
                             </a>
                         </li>
                     <?php endforeach ?>

@@ -249,4 +249,16 @@
         background-color: rgba(0, 0, 0, 0.06);
         border: 0 none;
     }
+
+    /**
+     * #FOOTNOTES
+     */
+    .footnotes {
+        margin-top: 4rem;
+        font-size: 0.8rem;
+
+        p {
+            margin: 0;
+        }
+    }
 }

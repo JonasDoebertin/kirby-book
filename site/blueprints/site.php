@@ -171,7 +171,7 @@ fields:
         required: true
 
     headlineVisuals:
-        label: Visuals
+        label: Visual Options
         type: headline
     logo:
         label: Logo

@@ -19,8 +19,29 @@ class Helpers {
             $g = hexdec(substr($hex, 2, 2));
             $b = hexdec(substr($hex, 4, 2));
         }
-        
+
         return 'rgba(' . $r . ',' . $g . ',' . $b . ',' . $alpha . ')';
+    }
+
+    public static function getPages($templates = array()) {
+        return site()->index()->visible()->filter(function($item) use ($templates) {
+            return in_array($item->intendedTemplate(), $templates);
+        });
+    }
+
+    public static function getPagesCount($templates = array()) {
+        return self::getPages($templates)->count();
+    }
+
+    public static function getWordsCount($templates = array()) {
+        $pages = self::getPages($templates);
+
+        $words = 0;
+        foreach ($pages as $page) {
+            $words += str_word_count(strip_tags($page->text()));
+        }
+
+        return $words;
     }
 
 }

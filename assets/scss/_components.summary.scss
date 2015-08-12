@@ -21,4 +21,10 @@
         padding: 0.5rem 0;
     }
 
+
 }
+    .summary__item {}
+
+    .summary__item--active > a {
+        font-weight: 700;
+    }

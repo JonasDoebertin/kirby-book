@@ -1,8 +1,8 @@
-Title: Kirby Book Demo
+Title: kirbyBOOK Documentation
 
 ----
 
-Description: A quick Kirby Book working demo
+Description: Fully featured documentation and demo project of kirbyBOOK, the Kirby based web publishing tool.
 
 ----
 
@@ -30,7 +30,7 @@ Author: »jd« powered / Jonas Döbertin
 
 ----
 
-Font: serif
+Font: sans-serif
 
 ----
 
