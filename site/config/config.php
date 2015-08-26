@@ -4,12 +4,21 @@ c::set('panel.stylesheet', 'assets/css/panel.min.css');
 
 c::set('markdown.extra', true);
 
+c::set('panel.widgets', array(
+    'glance'  => true,
+    'pages'   => true,
+    'site'    => true,
+    'account' => true,
+    'history' => true,
+    'about'   => true,
+));
+
 c::set('routes', [
 
     /*
         THEME
         =====
-        
+
      */
     [
         'pattern' => 'api/theme/custom.min.css',
