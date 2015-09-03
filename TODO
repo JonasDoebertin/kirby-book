@@ -1,7 +1,7 @@
 # TODO
 
-* Add FontAwesome via Bower
-* Add jQuery via Bower
 * Make theme translatable
 * Lists need outside styles
 * Add "seen" icon to summary (fa-eye)
+* Inline theming styles
+* Configurable data formats

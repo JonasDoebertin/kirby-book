@@ -50,4 +50,12 @@ class BasePage extends Page
         return $number;
     }
 
+    public function updated()
+    {
+        $args = [
+            'lang' => site()->contentLanguage(),
+        ];
+        return relativeDate($this->modified(), $args);
+    }
+
 }

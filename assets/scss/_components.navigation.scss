@@ -21,6 +21,15 @@
     }
 }
 
+    .navigation__wrap {
+        overflow-y: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
     .navigation__divider {
         border: 0;
         height: 1px;
@@ -30,6 +39,33 @@
 
     .navigation__item {
         margin: 10px 15px;
+    }
+
+    .navigation__header {
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+        .navigation__logo {
+            max-width: 100%;
+            margin: 0 auto 1rem;
+        }
+
+    .navigation__footer {
+        font-size: 80%;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            font-weight: bolder;
+        }
     }
 
 /**

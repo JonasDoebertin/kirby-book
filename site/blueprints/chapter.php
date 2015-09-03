@@ -3,6 +3,7 @@ pages:
     template:
         - article
 files: true
+icon: folder-open
 
 fields:
     headlineContent:

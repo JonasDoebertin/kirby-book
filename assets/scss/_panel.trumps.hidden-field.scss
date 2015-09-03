@@ -1,0 +1,8 @@
+/**
+ * $HIDDEN FIELD
+ */
+
+input.input-is-readonly[name=title],
+input.input-is-readonly[name=title] + .field-icon {
+    display: none;
+}

@@ -1,0 +1,33 @@
+Title: Installation
+
+----
+
+Headline: 
+
+----
+
+Text: 
+
+> **Please remember** that Kirby CMS is not free. If you use this theme on a public website, don't forget to (link: http://getkirby.com/buy text: buy a license) for Kirby too (currently from €15,- / $17,-)!
+
+Installing {{kirbybook}} is really easy!
+
+1. Unzip the downloaded theme files package
+2. Upload everything to your server (make sure to upload the invisible `.htaccess` file, too)
+3. Point your browser to `http://yournewsite.com/panel` and use the included installer to create your first user account
+
+This is really all it takes to get up and running with a basic {{kirbybook}} powered publication.
+
+**(link: setup/configuration text: Next step title: Configuration rel:next):** Configure and customize {{kirbybook}} to make it truly your own.
+
+----
+
+Sitemap: 1
+
+----
+
+Priority: 
+
+----
+
+Customstyles: 

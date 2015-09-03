@@ -1,0 +1,59 @@
+Title: Configuration
+
+----
+
+Headline: 
+
+----
+
+Text: 
+
+{{kirbybook}} offers quite a lot of configuration and customization options within the so called *Site Options*. To access these, click the *Menu* icon at the top left of the panel and choose *Site Options*.
+
+## General Options
+
+Book Title
+    :The main title of the book. This will be used at the top of the sidebar, within each pages navigation bar as well by your visitors browsers and search engines.
+
+Book Description
+    :The books description will be used within the meta data of the sites home page and will be shown by search engines.
+
+Book Author
+    :The book author, again, will be added to each pages meta data.
+
+Content Language
+    :Set your publications language here. This will improve search engine visibility of your content.
+
+Please note that filling in the *Book Description* and *Book Author* fields is optional but strongly recommended for search engine visibility puposes.
+
+## Visual Options
+
+Logo
+    :DESCRIPTION
+
+Highlight Color
+    :Choose a color to be used as *highlight color*. It will be used for both links and main headlines throughout the site.
+
+Default Font
+    :As you may have noticed, {{kirbybook}} let's the visitor choose between a serif and a sans-serif font. With this option you can choose your sites default font that will be shown to new visitors.
+
+## Site Footer
+
+Footer Text
+    :The sites footer text is displayed within the navigation sidebar right below the chapter/article overview. It is perfect for adding a copyright message or something similar and supports standard markdown features.
+
+## Webmaster Tools
+
+Adding your site to Googles or Bings *Webmaster Tools* requires you to add a little authentication key to your pages markup. With {{kirbybook}}, instead of manually adding them to the templates, you can simply add these keys here and {{kirbybook}} will take care of the rest for you.
+
+----
+
+Sitemap: 1
+
+----
+
+Priority: 
+
+----
+
+Customstyles: 

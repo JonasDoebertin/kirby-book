@@ -7,7 +7,8 @@ var gulp       = require('gulp'),
     minifyCSS  = require('gulp-minify-css'),
     uglify     = require('gulp-uglify'),
     rename     = require('gulp-rename'),
-    include    = require("gulp-include");
+    include    = require("gulp-include"),
+    sourcemaps = require('gulp-sourcemaps');
 
 
 
@@ -54,10 +55,12 @@ var scssCompilePaths = [
  */
 gulp.task('css', function() {
     return gulp.src(scssCompilePaths)
+        .pipe(sourcemaps.init())
         .pipe(sass({errLogToConsole: true}))
         .pipe(autoprefix('last 2 versions', '> 1%', 'ie 8', 'ie 9'))
         .pipe(minifyCSS({compatibility: 'ie8'}))
         .pipe(rename({suffix: '.min'}))
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('assets/css'));
 });
 
@@ -72,8 +75,10 @@ gulp.task('js', function() {
     return gulp.src(jsCompilePaths)
         .pipe(include())
             .on('error', console.log)
-        // .pipe(uglify({preserveComments: 'some'}))
+        .pipe(sourcemaps.init())
+        .pipe(uglify({preserveComments: 'some'}))
         .pipe(rename({suffix: '.min'}))
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('assets/js'));
 });
 

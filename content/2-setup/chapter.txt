@@ -1,0 +1,27 @@
+Title: Setup
+
+----
+
+Headline: Setting up kirbyBOOK
+
+----
+
+Text: 
+
+Setting up {{kirbybook}} is quite easy and can be done by anybody since everything you need is already included in the download.
+
+1. Unzip the downloaded theme files.
+2. Upload them to your webhost.
+3. Point your browser to `http://yournewsite.com/panel`.
+
+----
+
+Sitemap: 1
+
+----
+
+Priority: 
+
+----
+
+Customstyles: 

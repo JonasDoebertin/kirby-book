@@ -13,19 +13,14 @@ c::set('panel.widgets', array(
     'about'   => true,
 ));
 
+/*
+    Relative Date
+ */
+c::set('relativedate.conjunction', true);
+c::set('relativedate.fuzzy', true);
+c::set('relativedate.lang', 'en');
+
 c::set('routes', [
-
-    /*
-        THEME
-        =====
-
-     */
-    [
-        'pattern' => 'api/theme/custom.min.css',
-        'action'  => function() {
-            return new Response(Theme::trumps(), 'css', 200);
-        },
-    ],
 
     /*
         SITEMAP

@@ -1,0 +1,33 @@
+Headlinecontent: 
+
+----
+
+Title: Adding Content
+
+----
+
+Headline: 
+
+----
+
+Text: 
+
+----
+
+Headlinesettings: 
+
+----
+
+Sitemap: 1
+
+----
+
+Priority: 
+
+----
+
+Headlineadvanced: 
+
+----
+
+Customstyles: 

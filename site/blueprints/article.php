@@ -1,6 +1,7 @@
 title: Article
 pages: false
 files: true
+icon: file-text
 
 fields:
     headlineContent:

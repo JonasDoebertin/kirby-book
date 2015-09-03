@@ -17,7 +17,7 @@ fields:
         text: >
             Includes are a great way to store reusable pieces of text that can be added to any number of chapters or articles.
 
-            <pre><code>&#40;include: system-requirements&#41;
+            <pre class="theme__code-block"><code>&#40;include: system-requirements&#41;
 
                 &#40;include: my-copyright&#41;
             </code></pre>

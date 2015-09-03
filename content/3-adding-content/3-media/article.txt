@@ -1,0 +1,25 @@
+Title: Media
+
+----
+
+Headline: Embedding Media
+
+----
+
+Text: 
+
+(embed: https://www.youtube.com/watch?v=6v2L2UGZJAM)
+
+(embed: https://vimeo.com/22439234 width: 300)
+
+----
+
+Sitemap: 1
+
+----
+
+Priority: 
+
+----
+
+Customstyles: 

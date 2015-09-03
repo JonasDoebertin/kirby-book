@@ -44,4 +44,58 @@ class Helpers {
         return $words;
     }
 
+    /**
+     * Check if a user is logged in.
+     *
+     * @since 1.0.0
+     * @return boolean
+     */
+    public static function isLoggedIn()
+    {
+        return (site()->user() !== false);
+    }
+
+    /**
+     * Generate a panel url for an object and an action.
+     *
+     * @since 1.0.0
+     * @param Mixed    $obj
+     * @param string    $action
+     * @return string
+     */
+    public static function panelUrl($obj, $action = 'show')
+    {
+        /* Prepare base url */
+        $panel = url('/panel');
+
+        /* String */
+        if (is_string($obj)) {
+            return $panel . '#/' . $obj;
+        }
+
+        /* Page */
+        elseif (is_a($obj, 'Page')) {
+            return $panel . '#/pages/' . $action . '/' . $obj->id();
+        }
+
+        /* File */
+        elseif (is_a($obj, 'File')) {
+
+            /* Site file */
+            if ($obj->page()->isSite()) {
+                return $panel . '#/files/' . $action . '/' . urlencode($obj->filename());
+            }
+
+            /* Page file */
+            else {
+              return $panel . '#/files/' . $action . '/' . $obj->page()->id() . '/' . urlencode($obj->filename());
+            }
+        }
+
+        /* User */
+        elseif (is_a($obj, 'User')) {
+            return $panel . '#/users/' . $action . '/' . $obj->username();
+        }
+    }
+
 }

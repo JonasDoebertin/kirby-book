@@ -1,6 +1,7 @@
 title: Page
 pages: false
 files: true
+icon: home
 
 fields:
     headlineContent:

@@ -201,6 +201,12 @@ fields:
         type: info
         text: The default font will define how a new visitor sees your book. Please note that, regardless of this setting, the visitor will be able to switch between a serif and sans-serif font.
         width: 2/4
+    customStyles:
+        type: textarea
+        label: Custom CSS
+        buttons: false
+        icon: paint-brush
+        help: Use this to add custom CSS rules that will be applied to every page. This allows for easy theme customizations.
 
     headlineFooter:
         label: Site Footer

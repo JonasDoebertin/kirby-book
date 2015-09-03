@@ -6,15 +6,15 @@ Description: Fully featured documentation and demo project of kirbyBOOK, the Kir
 
 ----
 
-Logo: 
+Logo: kirbybook-logo.svg
 
 ----
 
-Highlight: #d9342e
+Highlight: #ff4136
 
 ----
 
-Footer: Published with Kirby Book.
+Footer: Published with (link: http://kirbybook.jd-powered.net/ text: {{kirbybook}}) theme created by (link: http://jd-powered.net/ text: {{jdpowered}}).
 
 ----
 
@@ -39,3 +39,24 @@ Contentlanguage: en
 ----
 
 Tracking: 
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.jd-powered.net/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 9]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.jd-powered.net/piwik.php?idsite=9" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+----
+
+Customstyles: .navigation__logo{max-width: 72%;}

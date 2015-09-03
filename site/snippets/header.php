@@ -18,8 +18,8 @@
         <!-- favicon and app icons -->
 
         <?= css('//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,400,700') ?>
-        <!-- <?= css('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css') ?> -->
         <?= css('assets/css/main.min.css') ?>
-        <?= css('api/theme/custom.min.css') ?>
+        <?= Theme::generateStyles() ?>
     </head>
     <body>
+        <div class="wrap">

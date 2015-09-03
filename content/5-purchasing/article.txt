@@ -1,0 +1,49 @@
+Title: Purchasing
+
+----
+
+Headline: How to get kirbyBOOK
+
+----
+
+Text: 
+
+## Where to get it?
+
+*kirbyBOOK* is available on (link: http://gumroad.com text: Gumroad).
+
+Ready-to-use / Developer
+
+## What is included?
+
+When purchasing *kirbyBOOK*, you'll get to choose between two versions of the *kirbyBOOK* theme:
+
+1. A **ready-to-use version** that you can upload to your webhost without any further ado.
+2. A **developer version** for advanced users which includes all source files for esier customization.
+
+### Ready-to-use Version
+
+The ready-to-use version includes all required theme files, assets and the complete set of demo content (as seen on this demo website). Everything is nicely prepared and embedded into a fresh, preconfigured and up-to-date Kirby installation.
+
+It is was made especially for non-code oriented people that just want to start publishing their book with *kirbyBOOK* without having to do any tweaks, configurations, compiling, etc…
+
+### Developer Version
+
+In addition to the *ready-to-use version* the developer version includes:
+
+* all uncompressed and well-documented JavaScript and Sass source files
+* Bower and Npm package files to install all vendor assets
+* a complete Gulp workflow for compiling the assets
+* Additional configuration files that enable you to use a complete Git-based workflow, including `.editorconfig`, `.gitignore` and `.gitmodules`.
+
+----
+
+Sitemap: 1
+
+----
+
+Priority: 
+
+----
+
+Customstyles: 

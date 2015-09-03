@@ -1,0 +1,24 @@
+/**
+ * $CODE
+ */
+
+.theme__inline-code {
+    display: inline-block;
+    font-family: monospace;
+    background: #dddddd;
+    padding: 0 4px;
+    border-radius: 2px;
+}
+
+.theme__code-block {
+    background: #dddddd;
+    padding: 5px 10px;
+    border-radius: 2px;
+
+    code {
+        display: block;
+        font-family: monospace;
+        font-size: 120%;
+        line-height: 1.5;
+    }
+}
