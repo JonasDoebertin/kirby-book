@@ -11,8 +11,7 @@ require __DIR__ . DS . 'kirby' . DS . 'bootstrap.php';
 /* Maybe use custom site.php file */
 if (file_exists(__DIR__ . DS . 'site.php')) {
     require __DIR__ . DS . 'site.php';
-}
-else {
+} else {
     $kirby = kirby();
 }
 

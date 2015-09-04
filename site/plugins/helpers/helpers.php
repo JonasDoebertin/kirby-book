@@ -1,7 +1,7 @@
 <?php
 
-class Helpers {
-
+class helpers
+{
     public static function hexToRgba($hex, $alpha)
     {
         // Remove hash character
@@ -23,17 +23,20 @@ class Helpers {
         return 'rgba(' . $r . ',' . $g . ',' . $b . ',' . $alpha . ')';
     }
 
-    public static function getPages($templates = array()) {
-        return site()->index()->visible()->filter(function($item) use ($templates) {
+    public static function getPages($templates = [])
+    {
+        return site()->index()->visible()->filter(function ($item) use ($templates) {
             return in_array($item->intendedTemplate(), $templates);
         });
     }
 
-    public static function getPagesCount($templates = array()) {
+    public static function getPagesCount($templates = [])
+    {
         return self::getPages($templates)->count();
     }
 
-    public static function getWordsCount($templates = array()) {
+    public static function getWordsCount($templates = [])
+    {
         $pages = self::getPages($templates);
 
         $words = 0;
@@ -59,8 +62,8 @@ class Helpers {
      * Generate a panel url for an object and an action.
      *
      * @since 1.0.0
-     * @param Mixed    $obj
-     * @param string    $action
+     * @param  Mixed  $obj
+     * @param  string $action
      * @return string
      */
     public static function panelUrl($obj, $action = 'show')
@@ -88,7 +91,7 @@ class Helpers {
 
             /* Page file */
             else {
-              return $panel . '#/files/' . $action . '/' . $obj->page()->id() . '/' . urlencode($obj->filename());
+                return $panel . '#/files/' . $action . '/' . $obj->page()->id() . '/' . urlencode($obj->filename());
             }
         }
 
@@ -97,5 +100,4 @@ class Helpers {
             return $panel . '#/users/' . $action . '/' . $obj->username();
         }
     }
-
 }

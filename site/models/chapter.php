@@ -2,5 +2,4 @@
 
 class ChapterPage extends BasePage
 {
-    
 }

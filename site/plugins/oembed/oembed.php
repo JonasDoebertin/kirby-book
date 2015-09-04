@@ -2,7 +2,7 @@
 
 Kirbytext::$tags['embed'] = [
     'attr' => [],
-    'html' => function($tag) {
+    'html' => function ($tag) {
 
         /* Build basic Embera configuration */
         $config = [
@@ -22,7 +22,7 @@ Kirbytext::$tags['embed'] = [
             ],
             'fake' => [
                 'width' => 800,
-            ]
+            ],
         ];
 
         /* Create Embera instance */

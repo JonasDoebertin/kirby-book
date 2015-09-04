@@ -1,10 +1,10 @@
 <?php
 
-kirbytext::$tags['include'] = array(
+kirbytext::$tags['include'] = [
     'attr' => [
-        'include'
+        'include',
     ],
-    'html' => function($tag) {
+    'html' => function ($tag) {
         // Try to find include
         $include = site()->find('includes/' . $tag->attr('include'));
 
@@ -12,6 +12,7 @@ kirbytext::$tags['include'] = array(
         if (is_null($include) or ($include === false)) {
             return '[Missing include: ' .  $tag->attr('include') . ']';
         }
+
         return $include->text()->kirbytext();
-    }
-);
+    },
+];

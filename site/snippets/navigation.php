@@ -15,7 +15,7 @@
 
         <ol class="navigation__item  summary">
             <?php snippet('navigation/item', ['item' => $site->homePage()]) ?>
-            <?php foreach($page->topLevelArticles() as $item): ?>
+            <?php foreach ($page->topLevelArticles() as $item): ?>
                 <?php snippet('navigation/item', ['item' => $item]) ?>
             <?php endforeach ?>
         </ol>

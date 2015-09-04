@@ -1,15 +1,15 @@
 <?php
 
 return [
-    'title' => 'About',
+    'title'   => 'About',
     'options' => [
         [
             'text' => 'Get Support',
             'icon' => 'life-ring',
-            'link' => 'mailto:support@jd-powered.net'
-        ]
+            'link' => 'mailto:support@jd-powered.net',
+        ],
     ],
-    'html'  => function() {
+    'html'  => function () {
         return Tpl::load(__DIR__ . DS . 'template.php');
-    }
+    },
 ];

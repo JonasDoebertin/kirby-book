@@ -2,17 +2,16 @@
 
 class BasePage extends Page
 {
-
     public function topLevelArticles()
     {
-        return site()->pages()->visible()->filter(function($item) {
+        return site()->pages()->visible()->filter(function ($item) {
             return in_array($item->intendedTemplate(), ['chapter', 'article']);
         });
     }
 
     public function containedArticles()
     {
-        return $this->children()->visible()->filter(function($item) {
+        return $this->children()->visible()->filter(function ($item) {
             return in_array($item->intendedTemplate(), ['chapter', 'article']);
         });
     }
@@ -21,8 +20,7 @@ class BasePage extends Page
     {
         if ($this->isHomePage()) {
             $title = site()->title();
-        }
-        else {
+        } else {
             $title = $this->title() . ' | ' . site()->title();
         }
 
@@ -55,7 +53,7 @@ class BasePage extends Page
         $args = [
             'lang' => site()->contentLanguage(),
         ];
+
         return relativeDate($this->modified(), $args);
     }
-
 }

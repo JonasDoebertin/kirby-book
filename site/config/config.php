@@ -4,14 +4,14 @@ c::set('panel.stylesheet', 'assets/css/panel.min.css');
 
 c::set('markdown.extra', true);
 
-c::set('panel.widgets', array(
+c::set('panel.widgets', [
     'glance'  => true,
     'pages'   => true,
     'site'    => true,
     'account' => true,
     'history' => true,
     'about'   => true,
-));
+]);
 
 /*
     Relative Date
@@ -32,13 +32,13 @@ c::set('routes', [
      */
     [
         'pattern' => 'sitemap',
-        'action'  => function() {
+        'action'  => function () {
             go('sitemap.xml');
         },
     ],
     [
         'pattern' => 'sitemap.xml',
-        'action'  => function() {
+        'action'  => function () {
             return site()->visit('sitemap');
         },
     ],

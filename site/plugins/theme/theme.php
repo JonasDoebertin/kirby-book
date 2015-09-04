@@ -1,6 +1,6 @@
 <?php
 
-class Theme
+class theme
 {
     /**
      * Theme Name.
@@ -43,8 +43,8 @@ class Theme
      * Get a theme option.
      *
      * @since 1.0.0
-     * @param string    $key
-     * @param mixed    $default
+     * @param  string $key
+     * @param  mixed  $default
      * @return mixed
      */
     protected static function option($key, $default)
@@ -95,7 +95,7 @@ class Theme
      * Apply all active replacements to a string.
      *
      * @since 1.0.0
-     * @param string    $text
+     * @param  string $text
      * @return string
      */
     public static function applyReplacements($text)
@@ -128,10 +128,10 @@ class Theme
 
     /**
      * Get a translatable string.
-     * 
+     *
      * @since 1.0.0
-     * @param string    $key
-     * @param string    $default
+     * @param  string $key
+     * @param  string $default
      * @return string
      */
     public static function lang($key, $default)

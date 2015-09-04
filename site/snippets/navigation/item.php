@@ -6,7 +6,7 @@
     <?php $containedArticles = $item->containedArticles() ?>
     <?php if ($containedArticles->count() > 0): ?>
         <ol>
-            <?php foreach($item->containedArticles() as $subitem): ?>
+            <?php foreach ($item->containedArticles() as $subitem): ?>
                 <?php snippet('navigation/item', ['item' => $subitem]) ?>
             <?php endforeach ?>
         </ol>
