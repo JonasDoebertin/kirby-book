@@ -15,7 +15,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-        <!-- favicon and app icons -->
+        <?= $site->faviconCode() ?>
 
         <?= css('//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,400,700') ?>
         <?= css('assets/css/main.min.css') ?>

@@ -33,12 +33,10 @@ class Theme
      */
     protected static function options()
     {
-        $options = [];
-
-        // Highlight color
-        $options['highlightColor'] = site()->highlight();
-
-        return $options;
+        return [
+            'highlightColor'  => site()->highlight(),
+            'contentLanguage' => site()->contentLanguage(),
+        ];
     }
 
     /**
@@ -112,5 +110,37 @@ class Theme
 
         /* Replace all occurances */
         return str_ireplace($needles, $replacements, $text);
+    }
+
+    /**
+     * Try to load language file based on site options.
+     *
+     * @since 1.0.0
+     */
+    protected static function loadLanguageFile()
+    {
+        $path = kirby()->roots->languages() . DS . self::option('contentLanguage', 'en') . '.php';
+
+        if (F::exists($path)) {
+            include $path;
+        }
+    }
+
+    /**
+     * Get a translatable string.
+     * 
+     * @since 1.0.0
+     * @param string    $key
+     * @param string    $default
+     * @return string
+     */
+    public static function lang($key, $default)
+    {
+        /* Maybe load language file */
+        if (!L::get('theme.lang', false)) {
+            self::loadLanguageFile();
+        }
+
+        return L::get($key, $default);
     }
 }

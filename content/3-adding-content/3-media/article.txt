@@ -8,9 +8,39 @@ Headline: Embedding Media
 
 Text: 
 
+Embedding various media objects like Youtube videos, Instagram pictures, Vines or Tweets is as easy as it could possibly be. The reason for this is a custom Kirbytext Tag (similar to a Shortcode or BBCodes) that {{kirbybook}} provides out of the box.
+
+To add one of the various supported media objects to your page, all you need to do is to use the `(embed)` Kirbytext Tag and add the url of the object you would like to embed to it.
+
+To get an impression of what sites or supported, please have a look at the following list of embeddable objects:
+
+* GitHub Gists
+* Instagram
+* Kickstarter
+* Soundcloud
+* Spotify
+* Twitter
+* Vimeo
+* Vine
+* Youtube
+
+****
+
+## Examples
+
+### Youtube
 (embed: https://www.youtube.com/watch?v=6v2L2UGZJAM)
 
-(embed: https://vimeo.com/22439234 width: 300)
+###  Vine
+(embed: https://vine.co/v/OW5rqKW25TQ)
+
+### Instagram
+
+(embed: https://instagram.com/p/7KgHaXQ6RZ)
+
+### Twitter
+
+(embed: https://twitter.com/TheEllenShow/status/440322224407314432)
 
 ----
 

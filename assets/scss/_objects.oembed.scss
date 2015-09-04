@@ -1,0 +1,22 @@
+/**
+ * $OEMBED
+ */
+
+.oembed {
+    max-width: 90%;
+    margin: 0 auto 2rem;
+
+    .fluid-width-video-wrapper {
+
+    }
+
+    .instagram-media {
+        max-width: 100% !important;
+    }
+
+    .flickr-embed-frame,
+    .twitter-tweet {
+        margin: 0 auto !important;
+        display: block;
+    }
+}

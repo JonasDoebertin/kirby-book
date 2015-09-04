@@ -7,7 +7,7 @@
         </h2>
 
         <?php /* Page content */ ?>
-        <div class="page__content">
+        <div class="page__content  js-page-content">
             <?= $page->text()->kirbytext() ?>
         </div>
 
@@ -31,14 +31,14 @@
         <?php if (Helpers::isLoggedIn()): ?>
             <nav class="page__edit  clearfix">
                 <p class="page__updated">
-                    Updated <?= $page->updated() ?>
+                    <?= sprintf(Theme::lang('page.updated', 'Updated %s'), $page->updated()) ?>
                 </p>
                 <ul class="page__actions">
                     <li>
-                        <a class="highlight--hover-text" href="<?= url('/panel') ?>" title="Go to Panel Dashboard">Dashboard</a>
+                        <a class="highlight--hover-text" href="<?= url('/panel') ?>" title="Go to Panel Dashboard"><?= Theme::lang('dashboard', 'Dashboard')?></a>
                     </li>
                     <li>
-                        <a class="highlight--hover-text" href="<?= Helpers::panelUrl($page, 'show') ?>" title="Edit this page">Edit Page</a>
+                        <a class="highlight--hover-text" href="<?= Helpers::panelUrl($page, 'show') ?>" title="Edit this page"><?= Theme::lang('page.edit', 'Edit Page')?></a>
                     </li>
                 </ul>
             </nav>

@@ -8,6 +8,8 @@ Headline: How to get kirbyBOOK
 
 Text: 
 
+(include: buy)
+
 ## Where to get it?
 
 *kirbyBOOK* is available on (link: http://gumroad.com text: Gumroad).
@@ -21,20 +23,20 @@ When purchasing *kirbyBOOK*, you'll get to choose between two versions of the *k
 1. A **ready-to-use version** that you can upload to your webhost without any further ado.
 2. A **developer version** for advanced users which includes all source files for esier customization.
 
-### Ready-to-use Version
+### Standard (ready-to-use) Edition
 
-The ready-to-use version includes all required theme files, assets and the complete set of demo content (as seen on this demo website). Everything is nicely prepared and embedded into a fresh, preconfigured and up-to-date Kirby installation.
+The standard ready-to-use version includes all required theme files, assets and the complete set of demo content (as seen on this demo website). Everything is nicely prepared and embedded into a fresh, preconfigured and up-to-date Kirby installation.
 
-It is was made especially for non-code oriented people that just want to start publishing their book with *kirbyBOOK* without having to do any tweaks, configurations, compiling, etc…
+This edition was made especially for non-code oriented people that just want to start publishing their book with {{kirbybook}} without having to worry about any tweaks, modifications, customizations, compiling, etc…
 
-### Developer Version
+### Developer Edition
 
-In addition to the *ready-to-use version* the developer version includes:
+In addition to the *standard ready-to-use edition* the developer edition includes:
 
 * all uncompressed and well-documented JavaScript and Sass source files
-* Bower and Npm package files to install all vendor assets
-* a complete Gulp workflow for compiling the assets
-* Additional configuration files that enable you to use a complete Git-based workflow, including `.editorconfig`, `.gitignore` and `.gitmodules`.
+* Composer, Bower and Npm package files to install all vendor assets
+* The complete Gulp workflow for compiling the assets
+* Additional configuration files that enable you to use a complete Git-based workflow, including `.gitignore` and `.gitmodules`.
 
 ----
 

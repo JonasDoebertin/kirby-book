@@ -231,8 +231,18 @@ fields:
         label: Advanced Options
         type: headline
 
+    faviconCode:
+        label: Favicon/Meta Tags
+        type: textarea
+        buttons: false
+        icon: code
+        help: >
+            Enter all your favicon related markup or other meta tags here. Tip: A great tool to create your favicon images and the necessary code is <a href="http://realfavicongenerator.net/">Real Favicon Generator</a>.
+
     tracking:
         label: Tracking Code
         type: textarea
         buttons: false
         icon: bar-chart
+        help: >
+            Enter you Google Analytics tracking code here. Make sure to include all the <code class="theme__inline-code">&lt;script&gt;</code> tags. Other tracking services like Piwik will work well, too.

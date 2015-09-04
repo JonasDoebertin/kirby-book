@@ -135,10 +135,6 @@ var Theme = function($, app) {
         currentSize = self.state.size;
         newSize = self.getNextSize(currentSize, direction);
 
-        console.log('Current ' + currentSize);
-        console.log('New ' + newSize);
-        console.log('Direction ' + direction);
-
         // Set new size
         self.setSize(newSize);
     };
@@ -154,8 +150,6 @@ var Theme = function($, app) {
         self.app.elements.html.removeClass(self.sizes.join(' '));
         self.app.elements.html.addClass(size);
         store.set('size', size);
-
-        console.log('Set size to ' + size);
     };
 
     /**

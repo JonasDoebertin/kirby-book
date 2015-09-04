@@ -6,6 +6,17 @@ Kirbytext::$tags['embed'] = [
 
         /* Build basic Embera configuration */
         $config = [
+            'allow' => [
+                'GithubGist',
+                'Instagram',
+                'Kickstarter',
+                'Soundcloud',
+                'Spotify',
+                'Twitter',
+                'Vimeo',
+                'Vine',
+                'Youtube',
+            ],
             'params' => [
                 'width' => 800,
             ],
@@ -16,9 +27,7 @@ Kirbytext::$tags['embed'] = [
 
         /* Create Embera instance */
         $embera = new \Embera\Embera($config);
-        $formatter = new \Embera\Formatter($embera);
-        $formatter->setTemplate('<div class="oembed oembed--{type}" style="max-width: 300px">{html}</div>');
 
-        return $formatter->transform($tag->attr('embed'));
+        return '<div class="oembed">' . $embera->autoEmbed($tag->attr('embed')) . '</div>';
     },
 ];

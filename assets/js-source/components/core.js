@@ -33,6 +33,20 @@ var Core = function($) {
 
         // Initialize theme component
         self.theme = new Theme($, self);
+
+        /* Initialize fitvids.js plugin */
+        self.initEmbeddedVideos();
+    };
+
+    this.initEmbeddedVideos = function() {
+        var selectors = [
+            'iframe[src*=\'instagram.com\'][src*=\'embed\']',
+            'iframe[src*=\'soundcloud.com/player\']',
+            'iframe[src*=\'embed.spotify.com\']',
+            'iframe[src*=\'vine.co\']',
+        ];
+
+        $('.js-page-content').fitVids({customSelector: selectors.join()});
     };
 
     // Run initialization
