@@ -12,11 +12,17 @@ Text:
 
 (include: buy)
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+{{kirbyBOOK}} is the definitiy solution to publishing web based books easily.
 
-(include: demo-include)
+## Features
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+**Simple to publish.** Publish, update and maintain your book easily via the integrated Panel or by using your favorite text or markdown editor. Throw in some Kirbytext (similar to WordPress shortcodes) to spice up your content even more.
+
+**Ready for your content.** Add any kind of content you like. Create multiple chapters containing several articles each. Add images, tables, footnotes. Embed Youtube and Vimeo videos, Tweets and a lot more.
+
+**Awesome reading experience.** Make your book available in a fully-responsive way optimized for both desktop and mobile reading experiences. Let your readers choose between multiple themes, fonts and text sizes.
+
+**Based on Kirby.** With the help of Kirby you set up your book on top of a well-proven file-based content management system. No hazzle with managing databases and performance drops. Backups are dead-simple.
 
 ----
 

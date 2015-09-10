@@ -6,7 +6,7 @@ Indicator: kirbybook
 
 ----
 
-Text: **kirbyBOOK**
+Text: **<span style="color: #ff4136;">kirby</span><span style="color: #333333;">BOOK</span>**
 
 ----
 
