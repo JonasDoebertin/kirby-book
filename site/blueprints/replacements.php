@@ -1,7 +1,6 @@
 title: Replacements
 pages:
-    template: replacement
-    num: zero
+    hide: true
 files:
     hide: true
 preview: false
@@ -19,13 +18,36 @@ fields:
 
             <ol>
                 <li>
-                    Use a replacement indicator within your pages text like so: <code class="theme__inline-code">{{brandname}}</code>.
+                    Create a replacement with your choosen indicator and replacement text, eg.: <code class="theme__inline-code">&lt;strong&gt;brandNAME&lt;/strong&gt;</code> by clicking <strong>Add</strong> below.
                 </li>
                 <li>
-                    Create a replacement with your choosen indicator and add your replacement content, eg.: <code class="theme__inline-code">&lt;strong&gt;brandNAME&lt;/strong&gt;</code>
+                    Use the replacement indicator within your content like so: <code class="theme__inline-code">{{indicator}}</code>.
                 </li>
+
             </ol>
 
+    setupHeadline:
+        type: headline
+        label: Add your Replacements
+    replacements:
+        type: structure
+        label: Replacements
+        fields:
+            indicator:
+                type: text
+                label: Indicator
+            replacement:
+                type: markdown
+                label: Replacement Text
+                tools:
+                    - bold
+                    - italic
+                    - strikethough
+                    - link
+                    - email
+        entry: >
+            <strong>{{indicator}}</strong><br/><br/>
+            <em>{{replacement}}</em>
 
     title:
         type: title

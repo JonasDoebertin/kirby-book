@@ -12,6 +12,8 @@ Text:
 
 ## General Options
 
+(image: general-options.png)
+
 Book Title
     :The main title of the book. This will be used at the top of the sidebar, within each pages navigation bar as well by your visitors browsers and search engines.
 
@@ -28,6 +30,8 @@ Please note that filling in the *Book Description* and *Book Author* fields is o
 
 ## Visual Options
 
+(image: visual-options.png)
+
 Logo
     :DESCRIPTION
 
@@ -38,6 +42,8 @@ Default Font
     :As you may have noticed, {{kirbybook}} let's the visitor choose between a serif and a sans-serif font. With this option you can choose your sites default font that will be shown to new visitors.
 
 ## Site Footer
+
+(image: site-footer.png)
 
 Footer Text
     :The sites footer text is displayed within the navigation sidebar right below the chapter/article overview. It is perfect for adding a copyright message or something similar and supports standard markdown features.

@@ -3,3 +3,11 @@ Title: Includes
 ----
 
 Sitemap: 
+
+----
+
+Includes: 
+
+- 
+  indicator: buy
+  include: '<p class="buy"><a class="gumroad-button" href="https://gumroad.com/l/KkqQ">Buy now!</a><script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script></p>'

@@ -12,7 +12,9 @@ Text:
 
 (include: buy)
 
-{{kirbyBOOK}} is the definitiy solution to publishing web based books easily.
+****
+
+{{kirbyBOOK}} is the definitive solution to publishing web based books easily.
 
 ## Features
 

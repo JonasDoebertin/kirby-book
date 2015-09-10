@@ -103,9 +103,9 @@ class theme
         /* Load all replacements */
         $needles = [];
         $replacements = [];
-        foreach (site()->find('replacements')->children() as $replacement) {
+        foreach (site()->find('replacements')->replacements()->toStructure() as $replacement) {
             $needles[] = '{{' . $replacement->indicator() . '}}';
-            $replacements[] = $replacement->text();
+            $replacements[] = $replacement->replacement();
         }
 
         /* Replace all occurances */

@@ -12,26 +12,41 @@ Text:
 
 ## Where to get it?
 
-*kirbyBOOK* is available on (link: http://gumroad.com text: Gumroad).
+{{kirbybook}} is available on (link: https://gum.co/kirbybook text: Gumroad).
 
 Ready-to-use / Developer
 
 ## What is included?
 
-When purchasing *kirbyBOOK*, you'll get to choose between two versions of the *kirbyBOOK* theme:
+When purchasing {{kirbybook}}, you'll get to choose between two versions of the *kirbyBOOK* theme:
 
 1. A **ready-to-use version** that you can upload to your webhost without any further ado.
 2. A **developer version** for advanced users which includes all source files for esier customization.
 
+| Files | Standard Edition | Developer Edition |
+| ---------------- | :--------------: | :---------------: |
+| Kirby Core | {{icon-yes}} | {{icon-yes}} |
+| Kirby Panel | {{icon-yes}} | {{icon-yes}} |
+| Theme Files | {{icon-yes}} | {{icon-yes}} |
+| Demo Content | {{icon-yes}} | {{icon-yes}} |
+| JavaScript Source Files | {{icon-no}} | {{icon-yes}} |
+| SCSS Source Files | {{icon-no}} | {{icon-yes}} |
+| Git Configuration Files | {{icon-no}} | {{icon-yes}} |
+| NPM Package Files | {{icon-no}} | {{icon-yes}} |
+| Bower Package Files | {{icon-no}} | {{icon-yes}} |
+| Gulp Workflow | {{icon-no}} | {{icon-yes}} |
+| Composer Package Files | {{icon-no}} | {{icon-yes}} |
+| PHP CS Fixer Configuration Files | {{icon-no}} | {{icon-yes}} |
+
 ### Standard (ready-to-use) Edition
 
-The standard ready-to-use version includes all required theme files, assets and the complete set of demo content (as seen on this demo website). Everything is nicely prepared and embedded into a fresh, preconfigured and up-to-date Kirby installation.
+The *standard Edition* includes all required theme files, assets and the complete set of demo content (as seen on this website). Everything is nicely prepared and embedded into a fresh, preconfigured and up-to-date Kirby installation.
 
 This edition was made especially for non-code oriented people that just want to start publishing their book with {{kirbybook}} without having to worry about any tweaks, modifications, customizations, compiling, etc…
 
 ### Developer Edition
 
-In addition to the *standard ready-to-use edition* the developer edition includes:
+In addition to the *Standard Edition* you may choose to get a hold on the special *Developer Edition*. Choose this edition if you want to make your own heavy modifications or customizations to {{kirbybook}}. In addition to the *Standard Edition* the *Developer Edition* includes:
 
 * all uncompressed and well-documented JavaScript and Sass source files
 * Composer, Bower and Npm package files to install all vendor assets

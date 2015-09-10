@@ -5,14 +5,15 @@ kirbytext::$tags['include'] = [
         'include',
     ],
     'html' => function ($tag) {
+
         // Try to find include
-        $include = site()->find('includes/' . $tag->attr('include'));
+        $include = site()->find('includes')->includes()->toStructure()->filterBy('indicator', $tag->attr('include'))->first();
 
         // Check for invalid include names
-        if (is_null($include) or ($include === false)) {
-            return '[Missing include: ' .  $tag->attr('include') . ']';
+        if (is_null($include)) {
+            return '[[Missing include: ' .  $tag->attr('include') . ']]';
         }
 
-        return $include->text()->kirbytext();
+        return $include->include()->kirbytext();
     },
 ];
