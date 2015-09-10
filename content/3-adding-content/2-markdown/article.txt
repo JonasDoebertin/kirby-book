@@ -1,7 +1,3 @@
-Headlinecontent: 
-
-----
-
 Title: Markdown
 
 ----
@@ -12,9 +8,29 @@ Headline:
 
 Text: 
 
-----
+When it comes to defining the actual content, Kirby uses acustom flavor of John Grubers Markdown syntax, called *Kirbytext*. Kirbytext is a simple but powerful syntax to format text, that is easy to understand and read.
 
-Headlinesettings: 
+Kirbytext inherits all basic Markdown features and extends them with simpler and more powerful tags for adding images, embedding videos or including download links for files.
+
+On top of that, {{kirbybook}} adds some additional Kirbytext tags that make embedding multimedia content and setting up reusable text snippets ever easier.
+
+## Markdown & Kirbytext Features
+
+You can learn all about the basic Markdown features at the (link: http://daringfireball.net/projects/markdown/syntax text: official website).
+
+If you want a more to-the-point overview of formatting your content with Markdown and Kirbytext you can have a look at the (link: http://getkirby.com/docs/content/text#basic-formats text: Formatting text) article from the Kirby docs.
+
+## Markdown Extra
+
+In addition to plain Markdown, {{kirbybook}} supports some more advanced features, called Markdown Extra, that are specifically relevant to book-like publications: tables and footnotes. Have a look at the (link: /typography text: Typography) page to see how to add tables and footnotes and how they are styled.
+
+## Custom Kirbytext Tags
+
+{{kirbybook}} comes with some additional Kirbytext Tags that extend the available features even further. The main custom features are:
+
+* (link: /adding-content/media text: oEmbed support) that allows you to embed Youtube & Vimeo videos, Tweets, Vines, Gists and more without writing any kidn of HTML code
+*  (link: /adding-content/includes text: Includes)
+*  (link: /adding-content/replacements text: Replacements)
 
 ----
 
@@ -23,10 +39,6 @@ Sitemap: 1
 ----
 
 Priority: 
-
-----
-
-Headlineadvanced: 
 
 ----
 

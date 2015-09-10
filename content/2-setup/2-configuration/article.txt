@@ -24,7 +24,7 @@ Book Author
     :The book author, again, will be added to each pages meta data.
 
 Content Language
-    :Set your publications language here. This will improve search engine visibility of your content.
+    :Set your publications language here. This will improve search engine visibility of your content. (link: /setup/language text: Learn more).
 
 Please note that filling in the *Book Description* and *Book Author* fields is optional but strongly recommended for search engine visibility puposes.
 

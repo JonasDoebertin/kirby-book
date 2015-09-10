@@ -9,7 +9,8 @@
      */
     p, blockquote,
     ul, ol, dl,
-    table, pre, hr {
+    table, pre, hr,
+    figure {
         margin-top: 0;
         margin-bottom: 1rem;
     }
@@ -48,9 +49,14 @@
         }
     }
 
+    figure,
     img {
         max-width: 100%;
         page-break-inside: avoid;
+    }
+
+    figure {
+        text-align: center;
     }
 
 
