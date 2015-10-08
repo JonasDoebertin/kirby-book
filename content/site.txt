@@ -14,7 +14,7 @@ Highlight: #ff4136
 
 ----
 
-Footer:
+Footer: 
 
 Published with (link: http://kirbybook.jd-powered.net/ text: {{kirbybook}}) theme created by (link: http://jd-powered.net/ text: {{jdpowered}}).
 
@@ -22,11 +22,11 @@ Published with (link: http://kirbybook.jd-powered.net/ text: {{kirbybook}}) them
 
 ----
 
-Googlemeta: <meta name="google-site-verification" content="uMT_lZ2k3HvLNsYZHVp7uNN9EiWSwufhaqwzeCDwdjM" />
+Googlemeta: <meta name="google-site-verification" content="libmP-13KnBdKftaAwcjHUqnZTexM5_gnUk-sZjdASM" />
 
 ----
 
-Bingmeta: 
+Bingmeta: <meta name="msvalidate.01" content="A577379B7BD7C049768A09C7316891E0" />
 
 ----
 
@@ -42,7 +42,7 @@ Contentlanguage: de
 
 ----
 
-Tracking:
+Tracking: 
 
 <!-- Piwik -->
 <script type="text/javascript">
@@ -59,18 +59,18 @@ Tracking:
   })();
 </script>
 <noscript><p><img src="//analytics.jd-powered.net/piwik.php?idsite=9" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik -->
+<!-- End Piwik Code -->
 
 ----
 
-Customstyles:
+Customstyles: 
 
 .navigation__logo{max-width: 72%;}
 .buy{text-align: center}
 
 ----
 
-Faviconcode:
+Faviconcode: 
 
 <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
@@ -93,7 +93,7 @@ Faviconcode:
 
 ----
 
-Scripts:
+Scripts: 
 
 <!-- Helpscout Beacon -->
 <script>!function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"a8bd46db-6c5c-11e5-8846-0e599dc12a51"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});</script>
