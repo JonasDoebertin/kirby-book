@@ -1,4 +1,4 @@
-Title: Markdown
+Title: Formatting Text
 
 ----
 
@@ -8,7 +8,7 @@ Headline:
 
 Text: 
 
-When it comes to defining the actual content, Kirby uses acustom flavor of John Grubers Markdown syntax, called *Kirbytext*. Kirbytext is a simple but powerful syntax to format text, that is easy to understand and read.
+When it comes to defining the actual content, Kirby uses a custom flavor of (link: https://daringfireball.net/projects/markdown/ text: John Grubers Markdown target: _blank) syntax, called (link: http://getkirby.com/docs/content/text text: Kirbytext target: _blank). Kirbytext is a simple yet powerful syntax to format text, that is easy to understand and to read.
 
 Kirbytext inherits all basic Markdown features and extends them with simpler and more powerful tags for adding images, embedding videos or including download links for files.
 
@@ -16,9 +16,9 @@ On top of that, {{kirbybook}} adds some additional Kirbytext tags that make embe
 
 ## Markdown & Kirbytext Features
 
-You can learn all about the basic Markdown features at the (link: http://daringfireball.net/projects/markdown/syntax text: official website).
+You can learn all about the basic Markdown features at the (link: http://daringfireball.net/projects/markdown/syntax text: official Markdown website target: _blank).
 
-If you want a more to-the-point overview of formatting your content with Markdown and Kirbytext you can have a look at the (link: http://getkirby.com/docs/content/text#basic-formats text: Formatting text) article from the Kirby docs.
+If you want a more to-the-point overview of formatting your content with Markdown and Kirbytext you can have a look at the (link: http://getkirby.com/docs/content/text#basic-formats text: Formatting text target: _blank) article from the Kirby docs.
 
 ## Markdown Extra
 

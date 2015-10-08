@@ -56,8 +56,17 @@
     }
 
     figure {
+        margin: 0 2rem 2rem;
         text-align: center;
+
+        &.no-margin {
+            margin: 0 0 2rem;
+        }
     }
+
+        figure img {
+            display: block;
+        }
 
 
     /**

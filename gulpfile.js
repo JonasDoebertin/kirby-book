@@ -104,8 +104,8 @@ gulp.task('css', function() {
     return gulp.src(scssCompilePaths)
         .pipe(sourcemaps.init())
         .pipe(sass({errLogToConsole: true}))
-        .pipe(autoprefix('last 2 versions', '> 1%', 'ie 8', 'ie 9'))
-        .pipe(minifyCSS({compatibility: 'ie8'}))
+        .pipe(autoprefix('last 2 versions', '> 2%', 'ie 9'))
+        .pipe(minifyCSS())
         .pipe(rename({suffix: '.min'}))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('assets/css'));

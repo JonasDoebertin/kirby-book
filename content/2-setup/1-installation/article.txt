@@ -18,10 +18,6 @@ This is really all it takes to get up and running with a basic {{kirbybook}} pow
 
 > **Please remember** that Kirby CMS is not free. If you use this theme on a public website, don't forget to (link: http://getkirby.com/buy text: buy a license) for Kirby (currently from €15,- / $17,-).
 
-****
-
-**(link: setup/configuration text: Next step title: Configuration rel:next):** Configure and customize {{kirbybook}} to make it truly your own.
-
 ----
 
 Sitemap: 1

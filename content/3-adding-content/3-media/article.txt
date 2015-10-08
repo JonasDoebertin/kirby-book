@@ -8,7 +8,7 @@ Headline: Embedding Media
 
 Text: 
 
-Embedding various media objects like Youtube videos, Instagram pictures, Vines or Tweets is as easy as it could possibly be. The reason for this is a custom Kirbytext Tag (similar to a Shortcode or BBCodes) that {{kirbybook}} provides out of the box.
+Embedding various media objects like Youtube videos, Instagram pictures, Vines or Tweets is as easy as it could possibly be. The reason for this is a custom Kirbytext Tag (similar to a WordPress Shortcode or BBCode) that {{kirbybook}} provides out of the box.
 
 To add one of the various supported media objects to your page, all you need to do is to use the `(embed)` Kirbytext Tag and add the url of the object you would like to embed to it.
 

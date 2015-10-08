@@ -12,7 +12,7 @@ Text:
 
 ## General Options
 
-(image: general-options.png alt: kirbyBOOK General Options)
+(image: general-options.png alt: kirbyBOOK General Options class: no-margin)
 
 Book Title
     :The main title of the book. This will be used at the top of the sidebar, within each pages navigation bar as well by your visitors browsers and search engines.
@@ -30,7 +30,7 @@ Please note that filling in the *Book Description* and *Book Author* fields is o
 
 ## Visual Options
 
-(image: visual-options.png)
+(image: visual-options.png alt: kirbyBOOK Visual Options class: no-margin)
 
 Logo
     :Your logo will be added at the top of the navigation sidebar. Choose any image format and size you like; {{kirbybook}} will handle generating the correct image size for you.
@@ -46,12 +46,14 @@ Custom CSS
 
 ## Site Footer
 
-(image: site-footer.png)
+(image: site-footer.png alt: kirbyBOOK Site Footer Options class: no-margin)
 
 Footer Text
     :The sites footer text is displayed within the navigation sidebar right below the chapter/article overview. It is perfect for adding a copyright message or something similar and supports standard markdown features.
 
 ## Webmaster Tools
+
+(image: webmaster-tools.png alt: kirbyBOOK Webmaster Tools Options class: no-margin)
 
 Adding your site to Googles *Search Console* or Bings *Webmaster Tools* requires you to add a little authentication key to your pages markup. Instead of manually adding them to the templates, you can simply add these tags here and {{kirbybook}} will take care of the rest for you.
 
@@ -63,6 +65,8 @@ Bing Webmaster Tools Verification Meta Tag
 
 ## Advanced Options
 
+(image: advanced-options.png alt: kirbyBOOK Advanced Options class: no-margin)
+
 The *Advanced Options* section contains another set of options that might come in handy even though not everybody will need them. They offer great ways to add extended functionality to your publication without the need to fire up a code editor.
 
 Favicon/Meta Tags
@@ -70,6 +74,9 @@ Favicon/Meta Tags
 
 Tracking Code
     :If you want to use some sort of web analytics software like *Google Analytics* or *Piwik*, this is the place to add your tracking code. {{kirbybook}} will make sure it is loaded right before the closing `</body>` tag.
+
+Custom JavaScript Code
+    :Use this to enter any additional JavaScript code snippets here. Make sure to include all the `<script>` tags.
 
 ----
 

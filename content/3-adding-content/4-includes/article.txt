@@ -8,9 +8,9 @@ Headline:
 
 Text: 
 
-Includes are a convenient way for reusing content portions across multiple places of your publication. They are optimal for storing large and confusing table definition outside of your main content while making them editable easily. They are also great for storing text that will be used at multiple places within your content, such as license texts, copyright notices, system requirements, call-to-action button, etc.
+Includes are a convenient way for reusing content portions across multiple places of your publication. They are optimal for storing large and confusing table definitions outside of your main content while making them easily editable. They are also great for storing text that will be used at multiple places within your content, such as license texts, copyright notices, system requirements, call-to-action buttons, etc.
 
-In fact, this demo site uses an Include to for the *Buy Button* code so it can be easily dropped in anywhere.
+In fact, this demo site uses an Include to for the "Buy now!" button code so it can be easily dropped in anywhere.
 
 ## Prepage an Include
 

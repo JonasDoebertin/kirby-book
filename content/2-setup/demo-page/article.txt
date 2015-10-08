@@ -1,0 +1,33 @@
+Headlinecontent: 
+
+----
+
+Title: Demo Page
+
+----
+
+Headline: 
+
+----
+
+Text: 
+
+----
+
+Headlinesettings: 
+
+----
+
+Sitemap: 1
+
+----
+
+Priority: 
+
+----
+
+Headlineadvanced: 
+
+----
+
+Customstyles: 

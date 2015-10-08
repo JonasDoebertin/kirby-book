@@ -8,26 +8,27 @@ Headline: Publishing Non-English Books
 
 Text: 
 
-{{kirbybook}} lets you publish your book in any language you want.
+{{kirbybook}} gives you the freedom to publish your book in any language you want.
 
 ## Setting the content language
 
-If you choose to publish your book in a language other then English, you should visit your *Site Options* and set the *Content Language* setting accordingly. This will a) tell search engines what language your book is published in and b) tell {{kirbybook}} to load the theme translation (button/icon hints, Dashboard links, etc.) in the same language (if available).
+If you choose to publish your book in a language other then English, you should visit the (link: setup/configuration text: *Site Options*) and set the *Content Language* setting accordingly. This will a) tell search engines what language your book is published in and b) tell {{kirbybook}} to load the respective theme translation (button/icon hints, Dashboard links, etc.), if available.
 
 {{kirbybook}} currently includes theme translations for the following languages:
 
 * English
 * German
 
-## Translating the Theme
+## Translating the theme
 
-If you want to use {{kirbybook}} with a content language that's not included in the above list you may add the theme translation yourself. Otherwise, {{kirbybook}} will just fallback to English texts.
+If you want to use {{kirbybook}} with a content language that's not included in the above list you may want to add the theme translation yourself. When you don't add a corresponding theme translation, {{kirbybook}} will just fallback to default English texts nicely.
 
-To add a theme translation you have to create a new translation file for your language. Don't worry, this is really easy:
+To add a theme translation you have to create a new translation file for your language. The easiest way to do so is to copy an existing translation and change all the texts accordingly. Don't worry though, this is really easy:
 
 1. Find the default translation file `site/languages/en.php`
 2. Copy and rename it to your desired languages ID (eg. `de.php` or `fr.php`)
 3. Open the newly created file in a text editor of your choice and translate all the texts.
+4. That's it. {{kirbybook}} will use the texts you provided from now on.
 
 ----
 

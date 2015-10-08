@@ -12,13 +12,11 @@ Text:
 
 ## Where to get it?
 
-{{kirbybook}} is available on (link: https://gum.co/kirbybook text: Gumroad).
-
-Ready-to-use / Developer
+{{kirbybook}} is available for purchase through (link: https://gum.co/kirbybook text: Gumroad). They'll handle the payment nice and securely and take care of delivering all future updates right to your inbox.
 
 ## What is included?
 
-When purchasing {{kirbybook}}, you'll get to choose between two versions of the *kirbyBOOK* theme:
+When it comes to purchasing {{kirbybook}}, you'll get to choose between two versions:
 
 1. A **ready-to-use version** that you can upload to your webhost without any further ado.
 2. A **developer version** for advanced users which includes all source files for esier customization.
@@ -49,7 +47,7 @@ This edition was made especially for non-code oriented people that just want to 
 In addition to the *Standard Edition* you may choose to get a hold on the special *Developer Edition*. Choose this edition if you want to make your own heavy modifications or customizations to {{kirbybook}}. In addition to the *Standard Edition* the *Developer Edition* includes:
 
 * all uncompressed and well-documented JavaScript and Sass source files
-* Composer, Bower and Npm package files to install all vendor assets
+* Composer, Bower and Npm package files to install all vendor assets required for development
 * The complete Gulp workflow for compiling the assets
 * Additional configuration files that enable you to use a complete Git-based workflow, including `.gitignore` and `.gitmodules`.
 
@@ -59,7 +57,7 @@ Sitemap: 1
 
 ----
 
-Priority: 
+Priority: 1
 
 ----
 
