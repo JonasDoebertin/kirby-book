@@ -80,3 +80,32 @@
         left: 0;
     }
 }
+
+/**
+ * #PRINTABLE LAYOUT
+ */
+
+.printable {
+    .book {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+    }
+
+        .book__wrap {
+            position: relative;
+            top: auto;
+            right: auto;
+            bottom: auto;
+            left: auto;
+        }
+
+            .book__header {}
+
+                .action--sidebar,
+                .action--print {
+                    display: none;
+                }
+}

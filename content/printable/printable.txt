@@ -1,0 +1,13 @@
+Title: Printable
+
+----
+
+Sitemap: 
+
+----
+
+Autoprint: 1
+
+----
+
+Customstyles: #hs-beacon, .buy {display:none !important;}

@@ -1,10 +1,10 @@
 <header class="book__header">
 
-    <a class="action  action--left  js-action-toggle-sidebar" href="#" title="<?= Theme::lang('action.menu', 'Toggle menu')?>">
+    <a class="action  action--left  action--sidebar  js-action-toggle-sidebar" href="#" title="<?= Theme::lang('action.menu', 'Toggle menu')?>">
         <i class="fa fa-bars"></i>
     </a>
 
-    <a class="action  action--left  js-dropdown-toggle" href="#" title="<?= Theme::lang('action.theme', 'Theme settings')?>">
+    <a class="action  action--left  action--theme  js-dropdown-toggle" href="#" title="<?= Theme::lang('action.theme', 'Theme settings')?>">
         <i class="fa fa-font"></i>
         <ul class="dropdown">
             <li class="dropdown__item  dropdown__item--half  smaller-text  js-theme-toggle" data-toggle="size" data-value="down" title="<?= Theme::lang('dropdown.theme.decrease.hint', 'Decrease font size')?>">
@@ -30,7 +30,7 @@
         </ul>
     </a>
 
-    <a class="action  action--right  js-dropdown-toggle" href="#" title="<?= Theme::lang('action.share', 'Share')?>">
+    <a class="action  action--right  action--share  js-dropdown-toggle" href="#" title="<?= Theme::lang('action.share', 'Share')?>">
         <i class="fa fa-share"></i>
         <ul class="dropdown  dropdown--left">
             <li class="dropdown__item" title="<?= Theme::lang('dropdown.share.facebook.hint', 'Share on Facebook')?>">
@@ -39,7 +39,7 @@
         </ul>
     </a>
 
-    <a class="action  action--right  js-action-print" href="javascript:window.print()" title="<?= Theme::lang('action.print', 'Print')?>">
+    <a class="action  action--right  action--print  js-action-print" href="<?= $site->page('printable')->url() ?>" title="<?= Theme::lang('action.print', 'Print')?>">
         <i class="fa fa-print"></i>
     </a>
 

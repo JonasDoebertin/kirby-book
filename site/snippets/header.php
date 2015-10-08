@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html class="no-js  white normal sans-serif with-sidebar with-animation" lang="<?= $site->contentlanguage()?>">
+<html class="no-js white normal sans-serif <?= r($case, $case, 'with-sidebar with-animation') ?>" lang="<?= $site->contentlanguage()?>">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
