@@ -12,7 +12,7 @@ Text:
 
 ## General Options
 
-(image: general-options.png)
+(image: general-options.png alt: kirbyBOOK General Options)
 
 Book Title
     :The main title of the book. This will be used at the top of the sidebar, within each pages navigation bar as well by your visitors browsers and search engines.
@@ -33,13 +33,16 @@ Please note that filling in the *Book Description* and *Book Author* fields is o
 (image: visual-options.png)
 
 Logo
-    :DESCRIPTION
+    :Your logo will be added at the top of the navigation sidebar. Choose any image format and size you like; {{kirbybook}} will handle generating the correct image size for you.
 
 Highlight Color
     :Choose a color to be used as *highlight color*. It will be used for both links and main headlines throughout the site.
 
 Default Font
-    :As you may have noticed, {{kirbybook}} let's the visitor choose between a serif and a sans-serif font. With this option you can choose your sites default font that will be shown to new visitors.
+    :As you may have noticed, {{kirbybook}} let's the visitor choose between a serif and a sans-serif font. With this option you can choose your sites default font that will be shown to new visitors. Please note that, regardless of this setting, the visitor will be able to switch between a serif and sans-serif font.
+
+Custom CSS
+    :Use this to add custom CSS rules that will be applied to every page across the whole publication. This allows for easy theme customizations without ever touching a code editor.
 
 ## Site Footer
 
@@ -50,7 +53,23 @@ Footer Text
 
 ## Webmaster Tools
 
-Adding your site to Googles or Bings *Webmaster Tools* requires you to add a little authentication key to your pages markup. With {{kirbybook}}, instead of manually adding them to the templates, you can simply add these keys here and {{kirbybook}} will take care of the rest for you.
+Adding your site to Googles *Search Console* or Bings *Webmaster Tools* requires you to add a little authentication key to your pages markup. Instead of manually adding them to the templates, you can simply add these tags here and {{kirbybook}} will take care of the rest for you.
+
+Google Search Console Verification Meta Tag
+    :Enter your *Google Search Console* verification meta tag. Make sure to add the complete tag, not just the ID.
+
+Bing Webmaster Tools Verification Meta Tag
+    :Enter your *Bing Webmaster Tools* verification meta tag. Make sure to add the complete tag, not just the ID.
+
+## Advanced Options
+
+The *Advanced Options* section contains another set of options that might come in handy even though not everybody will need them. They offer great ways to add extended functionality to your publication without the need to fire up a code editor.
+
+Favicon/Meta Tags
+    :Enter all your favicon related markup or other meta tags here. *Pro-Tip: A great tool to create your favicon images and the necessary code is (link: http://realfavicongenerator.net/ text: Real Favicon Generator target:_blank).*
+
+Tracking Code
+    :If you want to use some sort of web analytics software like *Google Analytics* or *Piwik*, this is the place to add your tracking code. {{kirbybook}} will make sure it is loaded right before the closing `</body>` tag.
 
 ----
 

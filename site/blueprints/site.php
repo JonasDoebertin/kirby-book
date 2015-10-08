@@ -12,15 +12,17 @@ fields:
     title:
         label: Book Title
         type:  text
-        help: The main title used by your visitors browsers and search engines.
+        help: The main title of the book. This will be used at the top of the sidebar, within each pages navigation bar as well by your visitors browsers and search engines.
     description:
         label: Book Description
         type:  textarea
         buttons: no
+        help: The books description will be used within the meta data of the sites home page and will be shown by search engines.
     author:
         label: Author
         type: text
         width: 1/2
+        help: The book author will be added to each pages meta data.
     contentlanguage:
         label: Content Language
         type: select
@@ -169,6 +171,7 @@ fields:
             zu: Zulu
         width: 1/2
         required: true
+        help: Setting your publications language here will improve search engine visibility of your content.
 
     headlineVisuals:
         label: Visual Options
@@ -177,16 +180,7 @@ fields:
         label: Logo
         type: selector
         mode: single
-    highlight:
-        label: Highlight Color
-        type: color
-        default: d9342e
-        width: 2/4
-    highlightColorInfo:
-        label: About the Highlight Color
-        type: info
-        text: The highlight color will be used for links and headlines.
-        width: 2/4
+        help: Choose any image format and size you like; kirbyBOOK will handle generating the correct image size for you.
     font:
         label: Default Font
         type: radio
@@ -196,17 +190,19 @@ fields:
         columns: 1
         width: 1/2
         required: true
-    fontInfo:
-        label: About the Default Font
-        type: info
-        text: The default font will define how a new visitor sees your book. Please note that, regardless of this setting, the visitor will be able to switch between a serif and sans-serif font.
+        help: The default font will define how a new visitor sees your book. Please note that, regardless of this setting, the visitor will be able to switch between a serif and sans-serif font.
+    highlight:
+        label: Highlight Color
+        type: color
+        default: d9342e
         width: 2/4
+        help: The highlight color will be used for both links and main headlines throughout the site.
     customStyles:
         type: textarea
         label: Custom CSS
         buttons: false
         icon: paint-brush
-        help: Use this to add custom CSS rules that will be applied to every page. This allows for easy theme customizations.
+        help: Use this to add custom CSS rules that will be applied to every page across the whole publication. This allows for easy theme customizations without ever touching a code editor.
 
     headlineFooter:
         label: Site Footer
@@ -214,23 +210,24 @@ fields:
     footer:
         label: Footer text
         type: markdown
+        help: The sites footer text is displayed within the navigation sidebar right below the chapter/article overview. It is perfect for adding a copyright message or something similar and supports standard markdown features.
 
     headlineWebmasterTools:
         label: Webmaster Tools
         type: headline
-    googleId:
-        label: Google Search Console Verification
+        help: Adding your site to Googles *Search Console* or Bings *Webmaster Tools* requires you to add a little authentication key to your pages markup. Instead of manually adding them to the templates, you can simply add these tags here and {{kirbybook}} will take care of the rest for you.
+    googleMeta:
+        label: Google Search Console Verification Meta Tag
         type: text
         icon: google
-    bingId:
-        label: Bing Webmaster Tools Verification
+    bingMeta:
+        label: Bing Webmaster Tools Verification Meta Tag
         type: text
         icon: windows
 
     headlineAdvancedOptions:
         label: Advanced Options
         type: headline
-
     faviconCode:
         label: Favicon/Meta Tags
         type: textarea
@@ -238,7 +235,6 @@ fields:
         icon: code
         help: >
             Enter all your favicon related markup or other meta tags here. Tip: A great tool to create your favicon images and the necessary code is <a href="http://realfavicongenerator.net/">Real Favicon Generator</a>.
-
     tracking:
         label: Tracking Code
         type: textarea
@@ -246,3 +242,10 @@ fields:
         icon: bar-chart
         help: >
             Enter you Google Analytics tracking code here. Make sure to include all the <code class="theme__inline-code">&lt;script&gt;</code> tags. Other tracking services like Piwik will work well, too.
+    scripts:
+        label: Custom JavaScript Code
+        type: textarea
+        buttons: false
+        icon: code
+        help: >
+            Enter any additional JavaScript code snippets here. Make sure to include all the <code class="theme__inline-code">&lt;script&gt;</code> tags.

@@ -6,14 +6,17 @@
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
         <title><?= $page->metaTitle() ?></title>
-        <meta name="description" content="<?= $page->metaDescription() ?>">
+        <meta name="description" content="<?= $page->metaDescription()->escape('attr') ?>">
         <meta name="generator" content="<?= Theme::generator() ?>">
-        <meta name="author" content="<?= $page->metaAuthor() ?>">
+        <meta name="author" content="<?= $page->metaAuthor()->escape('attr') ?>">
 
         <meta name="HandheldFriendly" content="true">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <?= $site->googleMeta() ?>
+        <?= $site->bingMeta() ?>
 
         <?= $site->faviconCode() ?>
 

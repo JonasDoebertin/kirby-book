@@ -14,7 +14,7 @@ Highlight: #ff4136
 
 ----
 
-Footer: 
+Footer:
 
 Published with (link: http://kirbybook.jd-powered.net/ text: {{kirbybook}}) theme created by (link: http://jd-powered.net/ text: {{jdpowered}}).
 
@@ -22,11 +22,11 @@ Published with (link: http://kirbybook.jd-powered.net/ text: {{kirbybook}}) them
 
 ----
 
-Googleid: 
+Googlemeta: <meta name="google-site-verification" content="uMT_lZ2k3HvLNsYZHVp7uNN9EiWSwufhaqwzeCDwdjM" />
 
 ----
 
-Bingid: 
+Bingmeta: 
 
 ----
 
@@ -42,7 +42,7 @@ Contentlanguage: de
 
 ----
 
-Tracking: 
+Tracking:
 
 <!-- Piwik -->
 <script type="text/javascript">
@@ -59,18 +59,18 @@ Tracking:
   })();
 </script>
 <noscript><p><img src="//analytics.jd-powered.net/piwik.php?idsite=9" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
+<!-- End Piwik -->
 
 ----
 
-Customstyles: 
+Customstyles:
 
 .navigation__logo{max-width: 72%;}
 .buy{text-align: center}
 
 ----
 
-Faviconcode: 
+Faviconcode:
 
 <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
@@ -90,3 +90,27 @@ Faviconcode:
 <meta name="msapplication-TileColor" content="#ff0000">
 <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
+
+----
+
+Scripts:
+
+<!-- Helpscout Beacon -->
+<script>!function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"a8bd46db-6c5c-11e5-8846-0e599dc12a51"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});</script>
+<script>
+    HS.beacon.config({
+        icon: 'question',
+        color: '#ff4136',
+        attachment: true,
+        poweredBy: false,
+        topics: [
+            {val: 'pre sale', label: 'Pre-sale Question'},
+            {val: 'setup', label: 'Initial Setup'},
+            {val: 'bug', label: 'Bug Report'},
+            {val: 'feature', label: 'Feature Request'},
+            {val: 'other', label: 'Other'},
+        ],
+        instructions: 'Do you need help with setting up kirbyBOOK or do you have any other question you\'d like to ask? Don\'t hesitate to send a message!'
+  });
+</script>
+<!-- End Helpscout Beacon -->
