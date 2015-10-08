@@ -1,7 +1,3 @@
-Headlinecontent: 
-
-----
-
 Title: Adding Content
 
 ----
@@ -12,9 +8,9 @@ Headline:
 
 Text: 
 
-----
+Since {{kirbybook}} is build on top of (link: http://getkirby.com text: Kirby CMS) managing your books content, chapters and articles is dead simple. You could even do with nothing more then a basic text editor.
 
-Headlinesettings: 
+The following pages will give you a comprehensive overview of adding and managing chapters and articles inside your online publication.
 
 ----
 
@@ -23,10 +19,6 @@ Sitemap: 1
 ----
 
 Priority: 
-
-----
-
-Headlineadvanced: 
 
 ----
 
