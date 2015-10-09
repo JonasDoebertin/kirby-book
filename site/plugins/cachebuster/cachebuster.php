@@ -30,10 +30,11 @@ $kirby->options['css.handler'] = function ($url, $media = false) use ($handlers,
 
     /* Handle arrays with multiple urls */
     if (is_array($url)) {
-        $css = array();
+        $css = [];
         foreach ($url as $u) {
             $css[] = call($handlers['css'], $u);
         }
+
         return implode(PHP_EOL, $css) . PHP_EOL;
     }
 
@@ -47,7 +48,7 @@ $kirby->options['css.handler'] = function ($url, $media = false) use ($handlers,
     }
 
     /* Run through previous CSS handler and return */
-    return call($handlers['css'], array($url, $media));
+    return call($handlers['css'], [$url, $media]);
 };
 
 /**
@@ -59,10 +60,11 @@ $kirby->options['js.handler'] = function ($src, $async = false) use ($handlers, 
 
     /* Handle arrays with multiple urls */
     if (is_array($src)) {
-        $js = array();
-        foreach($src as $s){
+        $js = [];
+        foreach ($src as $s) {
             $js[] = call($handlers['js'], $s);
         }
+
         return implode(PHP_EOL, $js) . PHP_EOL;
     }
 
@@ -76,5 +78,5 @@ $kirby->options['js.handler'] = function ($src, $async = false) use ($handlers, 
     }
 
     /* Run through previous JS handler and return */
-    return call($handlers['js'], array($src, $async));
+    return call($handlers['js'], [$src, $async]);
 };
