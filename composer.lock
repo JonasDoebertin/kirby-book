@@ -4,8 +4,53 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "57dba46b87cc479e23ea43935c3991a8",
+    "hash": "708e56f3d0ddc28102256d85e685b16d",
+    "content-hash": "12205ccb56a765cd667592248f87589c",
     "packages": [
+        {
+            "name": "jdpowered/share",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JonasDoebertin/php-share-link-generator.git",
+                "reference": "5151f30f3e7c17e61861ec37e433ea374fbf756c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JonasDoebertin/php-share-link-generator/zipball/5151f30f3e7c17e61861ec37e433ea374fbf756c",
+                "reference": "5151f30f3e7c17e61861ec37e433ea374fbf756c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "jdpowered\\Share\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonas Döbertin",
+                    "email": "hello@jd-powered.net"
+                }
+            ],
+            "description": "A simple share link generator",
+            "keywords": [
+                "facebook",
+                "link",
+                "share",
+                "sharer",
+                "twitter",
+                "url"
+            ],
+            "time": "2015-10-09 13:30:56"
+        },
         {
             "name": "mpratt/embera",
             "version": "1.8.10",

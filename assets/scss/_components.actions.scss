@@ -1,0 +1,43 @@
+/**
+ * $ACTIONS
+ */
+
+.actions {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .actions__item {
+        display: block;
+        position: relative;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin: 10px 5px;
+        color: inherit;
+
+        &--left {
+            float: left;
+        }
+
+        &--right {
+            float: right;
+        }
+    }
+
+        .actions__link {
+            display: block;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            color: inherit;
+            text-decoration: none;
+            transition: color 300ms ease;
+
+            .actions__item:hover &,
+            .actions__item.with-dropdown & {
+                color: $text-color;
+            }
+        }

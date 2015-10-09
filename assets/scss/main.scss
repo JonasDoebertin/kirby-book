@@ -36,7 +36,6 @@
 /**
  * #OBJECTS
  */
-@import "objects.action";
 @import "objects.dropdown";
 @import "objects.oembed";
 
@@ -48,6 +47,7 @@
 @import "components.summary";
 @import "components.book";
 @import "components.page";
+@import "components.actions";
 @import "components.markdown";
 
 /**

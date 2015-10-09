@@ -19,9 +19,9 @@ class BasePage extends Page
     public function metaTitle()
     {
         if ($this->isHomePage()) {
-            $title = site()->title();
+            $title = site()->title()->escape('attr');
         } else {
-            $title = $this->title() . ' | ' . site()->title();
+            $title = $this->title()->escape('attr') . ' | ' . site()->title()->escape('attr');
         }
 
         return $title;
@@ -29,12 +29,18 @@ class BasePage extends Page
 
     public function metaDescription()
     {
-        return site()->description()->html();
+        if ($this->isHomePage()) {
+            $description = site()->description()->escape('attr');
+        } else {
+            $description = $this->text()->excerpt(50, 'words');
+        }
+
+        return $description;
     }
 
     public function metaAuthor()
     {
-        return site()->author()->html();
+        return site()->author()->escape('attr');
     }
 
     public function tocNumber()
@@ -55,5 +61,14 @@ class BasePage extends Page
         ];
 
         return relativeDate($this->modified(), $args);
+    }
+
+    public function share($service)
+    {
+        if (!in_array($service, ['facebook', 'twitter', 'googleplus'])) {
+            return '';
+        }
+
+        return jdpowered\Share\Share::{$service}($this->url());
     }
 }

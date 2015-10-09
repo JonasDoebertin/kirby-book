@@ -15,6 +15,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
      -webkit-font-smoothing: antialiased;
 
+
     &.serif {
         font-family: $font-family-serif;
     }
@@ -26,6 +27,7 @@ html {
 
     body {
         height: 100%;
+        overflow-x: hidden;
     }
 
         .wrap {
