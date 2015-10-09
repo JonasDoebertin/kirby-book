@@ -29,7 +29,7 @@ class BasePage extends Page
 
     public function metaDescription()
     {
-        if ($this->isHomePage()) {
+        if ($this->isHomePage() or $this->isErrorPage()) {
             $description = site()->description()->escape('attr');
         } else {
             $description = $this->text()->excerpt(50, 'words');

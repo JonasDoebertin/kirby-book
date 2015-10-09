@@ -1,0 +1,25 @@
+Title: Error
+
+----
+
+Sitemap: 
+
+----
+
+Headline: Bummer! Something went wrong…
+
+----
+
+Text: 
+
+The page you were looking for could not be found. Either it has been moved or it never existed.
+
+Either way, why don't you (link: / text: start all over again)?
+
+----
+
+Customstyles: 
+
+----
+
+Logo: kirbybook-logo.svg

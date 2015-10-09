@@ -76,7 +76,7 @@ class theme
         $css .= '.highlight--border{border-color:' . Helpers::hexToRgba(self::option('highlightColor', 'inherit'), 0.5) . '!important;}';
 
         // Link color
-        $css .= '.navigation__header a:hover,.navigation__footer a:hover,.page__content a{color: ' . self::option('highlightColor', 'inherit') . '!important;}';
+        $css .= '.navigation__header a:hover,.navigation__footer a:hover,.page__content a,.error__content a{color: ' . self::option('highlightColor', 'inherit') . '!important;}';
 
         /* Custom site styles */
         if (site()->customStyles()->isNotEmpty()) {
