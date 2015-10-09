@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "708e56f3d0ddc28102256d85e685b16d",
-    "content-hash": "12205ccb56a765cd667592248f87589c",
+    "hash": "2e60f3f0388c68062a6cd30e00691af1",
+    "content-hash": "ecffd26b523ae7f9954434006ad7ff09",
     "packages": [
         {
             "name": "jdpowered/share",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JonasDoebertin/php-share-link-generator.git",
-                "reference": "5151f30f3e7c17e61861ec37e433ea374fbf756c"
+                "reference": "d0c6058fcc581484d493fd711ad4c6c059acb31d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JonasDoebertin/php-share-link-generator/zipball/5151f30f3e7c17e61861ec37e433ea374fbf756c",
-                "reference": "5151f30f3e7c17e61861ec37e433ea374fbf756c",
+                "url": "https://api.github.com/repos/JonasDoebertin/php-share-link-generator/zipball/d0c6058fcc581484d493fd711ad4c6c059acb31d",
+                "reference": "d0c6058fcc581484d493fd711ad4c6c059acb31d",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
                 "twitter",
                 "url"
             ],
-            "time": "2015-10-09 13:30:56"
+            "time": "2015-10-09 15:49:43"
         },
         {
             "name": "mpratt/embera",
