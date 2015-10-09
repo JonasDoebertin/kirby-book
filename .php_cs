@@ -3,14 +3,17 @@
 $finder = Symfony\CS\Finder\DefaultFinder::create()
     ->files()
     ->name('*.php')
+    ->exclude('assets')
+    ->exclude('bower_components')
+    ->exclude('content')
     ->exclude('kirby')
+    ->exclude('node_modules')
     ->exclude('panel')
-    ->exclude('vendor')
     ->exclude('site/accounts')
     ->exclude('site/fields')
     ->exclude('site/plugins/relative-date')
-    ->in(__DIR__)
-;
+    ->exclude('vendor')
+    ->in(__DIR__);
 
 return Symfony\CS\Config\Config::create()
     ->level(Symfony\CS\FixerInterface::PSR2_LEVEL)
@@ -37,5 +40,4 @@ return Symfony\CS\Config\Config::create()
         'concat_with_spaces',
         'short_array_syntax',
     ))
-    ->finder($finder)
-;
+    ->finder($finder);
