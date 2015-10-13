@@ -5,6 +5,7 @@ var Core = function($) {
     var self = this;
 
     // Cached DOM lements
+    this.$window = $(window);
     this.$document = $(document);
     this.elements = {
         html: $('html'),
@@ -35,7 +36,9 @@ var Core = function($) {
         self.theme = new Theme($, self);
 
         /* Initialize fitvids.js plugin */
-        self.initEmbeddedVideos();
+        self.$window.load(function () {
+            self.initEmbeddedVideos();
+        });
     };
 
     this.initEmbeddedVideos = function() {
