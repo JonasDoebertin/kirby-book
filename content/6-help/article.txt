@@ -8,6 +8,39 @@ Headline: Getting further help
 
 Text: 
 
+**You're stuck? Can't figure out all the things? No worries! You can always:**
+
+1. Use the contact form in the bottom right corner of this page to send an inquiry
+2. Send a support request by email: (email: support@jd-powered.net text: support@jd-powered.net)
+3. Send a quick tweet to (link: https://twitter.com/DieserJonas text: @DieserJonas) (short questions only!)
+
+## FAQ
+
+#### Broken subpages
+
+Visiting your home (or "Introduction") page works great, but trying to visit any subpage shows a blank page or even leads to a server error? Please make sure that you:
+
+1. Included the (hidden) `.htaccess` file when uploading / moving the {{kirbybook}} files
+2. Updated your RewriteBase setting according to your setup.
+
+If you're running {{kirbybook}} at the root of your domain try enabling the RewriteBase in your `.htaccess` file like so:
+
+```
+RewriteBase /
+````
+
+If you're running {{kirbybook}} in a subfolder, make sure to set the RewriteBase according to the name of your subfolder:
+
+```
+RewriteBase /my-subfolder
+```
+
+#### Broken content after saving
+
+If your site displays the initial demo content just fine but breaks as soon as you try to save your own content changes or your content files (within the `/content` directory) look broken this might be an issue with a missing PHP extension.
+
+To handle text correctly, {{kirbybook}} uses the `mbstring` extension. While this comes preinstalled with 99% of hosting providers there might be situations where this is missing. Try contacting your hosting provider and kindly ask them to enable that essential extension for you.
+
 ----
 
 Sitemap: 1
