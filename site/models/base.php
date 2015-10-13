@@ -16,6 +16,27 @@ class BasePage extends Page
         });
     }
 
+    public function nextArticle()
+    {
+        // If a page has children return the first of'em
+        if ($this->hasVisibleChildren()) {
+            return $this->children()->visible()->first();
+        }
+
+        // If there is a regular next page return it
+        if ($this->hasNextVisible()) {
+            return $this->nextVisible();
+        }
+
+        // If the parent has a regular next page return it
+        if ($this->parent()->hasNextVisible()) {
+            return $this->parent()->nextVisible();
+        }
+
+        // No next page found
+        return false;
+    }
+
     public function metaTitle()
     {
         if ($this->isHomePage()) {
