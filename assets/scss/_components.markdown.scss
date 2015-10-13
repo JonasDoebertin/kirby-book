@@ -115,7 +115,8 @@
      * #LISTS
      */
     ul {
-        list-style: square inside;
+        list-style: square outside;
+        margin-left: 2em;
         padding: 0;
 
         ul {
@@ -124,12 +125,13 @@
     }
 
     ol {
-        list-style: decimal inside;
+        list-style: decimal outside;
+        margin-left: 2em;
         padding: 0;
 
         ol {
             padding-left: 1rem;
-            list-style: lower-alpha inside;
+            list-style: lower-alpha outside;
         }
     }
 
