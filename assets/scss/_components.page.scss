@@ -3,11 +3,11 @@
  */
 
 .page {
-
+    position: relative;
 }
 
     .page__wrap {
-        max-width: 840px;
+        max-width: $max-page-width;
         margin: 0 auto;
         padding: 40px 20px;
     }

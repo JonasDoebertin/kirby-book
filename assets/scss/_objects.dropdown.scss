@@ -20,6 +20,7 @@ $dropdown-sepia-background: darken($background-color-sepia, 2%);
     visibility: hidden;
     opacity: 0;
     transition: opacity 300ms ease;
+    z-index: 9999;
 
     .with-dropdown + & {
         visibility: visible;

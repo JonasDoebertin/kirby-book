@@ -17,12 +17,15 @@
 }
 
     .book__wrap {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        overflow-y: auto;
+        min-height: calc(100% - 60px);
+        @media (min-width: $alt-book-layout-breakpoint) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            overflow-y: auto;
+        }
     }
 
         .book__header {
@@ -78,6 +81,59 @@
     @media (max-width: ($sidebar-width * 2)) {
         transform: translate(calc(100% - 60px), 0);
         left: 0;
+    }
+}
+
+.book__previous,
+.book__next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    float: left;
+    width: 50%;
+    max-width: 50%;
+    height: 60px;
+
+    color: $text-color-muted;
+    font-size: 30px;
+    text-decoration: none;
+    transition: color 300ms;
+
+
+
+    @include attention() {
+        color: $text-color;
+    }
+
+    .sepia & {
+        color: $text-color-sepia-muted;
+
+        @include attention() {
+            color: $text-color-sepia;
+        }
+    }
+}
+
+@media (min-width: $alt-book-layout-breakpoint) {
+
+    .book__previous,
+    .book__next {
+        position: absolute;
+        top: 80px;
+        bottom: 0px;
+        width: 40px;
+        height: auto;
+        float: none;
+    }
+
+    .book__previous {
+        left: 0;
+    }
+
+    .book__next {
+        right: 0;
     }
 }
 
