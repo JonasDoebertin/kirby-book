@@ -16,7 +16,7 @@ Highlight: #ff4136
 
 Footer: 
 
-Published with (link: http://kirbybook.jd-powered.net/ text: {{kirbybook}}) theme created by (link: http://jd-powered.net/ text: {{jdpowered}}).
+Published with (link: http://kirbybook.com/ text: {{kirbybook}}) theme created by (link: http://jd-powered.net/ text: {{jdpowered}}).
 
 (include: buy)
 
