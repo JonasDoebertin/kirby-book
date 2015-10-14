@@ -1,25 +1,28 @@
 <?php
 
-l::set('theme.lang', 'en');
+L::set('theme.lang', 'en');
 
-l::set('dashboard', 'Dashboard');
-l::set('page.edit', 'Edit Page');
-l::set('page.updated', 'Updated %s');
+L::set('dashboard', 'Dashboard');
+L::set('page.edit', 'Edit Page');
+L::set('page.updated', 'Updated %s');
 
-l::set('action.menu', 'Toggle menu');
-l::set('action.theme', 'Theme settings');
-l::set('action.print', 'Print');
-l::set('action.share', 'Share');
+L::set('action.menu', 'Toggle menu');
+L::set('action.theme', 'Theme settings');
+L::set('action.print', 'Print');
+L::set('action.share', 'Share');
 
-l::set('dropdown.theme.decrease', 'A');
-l::set('dropdown.theme.decrease.hint', 'Decrease font size');
-l::set('dropdown.theme.increase', 'A');
-l::set('dropdown.theme.increase.hint', 'Increase font size');
-l::set('dropdown.theme.serif', 'Serif');
-l::set('dropdown.theme.serif.hint', 'Switch to serif font');
-l::set('dropdown.theme.sansserif', 'Sans Serif');
-l::set('dropdown.theme.sansserif.hint', 'Switch to sans serif font');
-l::set('dropdown.theme.normal', 'Normal');
-l::set('dropdown.theme.normal.hint', 'Switch to normal theme');
-l::set('dropdown.theme.sepia', 'Sepia');
-l::set('dropdown.theme.sepia.hint', 'Switch to sepia theme');
+L::set('dropdown.theme.decrease', 'A');
+L::set('dropdown.theme.decrease.hint', 'Decrease font size');
+L::set('dropdown.theme.increase', 'A');
+L::set('dropdown.theme.increase.hint', 'Increase font size');
+L::set('dropdown.theme.serif', 'Serif');
+L::set('dropdown.theme.serif.hint', 'Switch to serif font');
+L::set('dropdown.theme.sansserif', 'Sans Serif');
+L::set('dropdown.theme.sansserif.hint', 'Switch to sans serif font');
+L::set('dropdown.theme.normal', 'Normal');
+L::set('dropdown.theme.normal.hint', 'Switch to normal theme');
+L::set('dropdown.theme.sepia', 'Sepia');
+L::set('dropdown.theme.sepia.hint', 'Switch to sepia theme');
+
+L::set('nav.prev', 'Previous:');
+L::set('nav.next', 'Next:');
