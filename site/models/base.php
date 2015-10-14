@@ -82,28 +82,41 @@ class BasePage extends Page
         return false;
     }
 
+    /**
+     * Get the meta title of the page.
+     *
+     * @since 1.0.0
+     * @return string
+     */
     public function metaTitle()
     {
         if ($this->isHomePage()) {
-            $title = site()->title()->escape('attr');
+            return site()->title()->escape('attr');
         } else {
-            $title = $this->title()->escape('attr') . ' | ' . site()->title()->escape('attr');
+            return $this->title()->escape('attr') . ' | ' . site()->title()->escape('attr');
         }
-
-        return $title;
     }
-
+    /**
+     * Get the meta description of the page.
+     *
+     * @since 1.0.0
+     * @return string
+     */
     public function metaDescription()
     {
         if ($this->isHomePage() or $this->isErrorPage()) {
-            $description = site()->description()->escape('attr');
+            return site()->description()->escape('attr');
         } else {
-            $description = $this->text()->excerpt(50, 'words');
+            return $this->text()->escape('attr')->excerpt(50, 'words');
         }
-
-        return $description;
     }
 
+    /**
+     * Get the sites meta author.
+     *
+     * @since 1.0.0
+     * @return string
+     */
     public function metaAuthor()
     {
         return site()->author()->escape('attr');
@@ -126,6 +139,12 @@ class BasePage extends Page
         return $number;
     }
 
+    /**
+     * Generate the pages fuzzy "Updated at" string.
+     *
+     * @since 1.0.0
+     * @return string
+     */
     public function updated()
     {
         $args = [
@@ -135,6 +154,13 @@ class BasePage extends Page
         return relativeDate($this->modified(), $args);
     }
 
+    /**
+     * Get a share link for the current page.
+     *
+     * @since 1.0.0
+     * @param string    $service
+     * @return string
+     */
     public function share($service)
     {
         if (!in_array($service, ['facebook', 'twitter', 'googleplus'])) {
