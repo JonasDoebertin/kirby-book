@@ -16,6 +16,10 @@ var Core = function($) {
     this.dropdown = null;
     this.theme = null;
 
+    // Misc.
+    this.mobileQuery = 'only screen and (max-width: 600px)';
+    this.isMobile = matchMedia(this.mobileQuery).matches;
+
     /**
      * Initialization.
      *

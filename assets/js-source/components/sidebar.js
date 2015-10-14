@@ -20,10 +20,14 @@ var Sidebar = function($, app) {
             self.toggleSidebar(null, true);
         });
 
-        // Initialize last state
-        // if (!self.app.isMobile) {
+        // Hide the navigation on mobile devices
+        if (self.app.isMobile) {
+            self.toggleSidebar(false, false);
+        }
+        // On screens that are large enough we'll initialize the last state
+        else {
             self.toggleSidebar(store.get('sidebar', true), false);
-        // }
+        }
     };
 
     this.toggleSidebar = function(show, animation) {

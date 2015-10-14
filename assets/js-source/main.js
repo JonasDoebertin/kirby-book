@@ -1,5 +1,6 @@
 //=require ../../node_modules/store/store.js
 //=require ../../node_modules/store/json.js
+//=require ../../bower_components/matchMedia/matchMedia.js
 //=require ../../bower_components/jquery.fitvids/jquery.fitvids.js
 
 //=require components/sidebar.js

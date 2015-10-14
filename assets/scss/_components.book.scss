@@ -8,12 +8,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    transition: left 300ms ease, transform 300ms ease;
     overflow-y: auto;
-
-    @media (max-width: ($sidebar-width * 2)) {
-        transition: transform 300ms ease;
-    }
 }
 
     .book__wrap {
@@ -72,6 +67,7 @@
             }
         }
 
+
 /**
  * #NAVIGATION TOGGLE
  */
@@ -84,6 +80,18 @@
     }
 }
 
+.with-animation .book {
+    transition: left 300ms ease, transform 300ms ease;
+
+    @media (max-width: ($sidebar-width * 2)) {
+        transition: transform 300ms ease;
+    }
+}
+
+
+/**
+ * #PREV / NEXT BUTTONS
+ */
 .book__previous,
 .book__next {
     display: flex;
@@ -101,8 +109,6 @@
     text-decoration: none;
     transition: color 300ms;
 
-
-
     @include attention() {
         color: $text-color;
     }
@@ -114,6 +120,10 @@
             color: $text-color-sepia;
         }
     }
+}
+
+.book__next {
+    float: right;
 }
 
 @media (min-width: $alt-book-layout-breakpoint) {
