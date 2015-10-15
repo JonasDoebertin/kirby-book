@@ -21,6 +21,8 @@ When it comes to purchasing {{kirbybook}}, you'll get to choose between two vers
 1. A **ready-to-use version** that you can upload to your webhost without any further ado.
 2. A **developer version** for advanced users which includes all source files for esier customization.
 
+*Please keep in mind that, similar to other Kirby themes on the market, {{kirbybook}} doesn't include a (link: http://getkirby.com/buy text: Kirby CMS license target: _blank). It needs to be purchased seperately (currently from €15 / $17).*
+
 | Files | Standard Edition | Developer Edition |
 | ---------------- | :--------------: | :---------------: |
 | Kirby Core | {{icon-yes}} | {{icon-yes}} |
