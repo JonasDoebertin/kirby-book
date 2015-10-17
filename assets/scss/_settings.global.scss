@@ -35,10 +35,13 @@ $sidebar-border-color:    rgba(0, 0, 0, 0.075);
 
 
 $max-page-width:          840px;
+$page-padding:            20px;
 $prevnext-width:          50px;
 $alt-book-layout-breakpoint: ($sidebar-width + $max-page-width + 2 * $prevnext-width);
 
 
+$columns-gutter: 30px;
+$columns-min-width: 800 * (1 / 3);
 
 
 /**

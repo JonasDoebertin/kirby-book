@@ -1,0 +1,83 @@
+Title: Columns
+
+----
+
+Headline: Multiple Columns
+
+----
+
+Text: 
+
+With {{kirbybook}} you can create flexible, responsive and fully-featured multi-column text blocks easily by simply wrapping your content with a set of custom Kirbytext tags.
+
+To set up a multi-column layout text block just wrap the content you want to be layed out in columns with `(columns…)` and `(…columns)` and separate each columns content with `++++`. You may create layouts with up to three columns.
+
+With each columns content you may use all other types of Markdown and Kirbytext formatting options (see (link: /updates/version-1-0-1 text: Updates » Version 1.0.1) for example).
+
+#### Example: two column layout
+
+(columns…)
+
+Column A Content
+
+++++
+
+Column B Content
+
+(…columns)
+
+```
+(columns… ) ⟵ Remove space character here
+
+Column A Content
+
+++++
+
+Column B Content
+
+(…columns ) ⟵ Remove space character here
+```
+
+#### Example: three column layout
+
+(columns…)
+
+Column A Content
+
+++++
+
+Column B Content
+
+++++
+
+Column C Content
+
+(…columns)
+
+```
+(columns… ) ⟵ Remove space character here
+
+Column A Content
+
+++++
+
+Column B Content
+
+++++
+
+Column C Content
+
+(…columns ) ⟵ Remove space character here
+```
+
+----
+
+Sitemap: 1
+
+----
+
+Priority: 
+
+----
+
+Customstyles: 

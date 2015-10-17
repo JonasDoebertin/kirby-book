@@ -1,0 +1,73 @@
+Title: Version 1.0.1
+
+----
+
+Headline: 
+
+----
+
+Text: 
+
+The updated version `1.0.1` contains mainly…
+
+#### Highlights
+
+* **Updated "Print" button functionality:** Clicking the print button now shows a dropdown that lets you choose from either printing the complete book or the current page only.
+
+#### Additional changes and bugfixes
+
+* Lorem
+
+****
+
+## Updating
+
+1. Replace your old `/assets` and `/site` directories with the ones from the update.
+
+****
+
+## Changed files
+
+(columns…)
+
+#### Standard Edition
+
+* assets/css/main.min.css
+* assets/css/main.min.css.map
+* assets/js/main.min.js
+* assets/js/main.min.js.map
+* content/5-purchasing/article.txt
+* content/site.txt
+* site/languages/de.php
+* site/languages/en.php
+* site/snippets/book/header.php
+
+++++
+
+#### Developer Edition
+
+* assets/css/main.min.css
+* assets/css/main.min.css.map
+* assets/js-source/components/core.js
+* assets/js/main.min.js
+* assets/js/main.min.js.map
+* assets/scss/_trumps.print.scss
+* content/5-purchasing/article.txt
+* content/site.txt
+* site/languages/de.php
+* site/languages/en.php
+* site/snippets/book/header.php
+
+(…columns)
+
+----
+
+Sitemap: 1
+
+----
+
+Priority: 
+
+----
+
+Customstyles: 
