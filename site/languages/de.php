@@ -24,5 +24,8 @@ L::set('dropdown.theme.normal.hint', 'Zum normalen Design wechseln');
 L::set('dropdown.theme.sepia', 'Sepia');
 L::set('dropdown.theme.sepia.hint', 'Zum Sepia-Design wechseln');
 
+L::set('dropdown.print.page.hint', 'Aktuelle Seite drucken');
+L::set('dropdown.print.book.hint', 'Komplettes Buch drucken');
+
 L::set('nav.prev', 'Zurück:');
 L::set('nav.next', 'Weiter:');

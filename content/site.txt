@@ -65,8 +65,19 @@ Tracking:
 
 Customstyles: 
 
-.navigation__logo{max-width: 72%;}
-.buy{text-align: center}
+.navigation__logo {
+    max-width: 72%;
+}
+
+.buy{
+    text-align: center;
+}
+
+@media print {
+    #hs-beacon {
+        display: none;
+    }
+}
 
 ----
 

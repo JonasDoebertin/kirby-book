@@ -1,0 +1,38 @@
+/**
+ * $COLUMNS
+ */
+.columns {
+    @extend %clearfix;
+    margin:  0;
+    padding: 0;
+    margin-left: -$columns-gutter;
+    overflow: visible;
+}
+
+    .columns__item {
+        display: block;
+        padding-left: $columns-gutter;
+        vertical-align: top;
+        float: left;
+        width: 100%;
+
+        .columns--2 > & {
+            width: 50%;
+
+            @media (max-width: (2 * $columns-min-width) + $page-padding + $sidebar-width) {
+                width: 100%;
+            }
+        }
+
+        .columns--3 > & {
+            width: 33.3333%;
+
+            @media (max-width: (3 * $columns-min-width) + $page-padding + $sidebar-width) {
+                width: 50%;
+            }
+
+            @media (max-width: (2 * $columns-min-width) + $page-padding + $sidebar-width) {
+                width: 100%;
+            }
+        }
+    }

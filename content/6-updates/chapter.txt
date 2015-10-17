@@ -1,0 +1,33 @@
+Headlinecontent: 
+
+----
+
+Title: Updates
+
+----
+
+Headline: 
+
+----
+
+Text: 
+
+----
+
+Headlinesettings: 
+
+----
+
+Sitemap: 1
+
+----
+
+Priority: 
+
+----
+
+Headlineadvanced: 
+
+----
+
+Customstyles: 

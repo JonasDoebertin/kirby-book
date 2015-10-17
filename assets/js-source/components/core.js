@@ -9,6 +9,7 @@ var Core = function($) {
     this.$document = $(document);
     this.elements = {
         html: $('html'),
+        printButton: $('.js-print-page')
     };
 
     // Component instances
@@ -42,6 +43,12 @@ var Core = function($) {
         /* Initialize fitvids.js plugin */
         self.$window.load(function () {
             self.initEmbeddedVideos();
+        });
+
+        // Bind print action event
+        self.elements.printButton.on('click', function (event) {
+            event.preventDefault();
+            window.print();
         });
     };
 
