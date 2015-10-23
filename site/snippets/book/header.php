@@ -71,9 +71,21 @@
         </li>
 
         <li class="actions__item  actions__item--right  actions__item--print">
-            <a class="actions__link  js-action-print" href="<?= $site->page('printable')->url() ?>" title="<?= Theme::lang('action.print', 'Print')?>">
+            <a class="actions__link  js-dropdown-toggle" href="#" title="<?= Theme::lang('action.print', 'Print')?>">
                 <i class="fa fa-print"></i>
             </a>
+            <ul class="dropdown  dropdown--left">
+                <li class="dropdown__item  dropdown__item--half">
+                    <a href="#" class="dropdown__link  js-print-page" title="<?= Theme::lang('dropdown.print.page.hint', 'Print the current page')?>">
+                        <i class="fa fa-file-text"></i>
+                    </a>
+                </li>
+                <li class="dropdown__item  dropdown__item--half">
+                    <a href="<?= $site->page('printable')->url() ?>" class="dropdown__link" title="<?= Theme::lang('dropdown.print.book.hint', 'Print the complete book')?>">
+                        <i class="fa fa-book"></i>
+                    </a>
+                </li>
+            </ul>
         </li>
 
         <li>

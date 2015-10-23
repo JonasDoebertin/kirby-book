@@ -24,5 +24,8 @@ L::set('dropdown.theme.normal.hint', 'Switch to normal theme');
 L::set('dropdown.theme.sepia', 'Sepia');
 L::set('dropdown.theme.sepia.hint', 'Switch to sepia theme');
 
+L::set('dropdown.print.page.hint', 'Print the current page');
+L::set('dropdown.print.book.hint', 'Print the complete book');
+
 L::set('nav.prev', 'Previous:');
 L::set('nav.next', 'Next:');

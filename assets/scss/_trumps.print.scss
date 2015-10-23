@@ -1,6 +1,46 @@
+/**
+ * $PRINT STYLES
+ */
 @media print {
+
+    /**
+     * #PRINT STYLES
+     */
+    // Hide navigation
+    .navigation {
+        display: none;
+    }
+
+    // Make content take up the required height
+    .book,
+    .with-sidebar .book,
+    .book__wrap {
+        position: static;
+    }
+
+    // Hide book header and prev/next navigation buttons
+    .book__header,
+    .book__previous,
+    .book__next {
+        display: none;
+    }
+
+    // Make content full-width
+    .page__wrap {
+        max-width: auto;
+        padding: 0;
+    }
+
+    // Hide additional page info and actions
+    .page__edit {
+        display: none;
+    }
+
+    /**
+     * #PRINTABLE TEMPLATE
+     */
     .printable {
-        
+
         .book__header {
             display: none;
         }

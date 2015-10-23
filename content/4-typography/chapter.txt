@@ -1,0 +1,79 @@
+Title: Typography
+
+----
+
+Headline: Available Typography
+
+----
+
+Text: 
+
+## General Styles
+Paragraph: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+**Strong: At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.**
+
+*Italic: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.*
+
+~~Strikethough: At vero eos et accusam et justo duo dolores et ea rebum.~~
+
+Anchor: (link: http://example.com text: Click me!)
+
+****
+
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+
+****
+
+## Quotes
+
+> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.
+
+****
+
+## Lists
+
+#### Unordered list
+
+* List Item
+* List Item
+    * Subitem
+    * Subitem
+    * Subitem
+* List Item
+* List Item
+* List Item
+
+#### Ordered list
+
+1. List Item
+2. List Item
+    1. Subitem
+    2. Subitem
+    3. Subitem
+3. List Item
+4. List Item
+
+#### Definition list
+
+Definition
+:   Explanation
+
+Definition
+:   Explanation
+
+----
+
+Sitemap: 1
+
+----
+
+Priority: 
+
+----
+
+Customstyles: 

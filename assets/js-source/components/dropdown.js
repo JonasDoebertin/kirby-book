@@ -18,6 +18,11 @@ var Dropdown = function($, app) {
         self.app.$document.on('click', '.js-dropdown-toggle', function(event) {
             event.stopPropagation();
             event.preventDefault();
+
+            // Hide all other dropdowns
+            self.hideAll();
+
+            // Show related dropdown
             $(this).toggleClass('with-dropdown');
         });
 
@@ -34,8 +39,8 @@ var Dropdown = function($, app) {
         app.$document.find('.js-dropdown-toggle').toggleClass('with-dropdown', false);
     };
 
+    // Run initialization.
     this.init();
 
     return {};
-
 };
