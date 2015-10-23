@@ -20,3 +20,12 @@ Replacements:
 - 
   indicator: icon-no
   replacement: '<i class="fa fa-minus" style="color: #FF4136"></i>'
+- 
+  indicator: status-added
+  replacement: '<span style="color: #3D9970">Added</span>'
+- 
+  indicator: status-removed
+  replacement: '<span style="color: #FF4136">Removed</span>'
+- 
+  indicator: status-modified
+  replacement: '<span style="color: #d35400">Modified</span>'

@@ -13,10 +13,13 @@ The updated version `1.0.1` contains mainly…
 #### Highlights
 
 * **Updated "Print" button functionality:** Clicking the print button now shows a dropdown that lets you choose from either printing the complete book or the current page only.
+* **Multi-column text layout:** Adding responsive multi-column text blocks is a breeze with the new `column` (link: /typography/columns text: Kirbytext tag).
 
 #### Additional changes and bugfixes
 
-* Lorem
+* Fixed elastic scrolling on iOS devices
+* Nicer underlines for hovered links
+* Opening one dropdown now closes the others
 
 ****
 
@@ -28,37 +31,27 @@ The updated version `1.0.1` contains mainly…
 
 ## Changed files
 
-(columns…)
+| Status  | File |
+| ------ | ---- |
+| {{status-modified}} | assets/css/main.min.css |
+| {{status-modified}} | assets/css/main.min.css.map |
+| {{status-modified}} | assets/js-source/components/core.js[^1] |
+| {{status-modified}} | assets/js-source/components/dropdown.js[^1] |
+| {{status-modified}} | assets/js/main.min.js |
+| {{status-modified}} | assets/js/main.min.js.map |
+| {{status-modified}} | assets/scss/_components.book.scss[^1] |
+| {{status-modified}} | assets/scss/_components.markdown.scss[^1] |
+| {{status-added}} | assets/scss/_objects.columns.scss[^1] |
+| {{status-modified}} | assets/scss/_settings.global.scss[^1] |
+| {{status-modified}} | assets/scss/_trumps.print.scss[^1] |
+| {{status-modified}} | assets/scss/main.scss[^1] |
+| {{status-modified}} | site/languages/de.php |
+| {{status-modified}} | site/languages/en.php |
+| {{status-added}} | site/plugins/columns/columns.php |
+| {{status-modified}} | site/plugins/theme/theme.php |
+| {{status-modified}} | site/snippets/book/header.php |
 
-#### Standard Edition
-
-* assets/css/main.min.css
-* assets/css/main.min.css.map
-* assets/js/main.min.js
-* assets/js/main.min.js.map
-* content/5-purchasing/article.txt
-* content/site.txt
-* site/languages/de.php
-* site/languages/en.php
-* site/snippets/book/header.php
-
-++++
-
-#### Developer Edition
-
-* assets/css/main.min.css
-* assets/css/main.min.css.map
-* assets/js-source/components/core.js
-* assets/js/main.min.js
-* assets/js/main.min.js.map
-* assets/scss/_trumps.print.scss
-* content/5-purchasing/article.txt
-* content/site.txt
-* site/languages/de.php
-* site/languages/en.php
-* site/snippets/book/header.php
-
-(…columns)
+[^1]: Only included in developer edition.
 
 ----
 

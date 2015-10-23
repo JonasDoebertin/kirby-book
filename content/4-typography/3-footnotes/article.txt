@@ -1,0 +1,32 @@
+Title: Footnotes
+
+----
+
+Headline: 
+
+----
+
+Text: 
+
+Every good book needs a little footnote here and there.[^1] A footnote is made of two things: a marker in the text that will become a superscript number and a footnote definition that will be placed in a list of footnotes at the end of the document. A footnote looks like this:[^2]
+
+```
+Every good book needs a little footnote here and there.[^1]
+
+[^1]: Yes, it most certainly does!
+```
+
+[^1]: Yes, it most certainly does!
+[^2]: It's as easy as that.
+
+----
+
+Sitemap: 1
+
+----
+
+Priority: 
+
+----
+
+Customstyles: 
