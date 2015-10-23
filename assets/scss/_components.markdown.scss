@@ -42,10 +42,22 @@
         text-decoration: none;
         outline: 0;
 
-        &:hover,
-        &:focus,
-        &:active {
-            text-decoration: underline;
+        .white &:hover,
+        .white &:focus,
+        .white &:active {
+            text-shadow: -1px -1px 0 $background-color-base,
+                          1px -1px 0 $background-color-base,
+                         -1px  1px 0 $background-color-base,
+                          1px  1px 0 $background-color-base;
+        }
+
+        .sepia &:hover,
+        .sepia &:focus,
+        .sepia &:active {
+            text-shadow: -1px -1px 0 $background-color-sepia,
+                          1px -1px 0 $background-color-sepia,
+                         -1px  1px 0 $background-color-sepia,
+                          1px  1px 0 $background-color-sepia;
         }
     }
 
