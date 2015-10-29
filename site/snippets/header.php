@@ -27,6 +27,14 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <?= $site->faviconCode() ?>
 
+        <link rel="canonical" href="<?= $page->url() ?>">
+        <?php if ($prev = $page->prevArticle()): ?>
+            <link rel="prev" href="<?= $prev->url() ?>">
+        <?php endif ?>
+        <?php if ($next = $page->nextArticle()): ?>
+            <link rel="next" href="<?= $next->url() ?>">
+        <?php endif ?>
+
         <?= $site->googleMeta() ?>
         <?= $site->bingMeta() ?>
 
