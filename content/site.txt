@@ -2,31 +2,11 @@ Title: kirbyBOOK Documentation
 
 ----
 
-Description: Fully featured documentation and demo project of kirbyBOOK, the Kirby based web publishing tool.
+Metatitle: kirbyBOOK – Publish web based online books easily
 
 ----
 
-Logo: kirbybook-logo.svg
-
-----
-
-Highlight: #ff4136
-
-----
-
-Footer: 
-
-Published with (link: http://kirbybook.com/ text: {{kirbybook}}) theme created by (link: http://jd-powered.net/ text: {{jdpowered}}).
-
-(include: buy)
-
-----
-
-Googlemeta: <meta name="google-site-verification" content="libmP-13KnBdKftaAwcjHUqnZTexM5_gnUk-sZjdASM" />
-
-----
-
-Bingmeta: <meta name="msvalidate.01" content="A577379B7BD7C049768A09C7316891E0" />
+Description: kirbyBOOK — The definitive solution to publishing web based books easily. Fully featured documentation and demo project.
 
 ----
 
@@ -34,32 +14,19 @@ Author: »jd« powered / Jonas Döbertin
 
 ----
 
-Font: sans-serif
-
-----
-
 Contentlanguage: en
 
 ----
 
-Tracking: 
+Logo: kirbybook-logo.svg
 
-<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//analytics.jd-powered.net/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 9]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//analytics.jd-powered.net/piwik.php?idsite=9" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
+----
+
+Font: sans-serif
+
+----
+
+Highlight: #ff4136
 
 ----
 
@@ -78,6 +45,22 @@ Customstyles:
         display: none;
     }
 }
+
+----
+
+Footer: 
+
+Published with (link: http://kirbybook.com/ text: {{kirbybook}}) theme created by (link: http://jd-powered.net/ text: {{jdpowered}}).
+
+(include: buy)
+
+----
+
+Googlemeta: <meta name="google-site-verification" content="libmP-13KnBdKftaAwcjHUqnZTexM5_gnUk-sZjdASM" />
+
+----
+
+Bingmeta: <meta name="msvalidate.01" content="A577379B7BD7C049768A09C7316891E0" />
 
 ----
 
@@ -101,6 +84,27 @@ Faviconcode:
 <meta name="msapplication-TileColor" content="#ff0000">
 <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
+
+----
+
+Tracking: 
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.jd-powered.net/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 9]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.jd-powered.net/piwik.php?idsite=9" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
 
 ----
 

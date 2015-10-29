@@ -91,9 +91,9 @@ class BasePage extends Page
     public function metaTitle()
     {
         if ($this->isHomePage()) {
-            return site()->title()->escape('attr');
+            return site()->metatitle()->or(site()->title())->escape('attr');
         } else {
-            return $this->title()->escape('attr') . ' | ' . site()->title()->escape('attr');
+            return $this->title()->escape('attr') . ' | ' . site()->metatitle()->or(site()->title())->escape('attr');
         }
     }
     /**

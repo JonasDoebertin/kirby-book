@@ -12,7 +12,11 @@ fields:
     title:
         label: Book Title
         type:  text
-        help: The main title of the book. This will be used at the top of the sidebar, within each pages navigation bar as well by your visitors browsers and search engines.
+        help: The main title of the book. This will be used at the top of the sidebar, within each pages navigation bar.
+    metatitle:
+        label: Meta Title
+        type:  text
+        help: The meta title of the book. This will be used by your visitors browsers and search engines.
     description:
         label: Book Description
         type:  textarea
