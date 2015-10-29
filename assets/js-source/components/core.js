@@ -40,6 +40,9 @@ var Core = function($) {
         // Initialize theme component
         self.theme = new Theme($, self);
 
+        // Initialize navigation component
+        self.navigation = new Navigation($, self);
+
         /* Initialize fitvids.js plugin */
         self.$window.load(function () {
             self.initEmbeddedVideos();

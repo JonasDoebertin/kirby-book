@@ -5,6 +5,7 @@
 
 //=require components/sidebar.js
 //=require components/dropdown.js
+//=require components/navigation.js
 //=require components/theme.js
 //=require components/core.js
 
