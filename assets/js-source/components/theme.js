@@ -1,198 +1,182 @@
+/**
+ * Modules
+ */
+var $     = require('jquery'),
+    store = require('store');
 
-var Theme = function($, app) {
-    'use strict';
-
-    /**
-     * Self reference.
-     * @type {object}
-     */
-    var self = this;
-
-    /**
-     * Save reference to app object.
-     * @type {object}
-     */
-    this.app = app;
-
-    /**
-     * Represents the current state
-     * @type {Object}
-     */
-    this.state = {
+/**
+ * Local Variables
+ */
+var state     = {
         font:  'sans-serif',
         size:  'normal',
         color: 'white'
-    };
+    },
+    fonts     = ['serif', 'sans-serif'],
+    sizes     = ['smaller', 'small', 'normal', 'large', 'larger'],
+    colors    = ['white', 'sepia'],
+    $document = $(document),
+    $html     = $('html');
 
-    /**
-     * All avaiable fonts
-     * @type {Array}
-     */
-    this.fonts = ['serif', 'sans-serif'];
 
-    /**
-     * All avaiable font sizes
-     * @type {Array}
-     */
-    this.sizes = ['smaller', 'small', 'normal', 'large', 'larger'];
 
-    /**
-     * All avaiable color variantions
-     * @type {Array}
-     */
-    this.colors = ['white', 'sepia'];
 
-    /**
-     * Initialization.
-     *
-     * @since 1.0.0
-     * @return void
-     */
-    this.init = function() {
 
-        // Init initial state
-        self.initState();
+/**
+ * Initialization.
+ *
+ * @since 1.1.0
+ */
+function init() {
 
-        // Bind toggle event handler
-        self.app.$document.on('click', '.js-theme-toggle', function(event) {
+    // Init initial state
+    initState();
 
-            // Preparations
-            var target = $(this);
-            event.preventDefault();
+    // Bind toggle event handler
+    $document.on('click', '.js-theme-toggle', function(event) {
 
-            // Delegate to related setter
-            switch(target.data('toggle')) {
-                case 'font':
-                    self.setFont(target.data('value'));
-                    break;
-                case 'size':
-                    self.changeSize(target.data('value'));
-                    break;
-                case 'color':
-                    self.setColor(target.data('value'));
-            }
-        });
+        // Preparations
+        var target = $(this);
+        event.preventDefault();
 
-    };
-
-    /**
-     * Initialize theme with current saved state.
-     * @since 1.0.0
-     * @return {void}
-     */
-    this.initState = function() {
-
-        // Find and apply current font
-        $.each(self.fonts, function(index, element) {
-            if (self.app.elements.html.hasClass(element)) {
-                self.state.font = element;
-            }
-        });
-        self.setFont(store.get('font', self.state.font));
-
-        // Find current size
-        $.each(self.sizes, function(index, size) {
-            if (self.app.elements.html.hasClass(size)) {
-                self.state.size = size;
-            }
-        });
-        self.setSize(store.get('size', self.state.size));
-
-        // Find and apply current color
-        $.each(self.colors, function(index, element) {
-            if (self.app.elements.html.hasClass(element)) {
-                self.state.color = element;
-            }
-        });
-        self.setColor(store.get('color', self.state.color));
-
-    };
-
-    /**
-     * Set a new font.
-     * @since 1.0.0
-     * @param {string}  font
-     * @return {void}
-     */
-    this.setFont = function(font) {
-        self.state.font = font;
-        self.app.elements.html.removeClass(self.fonts.join(' '));
-        self.app.elements.html.addClass(font);
-        store.set('font', font);
-    };
-
-    /**
-     * Change font size upwards or downwards.
-     * @since 1.0.0
-     * @param {string}  direction
-     * @return {void}
-     */
-    this.changeSize = function(direction) {
-
-        var currentSize, newSize;
-
-        // Get current and new sizes
-        currentSize = self.state.size;
-        newSize = self.getNextSize(currentSize, direction);
-
-        // Set new size
-        self.setSize(newSize);
-    };
-
-    /**
-     * Set and store a new font size.
-     * @since 1.0.0
-     * @param {string}  size
-     * @return {void}
-     */
-    this.setSize = function(size) {
-        self.state.size = size;
-        self.app.elements.html.removeClass(self.sizes.join(' '));
-        self.app.elements.html.addClass(size);
-        store.set('size', size);
-    };
-
-    /**
-     * Get the a new font size based on current size and direction.
-     * @since 1.0.0
-     * @param {string}  current
-     * @param {string}  direction
-     * @return {string}
-     */
-    this.getNextSize = function(current, direction) {
-        var i = $.inArray(current, self.sizes);
-
-        // Handle invalid values
-        if (i === -1) {
-            return 'normal';
+        // Delegate to related setter
+        switch(target.data('toggle')) {
+            case 'font':
+                setFont(target.data('value'));
+                break;
+            case 'size':
+                changeSize(target.data('value'));
+                break;
+            case 'color':
+                setColor(target.data('value'));
         }
+    });
 
-        // Handle edge cases
-        if ((i <= 0) && (direction === 'down')) {
-            return current;
+}
+
+/**
+ * Initialize theme with current saved state.
+ *
+ * @since 1.1.0
+ */
+function initState() {
+
+    // Find and apply current font
+    $.each(fonts, function(index, element) {
+        if ($html.hasClass(element)) {
+            state.font = element;
         }
-        if ((i >= 4) && (direction === 'up')) {
-            return current;
+    });
+    setFont(store.get('font', state.font));
+
+    // Find current size
+    $.each(sizes, function(index, size) {
+        if ($html.hasClass(size)) {
+            state.size = size;
         }
+    });
+    setSize(store.get('size', state.size));
 
-        return (direction === 'up') ? self.sizes[++i] : self.sizes[--i];
-    };
+    // Find and apply current color
+    $.each(colors, function(index, element) {
+        if ($html.hasClass(element)) {
+            state.color = element;
+        }
+    });
+    setColor(store.get('color', state.color));
 
-    /**
-     * Set a new color.
-     * @since 1.0.0
-     * @param {string}  color
-     * @return {void}
-     */
-    this.setColor = function(color) {
-        self.state.color = color;
-        self.app.elements.html.removeClass(self.colors.join(' '));
-        self.app.elements.html.addClass(color);
-        store.set('color', color);
-    };
+}
 
-    /**
-     * Run initialization
-     */
-    this.init();
+/**
+ * Set a new font.
+ *
+ * @since 1.1.0
+ * @param string
+ */
+function setFont(font) {
+    state.font = font;
+    $html.removeClass(fonts.join(' '));
+    $html.addClass(font);
+    store.set('font', font);
+}
+
+/**
+ * Change font size upwards or downwards.
+ *
+ * @since 1.1.0
+ * @param string
+ */
+function changeSize(direction) {
+    var currentSize, newSize;
+
+    // Get current and new sizes
+    currentSize = state.size;
+    newSize = getNextSize(currentSize, direction);
+
+    // Set new size
+    setSize(newSize);
+}
+
+/**
+ * Set and store a new font size.
+ *
+ * @since 1.1.0
+ * @param string
+ */
+function setSize(size) {
+    state.size = size;
+    $html.removeClass(sizes.join(' '));
+    $html.addClass(size);
+    store.set('size', size);
+}
+
+/**
+ * Get the a new font size based on current size and direction.
+ *
+ * @since 1.1.0
+ * @param string
+ * @param string
+ * @return string
+ */
+function getNextSize(current, direction) {
+    var i = $.inArray(current, sizes);
+
+    // Handle invalid values
+    if (i === -1) {
+        return 'normal';
+    }
+
+    // Handle edge cases
+    if ((i <= 0) && (direction === 'down')) {
+        return current;
+    }
+    if ((i >= 4) && (direction === 'up')) {
+        return current;
+    }
+
+    return (direction === 'up') ? sizes[++i] : sizes[--i];
+}
+
+/**
+ * Set a new color.
+ * @since 1.0.0
+ * @param {string}  color
+ * @return {void}
+ */
+function setColor(color) {
+    state.color = color;
+    $html.removeClass(colors.join(' '));
+    $html.addClass(color);
+    store.set('color', color);
+}
+
+
+
+
+
+/**
+ * Exports
+ */
+module.exports = {
+    init: init
 };

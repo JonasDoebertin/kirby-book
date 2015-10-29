@@ -1,17 +1,31 @@
-//=require ../../node_modules/store/store.js
-//=require ../../node_modules/store/json.js
-//=require ../../bower_components/matchMedia/matchMedia.js
-//=require ../../bower_components/jquery.fitvids/jquery.fitvids.js
-
-//=require components/sidebar.js
-//=require components/dropdown.js
-//=require components/navigation.js
-//=require components/theme.js
-//=require components/core.js
-
 /**
- * App initialization.
- *
- * @since 1.0.0
+ * Modules
  */
-var App = new Core(jQuery);
+var $          = require('jquery'),
+    dropdown   = require('./components/dropdown'),
+    navigation = require('./components/navigation'),
+    oembed     = require('./components/oembed'),
+    print      = require('./components/print.js'),
+    sidebar    = require('./components/sidebar'),
+    theme      = require('./components/theme');
+
+
+
+
+
+function boot() {
+    dropdown.init();
+    navigation.init();
+    oembed.init();
+    print.init();
+    sidebar.init();
+    theme.init();
+}
+
+boot();
+
+
+
+
+
+module.exports = {};

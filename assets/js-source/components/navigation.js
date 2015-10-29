@@ -1,57 +1,62 @@
+/**
+ * Modules
+ */
+var $ = require('jquery');
 
-var Navigation = function($, app) {
-    'use strict';
+/**
+ * Local Variables
+ */
+var prevLink = $('link[rel=prev]'),
+    nextLink = $('link[rel=next]'),
+    $document = $(document);
 
-    var self = this;
 
-    this.app = app;
 
-    this.elements = {
-        prevLink: $('link[rel=prev]'),
-        nextLink: $('link[rel=next]')
-    };
 
-    /**
-     * Initialization.
-     *
-     * @since 1.0.2
-     * @return void
-     */
-    this.init = function() {
+/**
+ * Initialization.
+ *
+ * @since 1.1.0
+ */
+function init() {
+    bindPrevNextPageShortcut();
+}
 
-        self.bindPrevNextPageShortcut();
+function bindPrevNextPageShortcut() {
+    $document.on('keydown', function (e) {
+        var keyCode = e.keyCode || e.which;
 
-    };
+        switch (keyCode) {
+            case 37:
+                executePrevPageShortcut();
+                break;
 
-    this.bindPrevNextPageShortcut = function () {
-        self.app.$document.on('keydown', function (e) {
-            var keyCode = e.keyCode || e.which;
-
-            switch (keyCode) {
-                case 37:
-                    self.executePrevPageShortcut();
-                    break;
-
-                case 39:
-                    self.executeNextPageShortcut();
-                    break;
-            }
-        });
-    };
-
-    this.executePrevPageShortcut = function () {
-        if (self.elements.prevLink.length > 0) {
-            window.location.href = self.elements.prevLink.attr('href');
+            case 39:
+                executeNextPageShortcut();
+                break;
         }
-    };
+    });
+}
 
-    this.executeNextPageShortcut = function () {
-        if (self.elements.nextLink.length > 0) {
-            window.location.href = self.elements.nextLink.attr('href');
-        }
-    };
+function executePrevPageShortcut() {
+    if (prevLink.length > 0) {
+        window.location.href = prevLink.attr('href');
+    }
+}
+
+function executeNextPageShortcut() {
+    if (nextLink.length > 0) {
+        window.location.href = nextLink.attr('href');
+    }
+}
 
 
-    this.init();
 
+
+
+/**
+ * Exports
+ */
+module.exports = {
+    init: init
 };

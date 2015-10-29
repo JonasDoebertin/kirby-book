@@ -8,6 +8,9 @@
 */
 
 var gulp       = require('gulp'),
+    browserify = require('browserify'),
+    source     = require('vinyl-source-stream'),
+    buffer     = require('vinyl-buffer'),
     args       = require('yargs').argv,
     sass       = require('gulp-sass'),
     autoprefix = require('gulp-autoprefixer'),
@@ -30,14 +33,15 @@ var gulp       = require('gulp'),
 */
 
 /* Paths: paths to watch for JS compilation */
-var jsWatchPaths = [
+var browserifyWatchPaths = [
     'assets/js-source/**/*.js',
-    'bower_components/**/*.js'
+    'bower_components/**/*.js',
+    'node_modules/**/*.js'
 ];
 
 /* Paths: paths to base files to include in JS compilation */
-var jsCompilePaths = [
-    'assets/js-source/*.js'
+var browserifyCompilePaths = [
+    'assets/js-source/main.js'
 ];
 
 /* Paths: paths to watch for SCSS compilation */
@@ -119,14 +123,12 @@ gulp.task('css', function() {
 });
 
 /* Task: Combine and uglify js */
-gulp.task('js', function() {
-    return gulp.src(jsCompilePaths)
-        .pipe(include())
-            .on('error', console.log)
-        .pipe(sourcemaps.init())
-        .pipe(uglify({preserveComments: 'some'}))
-        .pipe(rename({suffix: '.min'}))
-        .pipe(sourcemaps.write('./'))
+gulp.task('browserify', function() {
+    return browserify({entries: browserifyCompilePaths})
+        .bundle()
+        .pipe(source('main.min.js'))
+        .pipe(buffer())
+        .pipe(uglify())
         .pipe(gulp.dest('assets/js'));
 });
 
@@ -147,7 +149,7 @@ gulp.task('release-cleanup', function() {
 });
 
 /* Task: Copy files for a release */
-gulp.task('release-copy', ['release-cleanup', 'css', 'js'], function() {
+gulp.task('release-copy', ['release-cleanup', 'css', 'browserify'], function() {
     return gulp.src(releasePaths[args.edition])
         .pipe(gulp.dest('__releases/' + args.tag + '-' + args.edition));
 });
@@ -173,9 +175,9 @@ gulp.task('release', ['release-package']);
 */
 
 /* Task: start watcher */
-gulp.task('watch', ['css', 'js'], function() {
+gulp.task('watch', ['css', 'browserify'], function() {
     gulp.watch(scssWatchPaths, ['css']);
-    gulp.watch(jsWatchPaths, ['js']);
+    gulp.watch(browserifyWatchPaths, ['browserify']);
 });
 
 /* Task: default task */
