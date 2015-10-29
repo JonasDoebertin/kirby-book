@@ -58,6 +58,7 @@ var releasePaths = {
         '.htaccess',
         '!{__releases,__releases/**}',
         '!assets/{js-source,js-source/**,scss,scss/**}',
+        '!{bin,bin/**}',
         '!{bower_components,bower_components/**}',
         '!{node_modules,node_modules/**}',
         '!site/accounts/root.php',
