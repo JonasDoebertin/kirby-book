@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2e60f3f0388c68062a6cd30e00691af1",
-    "content-hash": "ecffd26b523ae7f9954434006ad7ff09",
+    "hash": "ded7d7755988e769b60a37ea141d6aa3",
+    "content-hash": "9e9721909fa336cb798232e33e885b25",
     "packages": [
         {
             "name": "jdpowered/share",
@@ -50,52 +50,6 @@
                 "url"
             ],
             "time": "2015-10-09 15:49:43"
-        },
-        {
-            "name": "mpratt/embera",
-            "version": "1.8.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mpratt/Embera.git",
-                "reference": "4ce99a9844e1d7e87f4317e66560ff4040395b0b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mpratt/Embera/zipball/4ce99a9844e1d7e87f4317e66560ff4040395b0b",
-                "reference": "4ce99a9844e1d7e87f4317e66560ff4040395b0b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Embera": "Lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Pratt",
-                    "email": "pratt@hablarmierda.net",
-                    "homepage": "http://www.michael-pratt.com",
-                    "role": "Author/Developer"
-                }
-            ],
-            "description": "A Oembed consumer library, that gives you information about urls. It helps you replace urls to youtube or vimeo for example, with their html embed code.",
-            "homepage": "https://github.com/mpratt/Embera",
-            "keywords": [
-                "Auto embed",
-                "embed",
-                "oembed",
-                "vimeo",
-                "youtube"
-            ],
-            "time": "2015-06-19 21:41:44"
         }
     ],
     "packages-dev": [],

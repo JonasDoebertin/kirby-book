@@ -2,7 +2,6 @@
     "name": "jdpowered/kirby-book",
     "description": "kirbyBOOK",
     "require": {
-        "mpratt/embera": "~1.8.0",
         "jdpowered/share": "~0.1.1"
     },
     "authors": [

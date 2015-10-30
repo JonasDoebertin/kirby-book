@@ -59,6 +59,52 @@ class helpers
     }
 
     /**
+     * Sanitize a string by checkinf if it is of an allowed value.
+     *
+     * @since 1.1.0
+     * @param string
+     * @param array
+     * @param string
+     * @return string
+     */
+    public static function sanitizeFromArray($actual, $allowed, $fallback)
+    {
+        return in_array($actual, $allowed) ? $actual : $fallback;
+    }
+
+    /**
+     * Convert a boolean-like string to an actual boolean.
+     *
+     * @since 1.1.0
+     * @param mixed
+     * @param boolean
+     * @return boolean
+     */
+    public static function toBool($actual, $fallback)
+    {
+        if (is_bool($actual)) {
+            return $actual;
+        }
+
+        switch ($actual) {
+            case 'true':
+            case 'yes':
+            case '1':
+            case 1:
+                return true;
+
+            case 'false':
+            case 'no':
+            case '0':
+            case 0:
+                return false;
+
+            default:
+                return $fallback;
+        }
+    }
+
+    /**
      * Generate a panel url for an object and an action.
      *
      * @since 1.0.0

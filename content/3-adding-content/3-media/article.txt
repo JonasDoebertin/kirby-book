@@ -10,19 +10,51 @@ Text:
 
 Embedding various media objects like Youtube videos, Instagram pictures, Vines or Tweets is as easy as it could possibly be. The reason for this is a custom Kirbytext Tag (similar to a WordPress Shortcode or BBCode) that {{kirbybook}} provides out of the box.
 
-To add one of the various supported media objects to your page, all you need to do is to use the `(embed)` Kirbytext Tag and add the url of the object you would like to embed to it.
+To add one of the various supported media objects to your page, all you need to do is to use the `(embed)` Kirbytext tag and add the url of the object you would like to embed to it.
 
-To get an impression of what sites or supported, please have a look at the following list of embeddable objects:
+Here are some highlights of the long list of sites you can embed from ((link: http://embed.ly/providers text: full list)):
 
-* GitHub Gists
+(columns…)
+
+* Amazon
+* Dribbble
+* Flickr
+* gfycat
+* GitHub
+* Imgur
+
+++++
+
 * Instagram
 * Kickstarter
-* Soundcloud
+* PollDaddy
+* SoundCloud
 * Spotify
-* Twitter
+* Twitch.tv
+
+++++
+
 * Vimeo
 * Vine
-* Youtube
+* Wikipedia
+* YouTube
+
+(…columns)
+
+To make using oEmbed as painless as possible, {{kirbybook}} heavily relys on a service called (link: http://embed.ly/cards text: Embedly Cards). It takes your media urls and generates the beautiful and responsive embeds you like so much asynchronously (without affecting page load times).
+
+****
+
+ ## Options
+ 
+ When using the`(embed)` Kirbytext tag, there is a small set of options you can use to customize the display of the embedded images/videos/articles.
+ 
+| Option | Default | Options | Description |
+| ------ | ------- | ------- | ----------- |
+| chrome | `no` | `yes`, `no` | Show/hide a left hand colored border |
+| controls | `no` | `yes`, `no` | Show/hide social share buttons  |
+| width | `100%` | any `%` or `px` based value  | Set the width of the embed  |
+| width | `center` | `left`, `center`, `right` | Alignment of the embed  |
 
 ****
 
