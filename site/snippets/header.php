@@ -28,12 +28,6 @@
         <?= $site->faviconCode() ?>
 
         <link rel="canonical" href="<?= $page->url() ?>">
-        <?php if ($prev = $page->prevArticle()): ?>
-            <link rel="prev" href="<?= $prev->url() ?>">
-        <?php endif ?>
-        <?php if ($next = $page->nextArticle()): ?>
-            <link rel="next" href="<?= $next->url() ?>">
-        <?php endif ?>
 
         <?= $site->googleMeta() ?>
         <?= $site->bingMeta() ?>
@@ -43,4 +37,4 @@
         <?= Theme::generateStyles() ?>
     </head>
     <body>
-        <div class="wrap">
+        <div class="wrap" id="pjax-container">
