@@ -1,8 +1,9 @@
 /**
  * Modules
  */
-var jQuery = $ = require('jquery'),
-    pjax   = require('jquery-pjax');
+var $         = jQuery = require('jquery'),
+    pjax      = require('jquery-pjax'),
+    nprogress = require('nprogress');
 
 /**
  * Local Variables
@@ -33,11 +34,13 @@ function initPjax() {
     $.pjax.defaults.container = '#pjax-container';
     $.pjax.defaults.fragment = '#pjax-container';
 
+    nprogress.configure({showSpinner: false});
+
     $document.on('pjax:start', function () {
-        console.log('Start');
+        nprogress.start();
     });
     $document.on('pjax:end', function () {
-        console.log('End');
+        nprogress.done();
     });
 }
 

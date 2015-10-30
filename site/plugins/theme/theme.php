@@ -81,6 +81,10 @@ class theme
         // Nice underlines
         $css .= '.page__content a:hover,.page__content a:focus,.page__content a:active{ background-image: linear-gradient(to top, transparent, transparent 2px, ' . self::option('highlightColor', 'inherit') . ' 2px, ' . self::option('highlightColor', 'inherit') . ' 3px, transparent 3px);}';
 
+        // nprogress bar
+        $css .= '#nprogress .bar{background:' . self::option('highlightColor', 'inherit') . '}';
+        $css .= '#nprogress .peg{box-shadow: 0 0 10px ' . self::option('highlightColor', 'inherit') . ', 0 0 5px ' . self::option('highlightColor', 'inherit') . ';}';
+
         /* Custom site styles */
         if (site()->customStyles()->isNotEmpty()) {
             $css .= site()->customStyles();
