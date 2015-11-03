@@ -11,7 +11,7 @@
         <meta name="author" content="<?= $page->metaAuthor() ?>">
 
         <meta property="og:url" content="<?= $page->url() ?>">
-        <meta property="og:site_name" content="<?= $site->title()->escape('attr') ?>">
+        <meta property="og:site_name" content="<?= $site->title()->escape('html') ?>">
         <meta property="og:title" content="<?= $page->metaTitle() ?>">
         <meta property="og:type" content="website">
         <meta property="og:description" content="<?= $page->metaDescription() ?>">

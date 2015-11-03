@@ -157,3 +157,7 @@ Epubsubject: Online Publishing,Kirby CMS
 ----
 
 Epubcover: epub-cover.png
+
+----
+
+Epubpublisherurl: http://jd-powered.net

@@ -120,9 +120,9 @@ class BasePage extends Page
     public function metaTitle()
     {
         if ($this->isHomePage()) {
-            return site()->metatitle()->or(site()->title())->escape('attr');
+            return site()->metatitle()->or(site()->title())->escape('html');
         } else {
-            return $this->title()->escape('attr') . ' | ' . site()->metatitle()->or(site()->title())->escape('attr');
+            return $this->title()->escape('attr') . ' | ' . site()->metatitle()->or(site()->title())->escape('html');
         }
     }
     /**
@@ -134,9 +134,9 @@ class BasePage extends Page
     public function metaDescription()
     {
         if ($this->isHomePage() or $this->isErrorPage()) {
-            return site()->description()->escape('attr');
+            return site()->description()->escape('html');
         } else {
-            return $this->text()->escape('attr')->excerpt(50, 'words');
+            return $this->text()->escape('html')->excerpt(50, 'words');
         }
     }
 
@@ -148,7 +148,7 @@ class BasePage extends Page
      */
     public function metaAuthor()
     {
-        return site()->author()->escape('attr');
+        return site()->author()->escape('html');
     }
 
     /**
