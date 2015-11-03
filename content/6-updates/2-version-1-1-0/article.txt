@@ -1,0 +1,120 @@
+Title: Version 1.1.0
+
+----
+
+Headline: 
+
+----
+
+Text: 
+
+The updated version 1.1.0 adds the new »Download as ePub« feature, upgrades {{kirbybook}} to Kirby CMS 2.2 and contains various small fixes.
+
+#### Highlights
+
+* **ePub download:** Let your readers download a copy of your publication in the well-proven ePub format with simply enabling a checkbox. Everything will be handled for you.
+* **Faster browsing experience:** With the help of a little PJAX magic browsing a publication powered by {{kirbybook}} is faster then ever before.
+* **Improved media embedding:** A new and improved way of adding mutimedia objects like Vimeo and YouTube videos, tweets, vines, etc. to your content makes this feature a lot quicker and more powerful.
+* **Kirby 2.2:** Take advantage of the new features (link: http://getkirby.com/changelog/kirby-2-2-0 text: Kirby 2.2) brings. This includes the completly rewritten Panel which makes managing your content even more easy.
+
+#### Additional changes and bugfixes
+
+* Use keyboard arrows to navigate between pages
+* Optimized gulp task structure and javascript compiling workflow
+
+## Updating
+
+1. Make a backup of your old `/content` directory.
+2. Replace all old files and folders (except your `/content` directory) with the new ones from the download.
+3. From the Panel:
+    1. Update your »Site Options« by filling in the new »ePub Metadata« section.
+    2. Walk through all your chapters/articles and resave them.
+
+****
+
+ ## Changed files
+
+```
+M       assets/css/main.min.css
+M       assets/css/main.min.css.map
+M       assets/css/panel.min.css.map
+D       assets/js-source/components/core.js
+M       assets/js-source/components/dropdown.js
+A       assets/js-source/components/navigation.js
+A       assets/js-source/components/oembed.js
+A       assets/js-source/components/platform.js
+A       assets/js-source/components/print.js
+M       assets/js-source/components/sidebar.js
+M       assets/js-source/components/theme.js
+D       assets/js-source/jquery-2.1.4.js
+M       assets/js-source/main.js
+D       assets/js/jquery-2.1.4.min.js
+D       assets/js/jquery-2.1.4.min.js.map
+M       assets/js/main.min.js
+D       assets/js/main.min.js.map
+M       assets/scss/_trumps.fontawesome.scss
+A       assets/scss/_trumps.nprogress.scss
+M       assets/scss/main.scss
+M       bower.json
+M       composer.json
+M       composer.lock
+M       gulpfile.js
+M       kirby
+M       package.json
+M       panel
+D       site/blueprints/article.php
+A       site/blueprints/article.yml
+D       site/blueprints/chapter.php
+A       site/blueprints/chapter.yml
+D       site/blueprints/error.php
+A       site/blueprints/error.yml
+D       site/blueprints/home.php
+A       site/blueprints/home.yml
+D       site/blueprints/include.php
+A       site/blueprints/include.yml
+D       site/blueprints/includes.php
+A       site/blueprints/includes.yml
+D       site/blueprints/printable.php
+A       site/blueprints/printable.yml
+D       site/blueprints/replacements.php
+A       site/blueprints/replacements.yml
+D       site/blueprints/site.php
+A       site/blueprints/site.yml
+D       site/blueprints/sitemap.php
+A       site/blueprints/sitemap.yml
+M       site/config/config.php
+M       site/fields/color
+M       site/fields/selector
+M       site/languages/de.php
+M       site/languages/en.php
+M       site/models/base.php
+M       site/models/printable.php
+A       site/plugins/epub-exporter/epub-exporter.php
+M       site/plugins/helpers/helpers.php
+A       site/plugins/hooks/hooks.php
+D       site/plugins/oembed/oembed.php
+M       site/plugins/theme/theme.php
+M       site/snippets/book.php
+M       site/snippets/book/header.php
+M       site/snippets/footer.php
+M       site/snippets/header.php
+A       site/tags/embed.php
+A       tasks/css.js
+A       tasks/js.js
+```
+
+----
+
+Sitemap: 1
+
+----
+
+Priority: 
+
+----
+
+Epub: 1
+
+----
+
+Customstyles: 
