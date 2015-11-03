@@ -4,9 +4,53 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d7ac1bd8cd312152b19dd1af36e6090d",
-    "content-hash": "e50cc1617b5f0973fcfb09186a3cb6b7",
+    "hash": "d73cbec510514bde2fd7f17bdd9b73eb",
+    "content-hash": "df5ceb03e625dcd72e35471be907d9be",
     "packages": [
+        {
+            "name": "ezyang/htmlpurifier",
+            "version": "v4.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezyang/htmlpurifier.git",
+                "reference": "ae1828d955112356f7677c465f94f7deb7d27a40"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/ae1828d955112356f7677c465f94f7deb7d27a40",
+                "reference": "ae1828d955112356f7677c465f94f7deb7d27a40",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
+                "files": [
+                    "library/HTMLPurifier.composer.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Edward Z. Yang",
+                    "email": "admin@htmlpurifier.org",
+                    "homepage": "http://ezyang.com"
+                }
+            ],
+            "description": "Standards compliant HTML filter written in PHP",
+            "homepage": "http://htmlpurifier.org/",
+            "keywords": [
+                "html"
+            ],
+            "time": "2015-08-05 01:03:42"
+        },
         {
             "name": "grandt/binstring",
             "version": "dev-master",
@@ -60,7 +104,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grandt/PHPePub/zipball/e71e389781151db67b578069de2e8485e47344d6",
+                "url": "https://api.github.com/repos/Grandt/PHPePub/zipball/57f3c11d6ced03a5c1e149107f995a92944a9b00",
                 "reference": "e71e389781151db67b578069de2e8485e47344d6",
                 "shasum": ""
             },
@@ -97,7 +141,7 @@
                 "e-book",
                 "epub"
             ],
-            "time": "2015-11-02 11:09:23"
+            "time": "2015-11-03 11:32:44"
         },
         {
             "name": "grandt/phpresizegif",

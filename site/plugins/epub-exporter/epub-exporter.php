@@ -18,6 +18,13 @@ class EPubExporter
      */
     protected $site;
 
+    /**
+     * HTMLPurifier instance.
+     *
+     * @var HTMLPurifier
+     */
+    protected $purifier;
+
 
     /**
      * Main public API.
@@ -88,6 +95,9 @@ class EPubExporter
 
         // Set up ePub generator
         $this->book = new EPub(EPub::BOOK_VERSION_EPUB3);
+
+        // Set up HTMLPurifier
+        $this->initPurifier();
 
         // Set book meta data
         $this->setTitle();
@@ -248,10 +258,9 @@ class EPubExporter
         $title = strip_tags($page->title()->html());
         $file = Str::slug($page->uri()) . '.html';
         $markup = $this->getChapterStart($title) . $this->getPageMarkup($page) . $this->getChapterEnd();
-        // TODO: Purify markup!
 
         // Add chapter to book
-        $this->book->addChapter($title, $file, $markup, true, EPub::EXTERNAL_REF_ADD);
+        $this->book->addChapter($title, $file, $markup, true, EPub::EXTERNAL_REF_ADD, kirby()->roots->content());
     }
 
     /**
@@ -286,15 +295,27 @@ class EPubExporter
         return "</body>\n</html>\n";
     }
 
+    /**
+     * Generate a pages markup.
+     *
+     * @since 1.1.0
+     * @param  Page   $page
+     * @return string
+     */
     protected function getPageMarkup($page)
     {
         $markup = '<h1>' . strip_tags($page->headline()->or($page->title())->html()) . '</h1>';
-
-        $markup .= $page->text()->kirbytext();
+        $markup .= $this->purifyMarkup($page->text()->kirbytext());
 
         return $markup;
     }
 
+    /**
+     * Generate general styles.
+     *
+     * @since 1.1.0
+     * @return string
+     */
     protected function getStyles()
     {
         // Page breaks inside tables
@@ -306,5 +327,41 @@ class EPubExporter
         $css .= '.fa {font-style: normal !important;}';
 
         return $css;
+    }
+
+    /**************************************************************************\
+    *                               HTMLPurifier                               *
+    \**************************************************************************/
+
+    /**
+     * Initialize HTMLPurifier.
+     *
+     * @since 1.1.0
+     */
+    protected function initPurifier()
+    {
+        // Set up allowed elements
+        $config = HTMLPurifier_Config::createDefault();
+        $config->set('HTML.Allowed', 'a[href|target|rel],strong,b,em,i,strike,pre,code,p,ol,ul,li,dl,dt,dd,br,h1,h2,h3,h4,h5,h6,figure,figcaption,img[src|alt],blockquote,q,cite,span,*[style|id|class]');
+
+        // Add <figure> and <figcaption> elements to DTD
+        $definition = $config->getHTMLDefinition(true);
+        $figure = $definition->addElement('figure', 'Flow', 'Flow', 'Common');
+        $figcaption = $definition->addElement('figcaption', 'Flow', 'Flow', 'Common');
+
+        // Instantiate purifier
+        $this->purifier = new HTMLPurifier($config);
+    }
+
+    /**
+     * Purify HTML markup to exclude unwanted elements.
+     *
+     * @since 1.1.0
+     * @param  string $markup
+     * @return string
+     */
+    protected function purifyMarkup($markup)
+    {
+        return $this->purifier->purify($markup);
     }
 }
