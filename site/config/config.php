@@ -117,6 +117,23 @@ c::set('routes', [
             return site()->visit('sitemap');
         },
     ],
+    /*
+        EPUB EXPORT
+     */
+    [
+        'pattern' => 'export/epub',
+        'action' => function () {
+
+            // Abort if ePub export has been disabled
+            if (site()->epub()->int() !== 1) {
+                return site()->visit('error');
+            }
+
+            // Export as ePub
+            EPubExporter::export();
+            die;
+        },
+    ],
 ]);
 
 /*

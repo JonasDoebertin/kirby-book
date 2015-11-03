@@ -1,7 +1,3 @@
-Headlinecontent: 
-
-----
-
 Title: Updates
 
 ----
@@ -14,10 +10,6 @@ Text:
 
 ----
 
-Headlinesettings: 
-
-----
-
 Sitemap: 1
 
 ----
@@ -26,8 +18,8 @@ Priority:
 
 ----
 
-Headlineadvanced: 
+Customstyles: 
 
 ----
 
-Customstyles: 
+Epub: 

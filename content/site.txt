@@ -129,3 +129,31 @@ Scripts:
   });
 </script>
 <!-- End Helpscout Beacon -->
+
+----
+
+Epub: 1
+
+----
+
+Epubauthor: Jonas Döbertin
+
+----
+
+Epubsortauthor: Döbertin, Jonas
+
+----
+
+Epubpublishername: »jd« powered
+
+----
+
+Epubdescription: kirbyBOOK — The definitive solution to publishing web based books easily. Complete documentation and demo export.
+
+----
+
+Epubsubject: Online Publishing,Kirby CMS
+
+----
+
+Epubcover: epub-cover.png

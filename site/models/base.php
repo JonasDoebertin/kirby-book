@@ -8,9 +8,12 @@ class BasePage extends Page
      * @since 1.0.0
      * @return Pages
      */
-    public function topLevelArticles()
+    public function topLevelArticles($export = false)
     {
-        return site()->pages()->visible()->filter(function ($item) {
+        return site()->pages()->visible()->filter(function ($item) use ($export) {
+            if ($export) {
+                return ($item->ePub()->int() === 1) and in_array($item->intendedTemplate(), ['chapter', 'article']);
+            }
             return in_array($item->intendedTemplate(), ['chapter', 'article']);
         });
     }
@@ -21,11 +24,35 @@ class BasePage extends Page
      * @since 1.0.0
      * @return Pages
      */
-    public function containedArticles()
+    public function containedArticles($export = false)
     {
-        return $this->children()->visible()->filter(function ($item) {
+        return $this->children()->visible()->filter(function ($item) use ($export) {
+            if ($export) {
+                return ($item->ePub()->int() === 1) and in_array($item->intendedTemplate(), ['chapter', 'article']);
+            }
             return in_array($item->intendedTemplate(), ['chapter', 'article']);
         });
+    }
+
+    /**
+     * Get a flat array of all articles.
+     *
+     * @since 1.0.0
+     * @return Pages
+     */
+    public function getArticles()
+    {
+        $pages = [];
+        $pages[] = site()->homePage();
+        foreach ($this->topLevelArticles() as $page) {
+            $pages[] = $page;
+            $subPages = $page->containedArticles();
+            foreach ($subPages as $subPage) {
+                $pages[] = $subPage;
+            }
+        }
+
+        return $pages;
     }
 
     /**

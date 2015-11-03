@@ -208,6 +208,57 @@ fields:
         icon: paint-brush
         help: Use this to add custom CSS rules that will be applied to every page across the whole publication. This allows for easy theme customizations without ever touching a code editor.
 
+    headlineExport:
+        label: ePub Metadata
+        type: headline
+    epub:
+        label: Enable ePub eBook Download
+        type: checkbox
+        text: Let users download this book as ePub eBook
+        default: 1
+        width: 1
+        help: Uncheck this box to disable the auto-generated downloadable ePub eBook file.
+    epubAuthor:
+        label: Author
+        type: text
+        width: 1/2
+        icon: user
+        help: Name or company name of the book author or creator eg. »John Doe« or »Donuts, Inc.« (An entity primarily responsible for making the resource. Examples of a creator include a person, an organization or a service.)
+    epubSortAuthor:
+        label: Author (Sorting)
+        type: text
+        width: 1/2
+        icon: user
+        help: Name or company name of the book author for sorting eg. »Doe, John«.
+    epubPublisherName:
+        label: Publisher
+        type: text
+        width: 1/2
+        icon: user
+        help: Name or company name of the books publisher. This could be a person, an organization or a service.
+    epubPublisherUrl:
+        label: Publisher URL
+        type: url
+        width: 1/2
+        help: Website of the books publisher.
+    epubDescription:
+        label: Description
+        type: textarea
+        buttons: no
+        help: Book description. This could include an abstract, a table of contents or any other type of informative text.
+    epubSubject:
+        label: Subject
+        type: tags
+        help: A list of keywords or key phrases descripbing the subject of the book.
+    epubCover:
+        label: Cover Image
+        type: selector
+        types:
+            - image
+        help: The books cover image.
+
+
+
     headlineFooter:
         label: Site Footer
         type: headline

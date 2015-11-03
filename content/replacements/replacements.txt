@@ -16,10 +16,10 @@ Replacements:
   replacement: '<span style="color: #c74223">»jd«</span> powered'
 - 
   indicator: icon-yes
-  replacement: '<i class="fa fa-check" style="color: #3D9970"></i>'
+  replacement: '<i class="fa fa-check" style="color: #3D9970"><span class="fa-alt">&#10003;</span></i>'
 - 
   indicator: icon-no
-  replacement: '<i class="fa fa-minus" style="color: #FF4136"></i>'
+  replacement: '<i class="fa fa-minus" style="color: #FF4136"><span class="fa-alt">—</span></i>'
 - 
   indicator: status-added
   replacement: '<span style="color: #3D9970">Added</span>'

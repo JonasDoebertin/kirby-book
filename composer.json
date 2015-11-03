@@ -2,7 +2,8 @@
     "name": "jdpowered/kirby-book",
     "description": "kirbyBOOK",
     "require": {
-        "jdpowered/share": "~0.1.1"
+        "jdpowered/share": "~0.1.1",
+        "grandt/phpepub": "dev-master"
     },
     "authors": [
         {
@@ -10,7 +11,7 @@
             "email": "hello@jd-powered.net"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "config": {
         "preferred-install": "dist"
     }

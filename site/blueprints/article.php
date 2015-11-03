@@ -36,6 +36,17 @@ fields:
         width: 1/2
         help: Add any number between 0.1 and 1 to overwrite the auto-generated page priority.
 
+    headlineExport:
+        label: Export Settings
+        type: headline
+    epub:
+        label: ePub Export
+        type: checkbox
+        text: Include in ePub download
+        default: 1
+        width: 1/2
+        help: Uncheck this box to exclude this article from the auto-generated downloadable ePub eBook file.
+
     headlineAdvanced:
         type: headline
         label: Advanced Options
