@@ -51,6 +51,36 @@ Custom CSS
 Footer Text
     :The sites footer text is displayed within the navigation sidebar right below the chapter/article overview. It is perfect for adding a copyright message or something similar and supports standard markdown features.
 
+## ePub Metadata
+
+(image: epub-metadata.png alt: kirbyBOOK ePub Metadata Options class: no-margin)
+
+First introduced with (link: /updates/version-1-1-0 text: Update 1.1.0) {{kirbybook}} lets your readers download your publication as a convenient ePub eBook file.
+
+Enable ePub eBook Download
+    :Unchecking this option will completly disable the ePub feature and remove the "Download as ePub" link from the sites »Print« menu.
+
+Author
+    :Each ePub file may contain specific information about the other of the book. This (and the »Author (Sorting)«) options lets you specify the eBook author independentely from the main book author used for HTML meta data. this first firld should contain the authors name or a company name in its natural writing eg. »John Doe« or »Donuts, Inc.«.
+
+Author (Sorting)
+    :This second author field should contain the author name in a sorting enabled writing like »Doe, John«.
+
+Publisher
+    :Use this option to add a name or company name of the books publisher. This could be a person, an organization or a service.
+
+Publisher URL
+    :Enter the publishers website URL.
+
+Description
+    :An ePub file may contain a short book description. This could include an abstract, a table of contents or any other type of informative text. Use plain text only.
+
+Subjects
+    :Add a list of keywords or key phrases that describe the subject of the publication.
+
+Cover Image
+    :Choose an image that shall be used as the books cover. Please note that not all eBook readers will display cover images.
+
 ## Webmaster Tools
 
 (image: webmaster-tools.png alt: kirbyBOOK Webmaster Tools Options class: no-margin)

@@ -27,5 +27,9 @@ L::set('dropdown.theme.sepia.hint', 'Zum Sepia-Design wechseln');
 L::set('dropdown.print.page.hint', 'Aktuelle Seite drucken');
 L::set('dropdown.print.book.hint', 'Komplettes Buch drucken');
 
+
+L::set('dropdown.export.epub', 'Als ePub speichern');
+L::set('dropdown.export.epub.hint', 'Lädt das komplette Buch als ePub eBook-Datei herunter');
+
 L::set('nav.prev', 'Zurück:');
 L::set('nav.next', 'Weiter:');

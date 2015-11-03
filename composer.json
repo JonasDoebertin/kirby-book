@@ -3,7 +3,7 @@
     "description": "kirbyBOOK",
     "require": {
         "jdpowered/share": "~0.1.1",
-        "grandt/phpepub": "dev-master#e71e389781151db67b578069de2e8485e47344d6",
+        "grandt/phpepub": "dev-master#c10bb64745f7bb234bd1df10841cd4f6a282d140",
         "ezyang/htmlpurifier": "~4.7.0"
     },
     "authors": [

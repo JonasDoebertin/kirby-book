@@ -85,6 +85,14 @@
                         <i class="fa fa-book"></i>
                     </a>
                 </li>
+                <?php if ($site->epub()->int() === 1): ?>
+                    <li class="dropdown__item--divider"></li>
+                    <li class="dropdown__item">
+                        <a class="dropdown__link" href="<?= url('export/epub') ?>" title="<?= Theme::lang('dropdown.export.epub.hint', 'Download the complete book as ePub eBook file')?>" data-no-pjax>
+                            <?= Theme::lang('dropdown.export.epub', 'Save as ePub')?>
+                        </a>
+                    </li>
+                <?php endif ?>
             </ul>
         </li>
 
