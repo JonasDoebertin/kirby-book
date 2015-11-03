@@ -122,7 +122,7 @@ c::set('routes', [
      */
     [
         'pattern' => 'export/epub',
-        'action' => function () {
+        'action'  => function () {
 
             // Abort if ePub export has been disabled
             if (site()->epub()->int() !== 1) {

@@ -14,6 +14,7 @@ class BasePage extends Page
             if ($export) {
                 return ($item->ePub()->int() === 1) and in_array($item->intendedTemplate(), ['chapter', 'article']);
             }
+
             return in_array($item->intendedTemplate(), ['chapter', 'article']);
         });
     }
@@ -30,6 +31,7 @@ class BasePage extends Page
             if ($export) {
                 return ($item->ePub()->int() === 1) and in_array($item->intendedTemplate(), ['chapter', 'article']);
             }
+
             return in_array($item->intendedTemplate(), ['chapter', 'article']);
         });
     }
@@ -185,7 +187,7 @@ class BasePage extends Page
      * Get a share link for the current page.
      *
      * @since 1.0.0
-     * @param string    $service
+     * @param  string $service
      * @return string
      */
     public function share($service)

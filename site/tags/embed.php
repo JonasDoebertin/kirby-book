@@ -17,13 +17,13 @@ kirbytext::$tags['embed'] = [
         $anchor = new Brick('a');
         $anchor->attr('href', $tag->attr('embed'));
         $anchor->addClass('oembed__anchor embedly-card');
-        $anchor->data(array(
+        $anchor->data([
             'card-chrome'   => Helpers::toBool($tag->attr('chrome'), false) ? '1'   : '0',
             'card-theme'    => 'light',
             'card-controls' => Helpers::toBool($tag->attr('controls'), false) ? '1' : '0',
             'card-width'    => $tag->attr('width', '100%'),
             'card-align'    => Helpers::sanitizeFromArray($tag->attr('align'), ['left', 'center', 'right'], 'center'),
-        ));
+        ]);
         $anchor->append($tag->attr('embed'));
 
         return $wrap->append($anchor);

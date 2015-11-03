@@ -40,7 +40,7 @@ class EPubExporter
                 'name'     => $filename,
                 'size'     => F::size($cacheFile),
                 'mime'     => 'application/epub+zip',
-                'modified' => F::modified($cacheFile)
+                'modified' => F::modified($cacheFile),
             ]);
 
             // Send file content
@@ -129,6 +129,7 @@ class EPubExporter
 
         // Finalize and return book.
         $this->book->finalize();
+
         return $this->book;
     }
 
@@ -306,5 +307,4 @@ class EPubExporter
 
         return $css;
     }
-
 }
