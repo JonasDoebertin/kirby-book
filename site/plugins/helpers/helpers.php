@@ -119,12 +119,12 @@ class helpers
 
         /* String */
         if (is_string($obj)) {
-            return $panel . '#/' . $obj;
+            return $panel . '/' . $obj;
         }
 
         /* Page */
         elseif (is_a($obj, 'Page')) {
-            return $panel . '#/pages/' . $action . '/' . $obj->id();
+            return $panel . '/pages/' . $obj->id() . '/' . $action;
         }
 
         /* File */
@@ -137,13 +137,13 @@ class helpers
 
             /* Page file */
             else {
-                return $panel . '#/files/' . $action . '/' . $obj->page()->id() . '/' . urlencode($obj->filename());
+                return $panel . '/files/' . $obj->page()->id() . '/file/' . urlencode($obj->filename()) . '/' . $action;
             }
         }
 
         /* User */
         elseif (is_a($obj, 'User')) {
-            return $panel . '#/users/' . $action . '/' . $obj->username();
+            return $panel . '/users/' . $obj->username() . '/' . $action;
         }
     }
 }
