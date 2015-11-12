@@ -93,7 +93,7 @@ gulp.task('release-copy', ['release-cleanup', 'css', 'browserify'], function() {
 
 /* Task: Create a package from a release directory */
 gulp.task('release-package', ['release-copy'], function() {
-    return gulp.src('__releases/' + args.tag + '-' + args.edition + '/**')
+    return gulp.src('__releases/' + args.tag + '-' + args.edition + '/**', {dot: true})
         .pipe(zip('kirbybook-' + args.tag + '-' + args.edition + '.zip'))
         .pipe(gulp.dest('__releases'));
 });
