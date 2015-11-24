@@ -342,7 +342,7 @@ class EPubExporter
     {
         // Set up allowed elements
         $config = HTMLPurifier_Config::createDefault();
-        $config->set('HTML.Allowed', 'a[href|target|rel],strong,b,em,i,strike,pre,code,p,ol,ul,li,dl,dt,dd,br,h1,h2,h3,h4,h5,h6,figure,figcaption,img[src|alt],blockquote,q,cite,span,*[style|id|class]');
+        $config->set('HTML.Allowed', 'a[href|target|rel],strong,b,em,i,strike,pre,code,p,ol,ul,li,dl,dt,dd,br,h1,h2,h3,h4,h5,h6,figure,figcaption,img[src|alt],blockquote,q,cite,span,table,thead,tbody,tfoot,tr,td,th,*[style|id|class]');
 
         // Add <figure> and <figcaption> elements to DTD
         $definition = $config->getHTMLDefinition(true);
