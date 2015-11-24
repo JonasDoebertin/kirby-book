@@ -19,6 +19,7 @@ The updated version 1.1.0 adds the new »Download as ePub« feature, upgrades {{
 
 #### Additional changes and bugfixes
 
+* Choose to exclude the *Introduction* page from the chapter/article numbering
 * Use keyboard arrows to navigate between pages
 * Optimized gulp task structure and javascript compiling workflow
 
@@ -84,6 +85,7 @@ D       site/blueprints/sitemap.php
 A       site/blueprints/sitemap.yml
 M       site/config/config.php
 M       site/fields/color
+M       site/fields/markdown
 M       site/fields/selector
 M       site/languages/de.php
 M       site/languages/en.php
@@ -96,11 +98,15 @@ D       site/plugins/oembed/oembed.php
 M       site/plugins/theme/theme.php
 M       site/snippets/book.php
 M       site/snippets/book/header.php
+M       site/snippets/book/page.php
+M       site/snippets/book/print.php
 M       site/snippets/footer.php
 M       site/snippets/header.php
+M       site/snippets/navigation/item.php
 A       site/tags/embed.php
 A       tasks/css.js
 A       tasks/js.js
+M       vendor
 ```
 
 ----
