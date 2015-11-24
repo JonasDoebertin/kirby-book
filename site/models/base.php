@@ -159,13 +159,17 @@ class BasePage extends Page
      */
     public function tocNumber()
     {
-        $number = $this->num() . '.';
+        $depth = $this->depth();
+        $excludeIntroduction = !site()->homePage()->inToc()->bool();
 
-        if (!is_null($parent = $this->parent())) {
-            $number = $parent->tocNumber() . $number;
+        if ($depth === 1) {
+            $number = ($excludeIntroduction) ? ($this->num() - 1) : $this->num();
+        }
+        else {
+            $number = $this->parent()->tocNumber() . $this->num();
         }
 
-        return $number;
+        return $number . '.';
     }
 
     /**

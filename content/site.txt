@@ -22,7 +22,7 @@ Logo: kirbybook-logo.svg
 
 ----
 
-Font: sans-serif
+Font: serif
 
 ----
 
