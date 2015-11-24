@@ -6,7 +6,7 @@ Headline: Welcome to kirbyBOOK
 
 ----
 
-Text:
+Text: 
 
 (image: kirbybook-logo.svg alt: kirbyBOOK Logo)
 
@@ -48,4 +48,4 @@ Customstyles:
 
 ----
 
-Intoc: 1
+Intoc: 0
