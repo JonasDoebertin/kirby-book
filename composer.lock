@@ -104,7 +104,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grandt/PHPePub/zipball/c10bb64745f7bb234bd1df10841cd4f6a282d140",
+                "url": "https://api.github.com/repos/Grandt/PHPePub/zipball/7606182da6d74592346f1df2e4d40f5b4b275578",
                 "reference": "c10bb64745f7bb234bd1df10841cd4f6a282d140",
                 "shasum": ""
             },
@@ -339,12 +339,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grandt/PHPZip.git",
-                "reference": "ef70494d798fc7796c75b2ef47bba37a3006b04d"
+                "reference": "936f93d656f68e29c231a39e19fd59a636fe7e47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grandt/PHPZip/zipball/ef70494d798fc7796c75b2ef47bba37a3006b04d",
-                "reference": "ef70494d798fc7796c75b2ef47bba37a3006b04d",
+                "url": "https://api.github.com/repos/Grandt/PHPZip/zipball/936f93d656f68e29c231a39e19fd59a636fe7e47",
+                "reference": "936f93d656f68e29c231a39e19fd59a636fe7e47",
                 "shasum": ""
             },
             "require": {
@@ -392,7 +392,7 @@
                 "stream",
                 "zip"
             ],
-            "time": "2015-11-01 09:53:49"
+            "time": "2015-11-16 16:30:51"
         }
     ],
     "packages-dev": [],
