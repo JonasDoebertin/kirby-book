@@ -19,9 +19,11 @@ var $document = $(document);
  * @since 1.1.0
  */
 function init() {
-    initPjax();
-    bindPjaxHandler();
-    bindPrevNextPageShortcut();
+    if (!$('html').hasClass('printable')) {
+        initPjax();
+        bindPjaxHandler();
+        bindPrevNextPageShortcut();
+    }
 }
 
 /**
