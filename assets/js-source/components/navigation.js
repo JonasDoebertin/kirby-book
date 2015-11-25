@@ -55,7 +55,7 @@ function bindPjaxHandler() {
     $document.on('click', 'a', function (e) {
         var anchor = $(this);
 
-        if (!anchor.is('[data-no-pjax]')) {
+        if (!anchor.is('[data-no-pjax]') && !anchor.is('[href^="#"]')) {
             e.preventDefault();
             navigateTo($(this).attr('href'), false);
         }
