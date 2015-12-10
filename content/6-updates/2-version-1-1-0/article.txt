@@ -8,11 +8,11 @@ Headline:
 
 Text: 
 
-The updated version 1.1.0 adds the new »Download as ePub« feature, upgrades {{kirbybook}} to Kirby CMS 2.2 and contains various small fixes.
+The updated version 1.1.0 adds the new **»Download as ePub«** feature, upgrades {{kirbybook}} to Kirby CMS 2.2 and contains various small fixes.
 
 #### Highlights
 
-* **ePub download:** Let your readers download a copy of your publication in the well-proven ePub format with simply enabling a checkbox. Everything will be handled for you.
+* **ePub download:** Let your readers download a copy of your publication in the well-proven ePub format by simply enabling a checkbox in the site options. Everything will be handled for you.
 * **Faster browsing experience:** With the help of a little PJAX magic browsing a publication powered by {{kirbybook}} is faster then ever before.
 * **Improved media embedding:** A new and improved way of adding mutimedia objects like Vimeo and YouTube videos, tweets, vines, etc. to your content makes this feature a lot quicker and more powerful.
 * **Kirby 2.2:** Take advantage of the new features (link: http://getkirby.com/changelog/kirby-2-2-0 text: Kirby 2.2) brings. This includes the completly rewritten Panel which makes managing your content even more easy.
@@ -106,8 +106,8 @@ M       site/snippets/navigation/item.php
 A       site/tags/embed.php
 A       tasks/css.js
 A       tasks/js.js
-M       vendor
 ```
+*Please note: this list contains files and folders that may only be included in the Developer Edition of {{kirbybook}}.*
 
 ----
 
