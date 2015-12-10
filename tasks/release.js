@@ -27,6 +27,7 @@ var releasePaths = {
     'standard': [
         '**/*',
         '.htaccess',
+        '!**/.DS_Store',
         '!{__releases,__releases/**}',
         '!assets/{js-source,js-source/**,scss,scss/**}',
         '!{bin,bin/**}',
@@ -54,6 +55,7 @@ var releasePaths = {
     'developer': [
         '**/*',
         '.htaccess',
+        '!**/.DS_Store',
         '!{__releases,__releases/**}',
         '!{bower_components,bower_components/**}',
         '!{node_modules,node_modules/**}',

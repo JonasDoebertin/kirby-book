@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c54effbae9f63f6a0cf5567e4143f635",
-    "content-hash": "e098ba045af7d1d13759e813eb503818",
+    "hash": "d3d4e56a1ade5613980cd928461316d5",
+    "content-hash": "4c8b0d38f2cb538a6def87be837eb867",
     "packages": [
         {
             "name": "ezyang/htmlpurifier",
@@ -100,12 +100,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grandt/PHPePub.git",
-                "reference": "c10bb64745f7bb234bd1df10841cd4f6a282d140"
+                "reference": "7606182da6d74592346f1df2e4d40f5b4b275578"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/Grandt/PHPePub/zipball/7606182da6d74592346f1df2e4d40f5b4b275578",
-                "reference": "c10bb64745f7bb234bd1df10841cd4f6a282d140",
+                "reference": "7606182da6d74592346f1df2e4d40f5b4b275578",
                 "shasum": ""
             },
             "require": {
