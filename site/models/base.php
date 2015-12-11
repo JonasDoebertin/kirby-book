@@ -164,8 +164,7 @@ class BasePage extends Page
 
         if ($depth === 1) {
             $number = ($excludeIntroduction) ? ($this->num() - 1) : $this->num();
-        }
-        else {
+        } else {
             $number = $this->parent()->tocNumber() . $this->num();
         }
 
