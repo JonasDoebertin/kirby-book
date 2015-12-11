@@ -4,7 +4,6 @@
 var $          = require('jquery'),
     dropdown   = require('./components/dropdown'),
     navigation = require('./components/navigation'),
-    oembed     = require('./components/oembed'),
     print      = require('./components/print.js'),
     sidebar    = require('./components/sidebar'),
     theme      = require('./components/theme');
