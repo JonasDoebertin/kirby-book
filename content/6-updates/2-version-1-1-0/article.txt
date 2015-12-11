@@ -106,6 +106,7 @@ M       site/snippets/navigation/item.php
 A       site/tags/embed.php
 A       tasks/css.js
 A       tasks/js.js
+M       vendor
 ```
 *Please note: this list contains files and folders that may only be included in the Developer Edition of {{kirbybook}}.*
 

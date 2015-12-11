@@ -12,16 +12,16 @@ Text:
 
 ## Where to get it?
 
-{{kirbybook}} is available for purchase through (link: https://gum.co/kirbybook text: Gumroad). They'll handle the payment nice and securely and take care of delivering all future updates right to your inbox.
+{{kirbybook}} is available for purchase right from this website (just click that big'ol *Buy now!* button above). Payments are handled nice and securely via (link: https://gum.co/kirbybook text: Gumroad). They'll also take care of delivering all future updates right to your inbox so you'll never miss out on any new features.
 
 ## What is included?
 
 When it comes to purchasing {{kirbybook}}, you'll get to choose between two versions:
 
-1. A **ready-to-use version** that you can upload to your webhost without any further ado.
-2. A **developer version** for advanced users which includes all source files for esier customization.
+1. A **standard ready-to-use edition** that you can upload to your webhost without any further ado.
+2. A **developer edition** for advanced users which includes all source files for esier customization.
 
-*Please keep in mind that, similar to other Kirby themes on the market, {{kirbybook}} doesn't include a (link: http://getkirby.com/buy text: Kirby CMS license target: _blank). It needs to be purchased seperately (currently from €15 / $17).*
+Each license you purchase is **valid for a single website** (of course you may create as many local development/testing installations as you like). If you want to use {{kirbybook}} on multiple websites or domains, you may choose the number of licenses you need during the checkout process. If you need a lot of licenses (6 or more) drop me a message at (email: user@example.com text: support@jd-powered.net) to talk about and arrange volume discounts.
 
 | Files | Standard Edition | Developer Edition |
 | ---------------- | :--------------: | :---------------: |
@@ -37,6 +37,8 @@ When it comes to purchasing {{kirbybook}}, you'll get to choose between two vers
 | Gulp Workflow | {{icon-no}} | {{icon-yes}} |
 | Composer Package Files | {{icon-no}} | {{icon-yes}} |
 | PHP CS Fixer Configuration Files | {{icon-no}} | {{icon-yes}} |
+
+*Please keep in mind that, similar to other Kirby themes on the market, {{kirbybook}} doesn't include a (link: http://getkirby.com/buy text: Kirby CMS license target: _blank). It needs to be purchased seperately (currently from €15 / $17).*
 
 ### Standard (ready-to-use) Edition
 
