@@ -10,4 +10,4 @@ Includes:
 
 - 
   indicator: buy
-  include: '<p class="buy"><a class="gumroad-button" href="https://gumroad.com/l/KkqQ" data-no-pjax>Buy now!</a><script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script></p>'
+  include: '<p class="buy"><a class="buy-now-button" href="https://gumroad.com/l/KkqQ" data-no-pjax>Buy now!</a><script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script></p>'

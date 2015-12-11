@@ -15,7 +15,6 @@ var $          = require('jquery'),
 function boot() {
     dropdown.init();
     navigation.init();
-    oembed.init();
     print.init();
     sidebar.init();
     theme.init();
