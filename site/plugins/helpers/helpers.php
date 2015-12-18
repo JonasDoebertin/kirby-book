@@ -59,6 +59,52 @@ class helpers
     }
 
     /**
+     * Sanitize a string by checkinf if it is of an allowed value.
+     *
+     * @since 1.1.0
+     * @param string
+     * @param array
+     * @param string
+     * @return string
+     */
+    public static function sanitizeFromArray($actual, $allowed, $fallback)
+    {
+        return in_array($actual, $allowed) ? $actual : $fallback;
+    }
+
+    /**
+     * Convert a boolean-like string to an actual boolean.
+     *
+     * @since 1.1.0
+     * @param mixed
+     * @param boolean
+     * @return boolean
+     */
+    public static function toBool($actual, $fallback)
+    {
+        if (is_bool($actual)) {
+            return $actual;
+        }
+
+        switch ($actual) {
+            case 'true':
+            case 'yes':
+            case '1':
+            case 1:
+                return true;
+
+            case 'false':
+            case 'no':
+            case '0':
+            case 0:
+                return false;
+
+            default:
+                return $fallback;
+        }
+    }
+
+    /**
      * Generate a panel url for an object and an action.
      *
      * @since 1.0.0
@@ -73,12 +119,12 @@ class helpers
 
         /* String */
         if (is_string($obj)) {
-            return $panel . '#/' . $obj;
+            return $panel . '/' . $obj;
         }
 
         /* Page */
         elseif (is_a($obj, 'Page')) {
-            return $panel . '#/pages/' . $action . '/' . $obj->id();
+            return $panel . '/pages/' . $obj->id() . '/' . $action;
         }
 
         /* File */
@@ -91,13 +137,13 @@ class helpers
 
             /* Page file */
             else {
-                return $panel . '#/files/' . $action . '/' . $obj->page()->id() . '/' . urlencode($obj->filename());
+                return $panel . '/files/' . $obj->page()->id() . '/file/' . urlencode($obj->filename()) . '/' . $action;
             }
         }
 
         /* User */
         elseif (is_a($obj, 'User')) {
-            return $panel . '#/users/' . $action . '/' . $obj->username();
+            return $panel . '/users/' . $obj->username() . '/' . $action;
         }
     }
 }

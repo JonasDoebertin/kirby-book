@@ -4,7 +4,10 @@
 
             <?php /* Article headline */ ?>
             <h2 class="page__headline  highlight--text  highlight--border">
-                <?= $article->tocNumber() ?>&nbsp;<?= $article->headline()->or($article->title())->html() ?>
+                <?php if (($article->intendedTemplate() !== 'home') or $article->inToc()->bool()): ?>
+                    <?= $article->tocNumber() ?>
+                <?php endif ?>
+                <?= $article->headline()->or($article->title())->html() ?>
             </h2>
 
             <?php /* Article content */ ?>

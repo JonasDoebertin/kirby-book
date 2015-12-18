@@ -8,9 +8,13 @@ class BasePage extends Page
      * @since 1.0.0
      * @return Pages
      */
-    public function topLevelArticles()
+    public function topLevelArticles($export = false)
     {
-        return site()->pages()->visible()->filter(function ($item) {
+        return site()->pages()->visible()->filter(function ($item) use ($export) {
+            if ($export) {
+                return ($item->ePub()->int() === 1) and in_array($item->intendedTemplate(), ['chapter', 'article']);
+            }
+
             return in_array($item->intendedTemplate(), ['chapter', 'article']);
         });
     }
@@ -21,11 +25,36 @@ class BasePage extends Page
      * @since 1.0.0
      * @return Pages
      */
-    public function containedArticles()
+    public function containedArticles($export = false)
     {
-        return $this->children()->visible()->filter(function ($item) {
+        return $this->children()->visible()->filter(function ($item) use ($export) {
+            if ($export) {
+                return ($item->ePub()->int() === 1) and in_array($item->intendedTemplate(), ['chapter', 'article']);
+            }
+
             return in_array($item->intendedTemplate(), ['chapter', 'article']);
         });
+    }
+
+    /**
+     * Get a flat array of all articles.
+     *
+     * @since 1.0.0
+     * @return Pages
+     */
+    public function getArticles()
+    {
+        $pages = [];
+        $pages[] = site()->homePage();
+        foreach ($this->topLevelArticles() as $page) {
+            $pages[] = $page;
+            $subPages = $page->containedArticles();
+            foreach ($subPages as $subPage) {
+                $pages[] = $subPage;
+            }
+        }
+
+        return $pages;
     }
 
     /**
@@ -91,9 +120,9 @@ class BasePage extends Page
     public function metaTitle()
     {
         if ($this->isHomePage()) {
-            return site()->title()->escape('attr');
+            return site()->metatitle()->or(site()->title())->escape('html');
         } else {
-            return $this->title()->escape('attr') . ' | ' . site()->title()->escape('attr');
+            return $this->title()->escape('attr') . ' | ' . site()->metatitle()->or(site()->title())->escape('html');
         }
     }
     /**
@@ -105,9 +134,9 @@ class BasePage extends Page
     public function metaDescription()
     {
         if ($this->isHomePage() or $this->isErrorPage()) {
-            return site()->description()->escape('attr');
+            return site()->description()->escape('html');
         } else {
-            return $this->text()->escape('attr')->excerpt(50, 'words');
+            return $this->text()->escape('html')->excerpt(50, 'words');
         }
     }
 
@@ -119,7 +148,7 @@ class BasePage extends Page
      */
     public function metaAuthor()
     {
-        return site()->author()->escape('attr');
+        return site()->author()->escape('html');
     }
 
     /**
@@ -130,13 +159,16 @@ class BasePage extends Page
      */
     public function tocNumber()
     {
-        $number = $this->num() . '.';
+        $depth = $this->depth();
+        $excludeIntroduction = !site()->homePage()->inToc()->bool();
 
-        if (!is_null($parent = $this->parent())) {
-            $number = $parent->tocNumber() . $number;
+        if ($depth === 1) {
+            $number = ($excludeIntroduction) ? ($this->num() - 1) : $this->num();
+        } else {
+            $number = $this->parent()->tocNumber() . $this->num();
         }
 
-        return $number;
+        return $number . '.';
     }
 
     /**
@@ -158,7 +190,7 @@ class BasePage extends Page
      * Get a share link for the current page.
      *
      * @since 1.0.0
-     * @param string    $service
+     * @param  string $service
      * @return string
      */
     public function share($service)

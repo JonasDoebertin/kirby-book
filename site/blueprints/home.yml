@@ -1,7 +1,7 @@
-title: Article
+title: Introduction Page
 pages: false
 files: true
-icon: file-text
+icon: home
 
 fields:
     headlineContent:
@@ -35,6 +35,13 @@ fields:
         step: 0.05
         width: 1/2
         help: Add any number between 0.1 and 1 to overwrite the auto-generated page priority.
+    inToc:
+        label: TOC / Numbering
+        type: checkbox
+        text: Include in navigation numbering
+        default: 1
+        width: 1/2
+        help: Uncheck this option to exclude this page from the auto-generated numbering as seens in the navigation sidebar.
 
     headlineAdvanced:
         type: headline

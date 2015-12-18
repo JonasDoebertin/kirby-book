@@ -2,8 +2,9 @@
     "name": "jdpowered/kirby-book",
     "description": "kirbyBOOK",
     "require": {
-        "mpratt/embera": "~1.8.0",
-        "jdpowered/share": "~0.1.1"
+        "jdpowered/share": "~0.1.1",
+        "grandt/phpepub": "dev-master#7606182da6d74592346f1df2e4d40f5b4b275578",
+        "ezyang/htmlpurifier": "~4.7.0"
     },
     "authors": [
         {
@@ -11,7 +12,7 @@
             "email": "hello@jd-powered.net"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "config": {
         "preferred-install": "dist"
     }

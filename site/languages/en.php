@@ -27,5 +27,8 @@ L::set('dropdown.theme.sepia.hint', 'Switch to sepia theme');
 L::set('dropdown.print.page.hint', 'Print the current page');
 L::set('dropdown.print.book.hint', 'Print the complete book');
 
+L::set('dropdown.export.epub', 'Save as ePub');
+L::set('dropdown.export.epub.hint', 'Download the complete book as ePub eBook file');
+
 L::set('nav.prev', 'Previous:');
 L::set('nav.next', 'Next:');

@@ -18,13 +18,21 @@ Text:
 
 ## Features
 
-**Simple to publish.** Publish, update and maintain your book easily via the integrated Panel or by using your favorite text or markdown editor. Throw in some Kirbytext (similar to WordPress shortcodes) to spice up your content even more.
+(columns…)
 
-**Ready for your content.** Add any kind of content you like. Create multiple chapters containing several articles each. Add images, tables, footnotes. Embed Youtube and Vimeo videos, Tweets and a lot more.
+**Simple to publish.** Publish, update and maintain your book easily via the integrated Panel or by using your favorite text or markdown editor. Throw in some Kirbytext (similar to WordPress shortcodes) to spice up your content even more.
 
 **Awesome reading experience.** Make your book available in a fully-responsive way optimized for both desktop and mobile reading experiences. Let your readers choose between multiple themes, fonts and text sizes.
 
 **Based on Kirby.** With the help of Kirby you set up your book on top of a well-proven file-based content management system. No hazzle with managing databases and performance drops. Backups are dead-simple.
+
+++++
+
+**Ready for your content.** Add any kind of content you like. Create multiple chapters containing several articles each. Add images, tables, footnotes. Embed Youtube and Vimeo videos, Tweets and a lot more.
+
+**ePub download.** Let your readers download a copy of your publication in the well-proven ePub format with simply enabling a checkbox. Everything will be handled for you.
+
+(…columns)
 
 ----
 
@@ -32,8 +40,12 @@ Sitemap: 1
 
 ----
 
-Priority: 1
+Priority: 1.00
 
 ----
 
 Customstyles: 
+
+----
+
+Intoc: 0

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html class="no-js white normal sans-serif <?= r($case, $case, 'with-sidebar with-animation') ?>" lang="<?= $site->contentlanguage()?>">
+<html class="no-js white normal sans-serif <?= r($case, $case, 'with-sidebar with-animation') ?>" lang="<?= $site->contentlanguage() ?>">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,7 +11,7 @@
         <meta name="author" content="<?= $page->metaAuthor() ?>">
 
         <meta property="og:url" content="<?= $page->url() ?>">
-        <meta property="og:site_name" content="<?= $site->title()->escape('attr') ?>">
+        <meta property="og:site_name" content="<?= $site->title()->escape('html') ?>">
         <meta property="og:title" content="<?= $page->metaTitle() ?>">
         <meta property="og:type" content="website">
         <meta property="og:description" content="<?= $page->metaDescription() ?>">
@@ -27,6 +27,8 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <?= $site->faviconCode() ?>
 
+        <link rel="canonical" href="<?= $page->url() ?>">
+
         <?= $site->googleMeta() ?>
         <?= $site->bingMeta() ?>
 
@@ -35,4 +37,4 @@
         <?= Theme::generateStyles() ?>
     </head>
     <body>
-        <div class="wrap">
+        <div class="wrap" id="pjax-container">

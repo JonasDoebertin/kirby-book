@@ -38,7 +38,7 @@
                         <a class="highlight--hover-text" href="<?= url('/panel') ?>" title="Go to Panel Dashboard"><?= Theme::lang('dashboard', 'Dashboard')?></a>
                     </li>
                     <li>
-                        <a class="highlight--hover-text" href="<?= Helpers::panelUrl($page, 'show') ?>" title="Edit this page"><?= Theme::lang('page.edit', 'Edit Page')?></a>
+                        <a class="highlight--hover-text" href="<?= Helpers::panelUrl($page, 'edit') ?>" title="Edit this page"><?= Theme::lang('page.edit', 'Edit Page')?></a>
                     </li>
                 </ul>
             </nav>

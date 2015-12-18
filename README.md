@@ -18,3 +18,9 @@ git submodule foreach git pull
 git commit -a -m "Update submodules"
 git submodule update --init --recursive
 ```
+
+### Find changed files
+
+```bash
+$ git diff --name-status [TAG] HEAD
+```

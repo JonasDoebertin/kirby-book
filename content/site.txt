@@ -2,7 +2,19 @@ Title: kirbyBOOK Documentation
 
 ----
 
-Description: Fully featured documentation and demo project of kirbyBOOK, the Kirby based web publishing tool.
+Metatitle: kirbyBOOK – Publish web based online books easily
+
+----
+
+Description: kirbyBOOK — The definitive solution to publishing web based books easily. Fully featured documentation and demo project.
+
+----
+
+Author: »jd« powered / Jonas Döbertin
+
+----
+
+Contentlanguage: en
 
 ----
 
@@ -10,7 +22,51 @@ Logo: kirbybook-logo.svg
 
 ----
 
+Font: serif
+
+----
+
 Highlight: #ff4136
+
+----
+
+Customstyles: 
+
+.navigation__logo {
+    max-width: 72%;
+}
+
+.buy{
+    text-align: center;
+}
+
+.buy-now-button.buy-now-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #ff4136;
+    color: #ffffff !important;
+    border-radius: 2px;
+    font-size: 125%;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12),0 1px 1px 0 rgba(0,0,0,.24);
+    transition: box-shadow 300ms;
+    font-weight: normal !important;
+}
+
+.buy-now-button.buy-now-button:hover,
+.buy-now-button.buy-now-button:active,
+.buy-now-button.buy-now-button:focus {
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+    text-shadow: none !important;
+    background-image: none !important;
+    color: #ffffff !important;
+}
+
+@media print {
+    #hs-beacon {
+        display: none;
+    }
+}
 
 ----
 
@@ -27,57 +83,6 @@ Googlemeta: <meta name="google-site-verification" content="libmP-13KnBdKftaAwcjH
 ----
 
 Bingmeta: <meta name="msvalidate.01" content="A577379B7BD7C049768A09C7316891E0" />
-
-----
-
-Author: »jd« powered / Jonas Döbertin
-
-----
-
-Font: sans-serif
-
-----
-
-Contentlanguage: en
-
-----
-
-Tracking: 
-
-<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(["setDoNotTrack", true]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//analytics.jd-powered.net/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 9]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//analytics.jd-powered.net/piwik.php?idsite=9" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
-
-----
-
-Customstyles: 
-
-.navigation__logo {
-    max-width: 72%;
-}
-
-.buy{
-    text-align: center;
-}
-
-@media print {
-    #hs-beacon {
-        display: none;
-    }
-}
 
 ----
 
@@ -104,6 +109,27 @@ Faviconcode:
 
 ----
 
+Tracking: 
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.jd-powered.net/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 9]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.jd-powered.net/piwik.php?idsite=9" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+----
+
 Scripts: 
 
 <!-- Helpscout Beacon -->
@@ -125,3 +151,35 @@ Scripts:
   });
 </script>
 <!-- End Helpscout Beacon -->
+
+----
+
+Epub: 1
+
+----
+
+Epubauthor: Jonas Döbertin
+
+----
+
+Epubsortauthor: Döbertin, Jonas
+
+----
+
+Epubpublishername: »jd« powered
+
+----
+
+Epubdescription: kirbyBOOK — The definitive solution to publishing web based books easily. Complete documentation and demo export.
+
+----
+
+Epubsubject: Online Publishing,Kirby CMS
+
+----
+
+Epubcover: epub-cover.png
+
+----
+
+Epubpublisherurl: http://jd-powered.net

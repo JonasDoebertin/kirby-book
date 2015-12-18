@@ -52,10 +52,12 @@
 @import "components.markdown";
 @import "components.error";
 
+
 /**
  * #TRUMPS
  */
 @import "bower_components/inuit-clearfix/trumps.clearfix";
+@import "trumps.nprogress";
 @import "trumps.fontawesome";
 @import "trumps.font";
 @import "trumps.theme";

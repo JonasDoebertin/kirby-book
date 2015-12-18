@@ -1,46 +1,54 @@
+/**
+ * Modules
+ */
+var $ = require('jquery');
 
-var Dropdown = function($, app) {
-    'use strict';
+/**
+ * Variables
+ */
+var $document = $(document);
 
-    var self = this;
+/**
+ * Initialize dropdowns.
+ *
+ * @since 1.1.0
+ */
+function init() {
 
-    this.app = app;
+    // Bind toggle event handler to all dropdown containers
+    $document.on('click', '.js-dropdown-toggle', function(event) {
+        event.stopPropagation();
+        event.preventDefault();
 
-    /**
-     * Initialization.
-     *
-     * @since 1.0.0
-     * @return void
-     */
-    this.init = function() {
+        // Hide all other dropdowns
+        hideAll();
 
-        // Bind toggle event handler to all dropdown containers
-        self.app.$document.on('click', '.js-dropdown-toggle', function(event) {
-            event.stopPropagation();
-            event.preventDefault();
+        // Show related dropdown
+        $(this).toggleClass('with-dropdown');
+    });
 
-            // Hide all other dropdowns
-            self.hideAll();
+    // Prevent clicks on dropdown from closing it
+    $document.on('click', '.dropdown', function(event) {
+        event.stopPropagation();
+    });
 
-            // Show related dropdown
-            $(this).toggleClass('with-dropdown');
-        });
+    // Hide all dropdown on clicks elsewhere
+    $document.on('click', hideAll);
+}
 
-        // Prevent clicks on dropdown from closing it
-        self.app.$document.on('click', '.dropdown', function(event) {
-            event.stopPropagation();
-        });
+/**
+ * Hide all dropdowns.
+ *
+ * @since 1.1.0
+ */
+function hideAll() {
+    $document.find('.js-dropdown-toggle').toggleClass('with-dropdown', false);
+}
 
-        // Hide all dropdown on clicks elsewhere
-        self.app.$document.on('click', self.hideAll);
-    };
-
-    this.hideAll = function() {
-        app.$document.find('.js-dropdown-toggle').toggleClass('with-dropdown', false);
-    };
-
-    // Run initialization.
-    this.init();
-
-    return {};
+/**
+ * Exports
+ */
+module.exports = {
+    init: init,
+    hideAll: hideAll
 };
